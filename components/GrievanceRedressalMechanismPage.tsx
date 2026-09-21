@@ -102,8 +102,8 @@ export default function GrievanceRedressalMechanismPage() {
                 <a href="tel:+918503090309">85-0309-0309</a>
               </ContactLine>
               <ContactLine label="Email ID:">
-                <a href="mailto:care@rupyaa.in" className="break-all">
-                  care@rupyaa.in
+                <a href="mailto:care@rupyaa.com" className="break-all">
+                  care@rupyaa.com
                 </a>
               </ContactLine>
               <ContactLine label="Timings:">

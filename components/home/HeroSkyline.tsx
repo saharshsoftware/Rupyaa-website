@@ -3,17 +3,18 @@ import type { CSSProperties, ReactElement } from "react";
 /**
  * Transparent skyline over the Personal Loan page gradient — bottom-pinned.
  * Shared by the home hero and site footer. Uses assets from `/public/images`.
+ * Full width, natural aspect ratio (no stretch / distortion).
  */
 export default function HeroSkyline(): ReactElement {
+  // Do not set `display` here — it would override Tailwind `hidden` / `sm:hidden`
+  // and show both mobile + desktop images at once (overlapping).
   const skylineStyle: CSSProperties = {
     position: "absolute",
     left: 0,
+    right: 0,
     bottom: 0,
     width: "100%",
     height: "auto",
-    maxHeight: "62vh",
-    objectFit: "contain",
-    objectPosition: "bottom center",
     background: "transparent",
     zIndex: 0,
     pointerEvents: "none",

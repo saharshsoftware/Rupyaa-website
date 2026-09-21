@@ -127,10 +127,10 @@ export default function NotFound() {
           <p className="text-sm text-gray-600">
             Need urgent help? Reach us at{" "}
             <a
-              href="mailto:care@rupyaa.in"
+              href="mailto:care@rupyaa.com"
               className="text-primary font-semibold hover:underline"
             >
-              care@rupyaa.in
+              care@rupyaa.com
             </a>
           </p>
         </div>

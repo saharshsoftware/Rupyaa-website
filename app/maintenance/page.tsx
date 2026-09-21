@@ -53,7 +53,7 @@ export default function MaintenancePage() {
           <p className="text-sm text-gray-600">
             For urgent assistance, please contact us at{" "}
             <a
-              href="mailto:care@rupyaa.in"
+              href="mailto:care@rupyaa.com"
               className="text-primary font-semibold hover:underline"
             >
               care@Rupyaa.in

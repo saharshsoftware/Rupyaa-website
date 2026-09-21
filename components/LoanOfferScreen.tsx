@@ -1,6 +1,7 @@
 "use client";
 
-import { useCallback, useEffect, useRef, type ReactNode } from "react";
+// import { useRef } from "react";
+import { useCallback, useEffect, type ReactNode } from "react";
 import { formatCurrency } from "@/lib/format-utils";
 import { useFlowStore, DEFAULT_OFFER_AMOUNT } from "@/store/useFlowStore";
 import { useEnableFullWebJourney } from "@/hooks/useEnableFullWebJourney";
@@ -8,7 +9,7 @@ import { useApprovedOfferStep } from "@/hooks/useApprovedOfferStep";
 import { ensureCurrentOfferForApprovedStep } from "@/lib/fetch-current-offer";
 import type { CurrentOffer, LoanType } from "@/lib/eligibility-api";
 import { useCurrentOfferStore } from "@/store/useCurrentOfferStore";
-import { trackReviewOfferPageLand, trackReviewOfferPageClick } from "@/lib/gtm";
+// import { trackReviewOfferPageLand, trackReviewOfferPageClick } from "@/lib/gtm";
 import ZapcashLoading from "@/components/ZapcashLoading";
 import AppButton from "@/components/app-button";
 
@@ -171,7 +172,7 @@ function ButtonSpinner() {
 }
 
 function ApprovedOfferReview({ onContinue }: { onContinue?: () => void }) {
-  const landSent = useRef(false);
+  // const landSent = useRef(false);
   const userStage = useFlowStore((s) => s.userStageResponse?.stage);
   const offerStatus = useFlowStore((s) => s.userStageResponse?.context?.offerStatus);
   const lastResult = useCurrentOfferStore((s) => s.lastResult);
@@ -181,7 +182,7 @@ function ApprovedOfferReview({ onContinue }: { onContinue?: () => void }) {
   }, [userStage, offerStatus, lastResult]);
 
   const handleAcceptSuccess = useCallback(() => {
-    trackReviewOfferPageClick();
+    // trackReviewOfferPageClick();
     void Promise.resolve(onContinue?.());
   }, [onContinue]);
 
@@ -206,11 +207,11 @@ function ApprovedOfferReview({ onContinue }: { onContinue?: () => void }) {
     onAcceptError: () => undefined,
   });
 
-  useEffect(() => {
-    if (!isOfferResolved || landSent.current) return;
-    landSent.current = true;
-    trackReviewOfferPageLand();
-  }, [isOfferResolved]);
+  // useEffect(() => {
+    // if (!isOfferResolved || landSent.current) return;
+    // landSent.current = true;
+    // trackReviewOfferPageLand();
+  // }, [isOfferResolved]);
 
   const handleRefreshClick = useCallback(() => {
     clearRefreshError();

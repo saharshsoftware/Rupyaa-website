@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { syncAuthLoggedInHintCookie } from "@/lib/auth-session-cookie";
 import { MarketingAttributionStorage } from "@/lib/marketing-attribution-storage";
-import { trackClarityLogout } from "@/lib/microsoft-clarity";
+// import { trackClarityLogout } from "@/lib/microsoft-clarity";
 import { useFlowStore } from "@/store/useFlowStore";
 
 function isBrowser(): boolean {
@@ -55,10 +55,10 @@ export const useAuthStore = create<AuthState & AuthActions>()(
       },
       setToken: (token) => set({ token }),
       logout: () => {
-        const currentPhoneNumber = useAuthStore.getState().phone;
-        const currentUserStage =
-          useFlowStore.getState().userStageResponse?.stage ?? null;
-        trackClarityLogout(currentPhoneNumber, currentUserStage);
+        // const currentPhoneNumber = useAuthStore.getState().phone;
+        // const currentUserStage =
+          // useFlowStore.getState().userStageResponse?.stage ?? null;
+        // trackClarityLogout(currentPhoneNumber, currentUserStage);
         set({
           isLoggedIn: false,
           phone: null,

@@ -6,10 +6,45 @@ import {
   homeSectionSpacingClassName,
 } from "@/lib/app-shell-layout";
 
+/** Review quote card — compact mobile size (matches reference); equal to rating on `sm+`. */
+const REVIEW_CARD_CLASS_NAME =
+  "flex h-full min-h-[168px] w-[min(58vw,210px)] shrink-0 flex-col sm:min-h-[240px] sm:w-[300px] lg:min-h-[260px] lg:w-[320px]";
+
+/** Rating card — narrow yellow rail on mobile; equal to review cards from `sm` up. */
+const RATING_CARD_CLASS_NAME =
+  "flex h-full min-h-[168px] w-[min(32vw,120px)] shrink-0 flex-col sm:min-h-[240px] sm:w-[300px] lg:min-h-[260px] lg:w-[320px]";
+
 function StarIcon({ size = 14 }: { readonly size?: number }): ReactElement {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
       <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+    </svg>
+  );
+}
+
+/**
+ * Left-half filled star for 4.5 rating display.
+ */
+function HalfStarIcon(): ReactElement {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden>
+      <defs>
+        <clipPath id="testimonial-half-star-clip">
+          <rect x="0" y="0" width="12" height="24" />
+        </clipPath>
+      </defs>
+      <polygon
+        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <polygon
+        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+        fill="currentColor"
+        clipPath="url(#testimonial-half-star-clip)"
+      />
     </svg>
   );
 }
@@ -38,43 +73,64 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "Getting funds when I needed them most felt easy. Clear steps and timely updates kept me confident throughout.",
-    name: "Rohan Mehta",
-    location: "Bengaluru",
+      "Support team answered my questions quickly and helped me choose an option that fit my needs.",
+    name: "Rahul Mehta",
+    location: "Pune",
     initials: "RM",
   },
   {
     quote:
-      "Support was helpful and the approval felt fast. I would recommend Rupyaa to anyone looking for a simple loan experience.",
-    name: "Neha Verma",
-    location: "Jaipur",
-    initials: "NV",
+      "Everything was digital, so I did not have to visit a branch. That saved me a lot of time.",
+    name: "Sneha Reddy",
+    location: "Hyderabad",
+    initials: "SR",
   },
   {
     quote:
-      "Everything was transparent — from eligibility to disbursal. No confusion, just a smooth end-to-end process.",
-    name: "Siddharth Rao",
-    location: "Hyderabad",
-    initials: "SR",
+      "I could track my application status easily. The updates made the whole experience transparent.",
+    name: "Vikram Singh",
+    location: "Jaipur",
+    initials: "VS",
+  },
+  {
+    quote:
+      "Disbursal was faster than I expected after approval. The repayment schedule was also clear.",
+    name: "Ananya Joshi",
+    location: "Bengaluru",
+    initials: "AJ",
+  },
+  {
+    quote:
+      "The app interface is clean and easy to navigate. Even first-time users can complete the flow.",
+    name: "Karan Patel",
+    location: "Ahmedabad",
+    initials: "KP",
   },
 ] as const;
 
 /**
  * Sticky yellow rating summary card (left rail).
+ * Compact on mobile; same width as review cards on desktop (`sm+`).
  */
 function RatingSummaryCard(): ReactElement {
   return (
-    <div className="flex h-full min-h-[220px] w-[min(42vw,160px)] shrink-0 flex-col items-center justify-center bg-[#FECA42] px-4 py-8 text-center sm:w-[180px] sm:min-h-[240px] sm:px-5 lg:w-[200px] lg:min-h-[260px] lg:px-6 lg:py-10">
-      <p className="text-4xl font-extrabold leading-none text-gray-900 sm:text-5xl lg:text-6xl">
-        4.9
+    <div
+      className={`${RATING_CARD_CLASS_NAME} items-center justify-center bg-[#FECA42] px-2.5 py-5 text-center sm:px-6 sm:py-8 lg:px-7 lg:py-10`}
+    >
+      <p className="text-[28px] font-extrabold leading-none text-gray-900 sm:text-5xl lg:text-6xl">
+        4.5
       </p>
-      <p className="mt-2 text-xs font-medium text-gray-900 sm:mt-3 sm:text-sm lg:text-base">
+      <p className="mt-1.5 text-[10px] font-medium leading-tight text-gray-900 sm:mt-3 sm:text-sm lg:text-base">
         Customer Reviews
       </p>
-      <div className="mt-3 flex gap-0.5 text-gray-900 sm:mt-4 sm:gap-1">
-        {[1, 2, 3, 4, 5].map((i) => (
+      <div
+        className="mt-2 flex gap-0.5 text-gray-900 sm:mt-4 sm:gap-1"
+        aria-label="4.5 out of 5 stars"
+      >
+        {[1, 2, 3, 4].map((i) => (
           <StarIcon key={i} />
         ))}
+        <HalfStarIcon />
       </div>
     </div>
   );
@@ -98,21 +154,21 @@ function TestimonialCard({
   initials,
   showDivider = true,
 }: TestimonialCardProps): ReactElement {
-  let cardClassName =
-    "flex h-full min-h-[220px] w-[min(78vw,280px)] shrink-0 flex-col bg-[#FFFCF5] px-5 py-6 sm:min-h-[240px] sm:w-[300px] sm:px-6 sm:py-8 lg:min-h-[260px] lg:w-[320px] lg:px-7 lg:py-10";
+  let cardClassName = `${REVIEW_CARD_CLASS_NAME} bg-[#FFFCF5] px-4 py-5 sm:px-6 sm:py-8 lg:px-7 lg:py-10`;
   if (showDivider) {
     cardClassName = `${cardClassName} border-l border-[#FECA42]`;
   }
+
   return (
     <div className={cardClassName}>
-      <p className="flex-1 text-sm leading-relaxed text-gray-600 sm:text-[15px]">{quote}</p>
-      <div className="mt-8 flex items-center gap-3">
-        <div className="flex size-9 shrink-0 items-center justify-center rounded-full border border-[#FECA42] bg-gray-100 text-xs font-semibold text-gray-700">
+      <p className="flex-1 text-[13px] leading-relaxed text-gray-600 sm:text-[15px]">{quote}</p>
+      <div className="mt-5 flex items-center gap-2.5 sm:mt-8 sm:gap-3">
+        <div className="flex size-8 shrink-0 items-center justify-center rounded-full border border-[#FECA42] bg-gray-100 text-[11px] font-semibold text-gray-700 sm:size-9 sm:text-xs">
           {initials}
         </div>
         <div>
-          <p className="text-sm font-bold text-gray-900">{name}</p>
-          <p className="text-xs text-gray-500">{location}</p>
+          <p className="text-[13px] font-bold text-gray-900 sm:text-sm">{name}</p>
+          <p className="text-[11px] text-gray-500 sm:text-xs">{location}</p>
         </div>
       </div>
     </div>

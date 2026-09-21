@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server';
 import { getMirrorDestination } from './lib/blog/resolve-mirror-destination';
 
 const MAINTENANCE_MODE = process.env.MAINTENANCE_MODE === 'true' || process.env.MAINTENANCE_MODE === '1';
-const STAGING_HOST_PATTERN = /^staging[\w-]*\.zapcash\.in$/;
+const STAGING_HOST_PATTERN = /^staging[\w-]*\.rupyaa\.com$/;
 
 const STATIC_PATHS = [
     '/_next',

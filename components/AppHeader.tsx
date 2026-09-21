@@ -16,7 +16,7 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/personal-loan", label: "Personal Loan" },
   { href: "/credit-score", label: "Credit Score" },
-  { href: "/blog/", label: "Blogs" },
+  // { href: "/blog/", label: "Blogs" },
   { href: "/support", label: "Support" },
 ] as const;
 
@@ -169,7 +169,7 @@ export default function AppHeader(): ReactElement {
     accountOrLogin = (
       <AppButton
         type="button"
-        className="hidden !min-h-0 rounded-lg bg-[#FECA42] px-5 py-2 text-sm font-semibold text-[#1A1A1A] hover:bg-black focus:ring-gray-900 md:inline-flex"
+        className="hidden !min-h-0 rounded-lg bg-[#FECA42] px-5 py-2 text-sm font-semibold text-[#1A1A1A] md:inline-flex"
         onClick={() => router.push(authHref)}
       >
         Login

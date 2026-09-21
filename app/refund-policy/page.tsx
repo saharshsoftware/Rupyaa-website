@@ -96,7 +96,7 @@ export default function RefundPolicyPage() {
       <PolicySection number={6} title="Refund Request Procedure">
         <p className="mb-4">
           To initiate a refund request, please email us at{" "}
-          <a href="mailto:care@rupyaa.in" className="break-all">
+          <a href="mailto:care@rupyaa.com" className="break-all">
             care@Rupyaa.in
           </a>{" "}
           with the following details:
@@ -144,7 +144,7 @@ export default function RefundPolicyPage() {
           </p>
           <p className="text-sm sm:text-base">
             <strong className="text-gray-800">Email:</strong>{" "}
-            <a href="mailto:care@rupyaa.in" className="break-all">
+            <a href="mailto:care@rupyaa.com" className="break-all">
               care@Rupyaa.in
             </a>
           </p>

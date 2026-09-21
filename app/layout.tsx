@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
-import Script from "next/script";
+// import Script from "next/script";
 import "./globals.css";
 import { Providers } from "@/components/providers";
 import { zapcashJsonLdSchema } from "@/lib/SEO-JSON-schema";
@@ -59,7 +59,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script id="gtm-script" strategy="afterInteractive">
+        {/* Legacy GTM and Microsoft Clarity disabled; retained for reference. */}
+        {/* <Script id="gtm-script" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -76,8 +77,8 @@ export default function RootLayout({
               y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             })(window,document,"clarity","script","xsvqmpzd2i");
           `}
-        </Script>
-        <script
+        </Script> */}
+        {/* <script
           id="zapcash-json-ld"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -86,20 +87,20 @@ export default function RootLayout({
               "\\u003c",
             ),
           }}
-        />
+        /> */}
       </head>
       <body
         className={`${poppins.variable} font-sans antialiased`}
         suppressHydrationWarning
       >
-        <noscript>
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-N9BFLKFL"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           />
-        </noscript>
+        </noscript> */}
         <script
           dangerouslySetInnerHTML={{
             __html: `if (window.location.pathname === '/' && 'scrollRestoration' in history) { history.scrollRestoration = 'manual'; window.scrollTo(0, 0); }`,

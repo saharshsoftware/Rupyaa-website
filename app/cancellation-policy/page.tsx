@@ -38,7 +38,7 @@ export default function CancellationPolicyPage() {
           <li>
             Cancellation requests must be submitted through your registered
             account or by contacting our customer support at{" "}
-            <a href="mailto:care@rupyaa.in" className="break-all">
+            <a href="mailto:care@rupyaa.com" className="break-all">
               care@Rupyaa.in
             </a>
             .
@@ -141,7 +141,7 @@ export default function CancellationPolicyPage() {
           </p>
           <p className="text-sm sm:text-base">
             <strong className="text-gray-800">Email:</strong>{" "}
-            <a href="mailto:care@rupyaa.in" className="break-all">
+            <a href="mailto:care@rupyaa.com" className="break-all">
               care@Rupyaa.in
             </a>
           </p>

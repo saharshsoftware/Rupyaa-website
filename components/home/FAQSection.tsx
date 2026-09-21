@@ -192,7 +192,7 @@ type FAQSectionProps = {
 };
 
 export default function FAQSection({ startBatch = 0, layout = "centered" }: FAQSectionProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
 
   const orderedItems = getOrderedItems(startBatch);
