@@ -39,7 +39,7 @@ export default function BasicInfoSidebar(): ReactElement {
 
         <div className="flex items-center justify-center py-1">
           <div className="flex origin-center scale-[0.78] items-center gap-2 sm:scale-[0.72] lg:h-[clamp(2.25rem,6.5cqh,3rem)] lg:scale-[0.58] lg:overflow-hidden xl:scale-[0.66]">
-            <AppStoreBadge />
+            {/* <AppStoreBadge /> */}
             <GooglePlayBadge />
           </div>
         </div>

@@ -16,7 +16,7 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/personal-loan", label: "Personal Loan" },
   { href: "/credit-score", label: "Credit Score" },
-  { href: "/blog/", label: "Blogs" },
+  // { href: "/blog/", label: "Blogs" },
   { href: "/support", label: "Support" },
 ] as const;
 

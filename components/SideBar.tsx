@@ -71,7 +71,7 @@ export default function SideBar() {
           <p className="text-xs font-medium text-gray-600 mb-2">Download the app to get started</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 flex-wrap">
             <GooglePlayBadge />
-            <AppStoreBadge />
+            {/* <AppStoreBadge /> */}
           </div>
         </div>
       </aside>

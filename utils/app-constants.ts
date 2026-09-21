@@ -45,5 +45,5 @@ export const SITE_NAME = "Rupyaa";
 export const SITE_URL = "https://rupyaa.com"
 //TODO: Add OG image URL
 export const OG_IMAGE_URL =
-  "";
+  "https://rupyaa-assets.s3.ap-south-1.amazonaws.com/image.jpeg";
   

@@ -161,12 +161,12 @@ function ContactCard({
     </p>
   );
   return (
-    <section className="flex items-center gap-3 rounded-xl border border-[#FECA42] bg-[#FFFCF4] p-3 sm:min-h-[120px] sm:gap-5 sm:p-5 sm:shadow-[0_14px_32px_rgba(15,23,42,0.05)]">
+    <section className="flex items-center gap-2 rounded-xl border border-[#FECA42] bg-[#FFFCF4] px-2 py-1.5 sm:min-h-[80px] sm:gap-3 sm:p-3 sm:shadow-[0_14px_32px_rgba(15,23,42,0.05)]">
       <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-[#FFE398] sm:size-14 sm:rounded-xl [&_svg]:h-[18px] [&_svg]:w-[18px] sm:[&_svg]:h-[26px] sm:[&_svg]:w-[26px]">
         {icon}
       </div>
       <div className="min-w-0">
-        <h2 className="mb-0.5 text-xs font-medium text-slate-500 sm:mb-2 sm:text-lg sm:font-bold sm:text-slate-900">
+        <h2 className="mb-0.5 text-xs font-medium text-slate-500 sm:mb-1 sm:text-lg sm:font-bold sm:text-slate-900">
           {title}
         </h2>
         {contentNode}
@@ -210,7 +210,7 @@ function SupportPromoCard(): React.ReactNode {
         </ul>
         <div className="flex flex-wrap gap-3">
           <GooglePlayBadge />
-          <AppStoreBadge />
+          {/* <AppStoreBadge /> */}
         </div>
       </div>
     </section>
@@ -531,7 +531,7 @@ function SupportContent(): React.ReactNode {
       {!isMobileSource && <AppHeader />}
       <main className={isMobileSource ? "" : "pt-16"}>
         <div className={`${appShellContainerClassName} py-6 sm:py-10 lg:py-12`}>
-          <div className="mx-auto max-w-5xl">
+          <div>
             <div className="mb-6 text-center sm:mb-8">
               <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
                 Welcome to{" "}
@@ -558,8 +558,8 @@ function SupportContent(): React.ReactNode {
                   />
                   <ContactCard
                     title="Contact Support Email"
-                    content="care@rupyaa.in"
-                    href="mailto:care@rupyaa.in"
+                    content="care@rupyaa.com"
+                    href="mailto:care@rupyaa.com"
                     icon={<MailIcon />}
                   />
                   <ContactCard
@@ -571,9 +571,9 @@ function SupportContent(): React.ReactNode {
               </section>
               {renderForm()}
             </div>
-            {downloadSection}
           </div>
         </div>
+        {downloadSection}
         {!isMobileSource && <Footer />}
       </main>
     </div>

@@ -472,7 +472,7 @@ function PrivacyPolicyContent() {
                     </li>
                   </ul>
                   <p className="mt-4">
-                    To exercise rights, email to care@rupyaa.in. We respond
+                    To exercise rights, email to care@rupyaa.com. We respond
                     within 30 days.
                   </p>
                   <p className="mt-3">For cookies, see Section 8.</p>
@@ -599,7 +599,7 @@ function PrivacyPolicyContent() {
                     <li>
                       <strong className="text-gray-800">Email Request:</strong>{" "}
                       Send a deletion request from your registered email ID to:
-                      care@rupyaa.in - Subject line: Account Deletion Request
+                      care@rupyaa.com - Subject line: Account Deletion Request
                     </li>
                   </ul>
                   <p className="mt-4">

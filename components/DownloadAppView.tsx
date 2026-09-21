@@ -100,7 +100,7 @@ export default function DownloadAppView() {
 
           <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
             <GooglePlayBadge />
-            <AppStoreBadge />
+            {/* <AppStoreBadge /> */}
           </div>
           <p className="mt-7 text-xs font-medium text-white/70">Joined by 1M+ users</p>
         </aside>

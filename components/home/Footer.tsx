@@ -14,7 +14,7 @@ const PRODUCT_LINKS = [
 ] as const;
 
 const QUICK_LINKS = [
-  { href: "/blog/", label: "Blogs" },
+  // { href: "/blog/", label: "Blogs" },
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/auth", label: "Apply for Loan" },
   { href: "/support", label: "Raise a complaint" },
@@ -166,16 +166,18 @@ function LegalLinksRow(): ReactElement {
 
 /**
  * Site-wide footer: brand + store badges, link columns, socials, and copyright.
- * Uses the same Personal Loan gradient + skyline treatment as the home hero.
+ * Same yellow gradient + full-width natural skyline as the home hero.
  */
 export default function Footer(): ReactElement {
   return (
     <footer
-      className="relative overflow-hidden bg-white pt-10 sm:pt-12"
+      className="relative w-full min-h-[28rem] overflow-hidden pt-10 sm:min-h-[32rem] sm:pt-12 lg:min-h-[36rem]"
       style={{ background: PERSONAL_LOAN_PAGE_GRADIENT }}
     >
       <HeroSkyline />
-      <div className={`relative z-[2] ${appShellContainerClassName} pb-10 sm:pb-12 lg:pb-14`}>
+      <div
+        className={`relative z-[2] ${appShellContainerClassName} pb-10 sm:pb-12 lg:pb-14`}
+      >
         <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-16">
           <div className="flex shrink-0 flex-col gap-5">
             <Link href="/" className="inline-flex w-fit items-center">
@@ -189,7 +191,7 @@ export default function Footer(): ReactElement {
             </Link>
             <div className="hidden flex-col items-start gap-2.5 sm:flex">
               <GooglePlayBadge />
-              <AppStoreBadge />
+              {/* <AppStoreBadge /> */}
             </div>
           </div>
 
@@ -200,7 +202,7 @@ export default function Footer(): ReactElement {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center border-t border-black/10 pt-8 text-center sm:mt-14 sm:pt-10">
+        <div className="mt-12 flex flex-col items-center pt-8 text-center sm:mt-14 sm:pt-10">
           <div className="mb-5 flex items-center justify-center gap-5">
             {SOCIAL_LINKS.map(({ href, label, icon }) => (
               <a

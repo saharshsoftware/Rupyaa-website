@@ -45,7 +45,7 @@ export default function DownloadAppSection(): ReactElement {
               </div>
               <div className="flex flex-col items-center gap-2.5 sm:items-start">
                 <GooglePlayBadge />
-                <AppStoreBadge />
+                {/* <AppStoreBadge /> */}
               </div>
             </div>
           </div>
