@@ -14,7 +14,7 @@ const REVIEW_CARD_CLASS_NAME =
 const RATING_CARD_CLASS_NAME =
   "flex h-full min-h-[168px] w-[min(32vw,120px)] shrink-0 flex-col sm:min-h-[240px] sm:w-[300px] lg:min-h-[260px] lg:w-[320px]";
 
-function StarIcon(): ReactElement {
+function StarIcon({ size = 14 }: { readonly size?: number }): ReactElement {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
       <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
