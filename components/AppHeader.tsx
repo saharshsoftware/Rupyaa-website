@@ -221,7 +221,7 @@ export default function AppHeader(): ReactElement {
         <AppButton
           type="button"
           fullWidth
-          className="mt-2"
+          className="mt-2 !min-h-[44px] rounded-lg bg-[#1A1A1A] py-2.5 text-sm font-semibold text-[#FECA42] hover:bg-black focus:ring-gray-900"
           onClick={() => {
             setMobileMenuOpen(false);
             router.push(authHref);
