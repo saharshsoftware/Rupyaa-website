@@ -6,9 +6,9 @@ import {
   homeSectionSpacingClassName,
 } from "@/lib/app-shell-layout";
 
-function StarIcon(): ReactElement {
+function StarIcon({ size = 14 }: { readonly size?: number }): ReactElement {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
       <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
     </svg>
   );
@@ -17,8 +17,8 @@ function StarIcon(): ReactElement {
 const TESTIMONIALS = [
   {
     quote:
-      "The application process felt simple and easy to understand. I could complete everything without any confusion.",
-    name: "Manvi",
+      "Rupyaa made my loan journey simple and stress-free. The process was quick, transparent, and I received the support I needed.",
+    name: "Mansi",
     location: "Mumbai",
     initials: "M",
   },
@@ -35,6 +35,27 @@ const TESTIMONIALS = [
     name: "Priyanka Gupta",
     location: "Uttar Pradesh",
     initials: "PG",
+  },
+  {
+    quote:
+      "Getting funds when I needed them most felt easy. Clear steps and timely updates kept me confident throughout.",
+    name: "Rohan Mehta",
+    location: "Bengaluru",
+    initials: "RM",
+  },
+  {
+    quote:
+      "Support was helpful and the approval felt fast. I would recommend Rupyaa to anyone looking for a simple loan experience.",
+    name: "Neha Verma",
+    location: "Jaipur",
+    initials: "NV",
+  },
+  {
+    quote:
+      "Everything was transparent — from eligibility to disbursal. No confusion, just a smooth end-to-end process.",
+    name: "Siddharth Rao",
+    location: "Hyderabad",
+    initials: "SR",
   },
 ] as const;
 

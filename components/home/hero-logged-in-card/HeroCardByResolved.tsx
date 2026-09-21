@@ -28,8 +28,7 @@ export type HeroCardByResolvedProps = {
 };
 
 /**
- * Maps `getLoggedInHeroUiCase(resolved)` + `parsedStage` (from `lib/build-hero-home-card.ts`) to card UI.
- * Returns `null` when no branch matches so the parent can omit layout entirely.
+ * Maps `getLoggedInHeroUiCase(resolved)` to the matching logged-in hero status card.
  */
 export function resolveHeroCardNode({
   resolved,
@@ -78,13 +77,11 @@ export function resolveHeroCardNode({
       applicationNumber: resolved.applicationNumber,
     });
     return (
-      <>
-        <UnderReviewCard
-          applicationNumber={resolved.applicationNumber}
-          onRefresh={() => onRefreshStatus?.()}
-          isRefreshing={isRefreshingHeroData}
-        />
-      </>
+      <UnderReviewCard
+        applicationNumber={resolved.applicationNumber}
+        onRefresh={() => onRefreshStatus?.()}
+        isRefreshing={isRefreshingHeroData}
+      />
     );
   }
 
@@ -101,9 +98,7 @@ export function resolveHeroCardNode({
 
   if (heroUiCase === "cbl_rejected") {
     logHeroLoggedInBranch("cbl_rejected", {});
-    return (
-      <HeroCblRejectedCard title={copy.title} heading={copy.heading} description={copy.description} />
-    );
+    return <HeroCblRejectedCard />;
   }
 
   /**

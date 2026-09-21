@@ -133,7 +133,7 @@ function renderFaqAnswerContent(item: FAQItem): ReactNode {
   const sections: ReactNode[] = [];
   if (answer) {
     sections.push(
-      <p key="answer" className="text-gray-600 text-base leading-relaxed">
+      <p key="answer" className="text-sm leading-relaxed text-gray-600">
         {answer}
       </p>,
     );
@@ -142,7 +142,7 @@ function renderFaqAnswerContent(item: FAQItem): ReactNode {
     let heading: ReactNode = null;
     if (listHeading) {
       heading = (
-        <p className="text-gray-900 text-base font-semibold leading-relaxed">
+        <p className="text-sm font-semibold leading-relaxed text-gray-900">
           {listHeading}
         </p>
       );
@@ -150,7 +150,7 @@ function renderFaqAnswerContent(item: FAQItem): ReactNode {
     sections.push(
       <div key="bullets">
         {heading}
-        <ul className="mt-2 list-disc space-y-2 pl-5 text-gray-600 text-base leading-relaxed">
+        <ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-relaxed text-gray-600">
           {bulletPoints.map((point) => (
             <li key={point}>{point}</li>
           ))}
@@ -160,7 +160,7 @@ function renderFaqAnswerContent(item: FAQItem): ReactNode {
   }
   if (footer) {
     sections.push(
-      <p key="footer" className="text-gray-600 text-base leading-relaxed">
+      <p key="footer" className="text-sm leading-relaxed text-gray-600">
         {footer}
       </p>,
     );
@@ -241,12 +241,12 @@ export default function FAQSection({ startBatch = 0, layout = "centered" }: FAQS
             <button
               type="button"
               onClick={() => toggleItem(index)}
-              className="flex w-full items-center justify-between gap-3 p-4 text-left transition-colors hover:bg-black/[0.02] sm:gap-4 sm:p-5"
+              className="flex w-full items-center justify-between gap-3 p-2 text-left transition-colors hover:bg-black/[0.02] sm:gap-4"
               aria-expanded={isOpen}
               aria-controls={`faq-answer-${index}`}
               id={`faq-question-${index}`}
             >
-              <span className="pr-4 text-sm font-semibold text-gray-900 sm:text-base md:text-lg">
+              <span className="text-xs font-semibold text-gray-900 sm:text-sm md:text-base">
                 {question}
               </span>
               <span className="flex-shrink-0 text-gray-600">
