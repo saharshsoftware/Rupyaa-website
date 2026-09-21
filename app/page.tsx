@@ -17,13 +17,13 @@ export const generateMetadata = () => getSeoMetadata("home");
 export default function HomeLandingPage() {
   return (
     <>
-      <script
+      {/* <script
         id="zapcash-homepage-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(homepageSchema).replace(/</g, "\\u003c"),
         }}
-      />
+      /> */}
       <ExternalAppConfigInit />
       <SiteChrome
         className="min-h-screen overflow-x-hidden bg-white"

@@ -15,13 +15,13 @@ export default async function LendingPartnersPage({
 
   return (
     <>
-      <script
+      {/* <script
         id="zapcash-lenders-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(lendersPageSchema).replace(/</g, "\\u003c"),
         }}
-      />
+      /> */}
       <SiteChrome
         hideChrome={isMobileSource}
         className="relative min-h-screen overflow-x-hidden bg-white"

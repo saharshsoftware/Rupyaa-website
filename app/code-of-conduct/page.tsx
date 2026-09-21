@@ -8,7 +8,7 @@ export default function CodeOfConductPage() {
     <PolicyPageLayout title="CODE OF CONDUCT" effectiveDate="February 25, 2026">
       <p>
         Our Code of Conduct outlines the ethical standards and behavioral
-        expectations for all employees, partners, and stakeholders of Zapcash.
+        expectations for all employees, partners, and stakeholders of Rupyaa.
         We are committed to maintaining integrity, transparency, and
         professionalism in all our operations.
       </p>
@@ -16,7 +16,7 @@ export default function CodeOfConductPage() {
       <PolicySection number={1} title="Purpose of the Code">
         <p className="mb-0">
           This Code of Conduct is designed to foster a culture of integrity,
-          accountability, and respect within Zapcash. It applies to all
+          accountability, and respect within Rupyaa. It applies to all
           employees, directors, contractors, vendors, and partners interacting
           with our organization or customers. The code ensures compliance with
           applicable laws, regulations, and ethical standards, particularly
@@ -27,7 +27,7 @@ export default function CodeOfConductPage() {
 
       <PolicySection number={2} title="Scope">
         <p className="mb-0">
-          This policy applies to all individuals associated with Zapcash,
+          This policy applies to all individuals associated with Rupyaa,
           including full-time and part-time employees, consultants, and
           third-party partners. It covers all aspects of our operations,
           including customer interactions, financial dealings, marketing, and
@@ -155,8 +155,8 @@ export default function CodeOfConductPage() {
         <p className="mb-0">
           For any questions or to report concerns, please contact our customer
           support team at{" "}
-          <a href="mailto:care@zapcash.in" className="break-all">
-            care@zapcash.in
+          <a href="mailto:care@rupyaa.com" className="break-all">
+            care@rupyaa.com
           </a>
           . We are committed to upholding the highest standards of conduct and
           addressing your inquiries promptly.

@@ -6,7 +6,7 @@ import { Toaster } from "react-hot-toast";
 import ScrollToTop from "@/components/ScrollToTop";
 import { EncryptionStatusInit } from "@/components/EncryptionStatusInit";
 import { MarketingAttributionPersistence } from "@/components/MarketingAttributionPersistence";
-import { MicrosoftClarityAnalytics } from "@/components/MicrosoftClarityAnalytics";
+// import { MicrosoftClarityAnalytics } from "@/components/MicrosoftClarityAnalytics";
 
 type ProvidersProps = {
   children: React.ReactNode;
@@ -28,7 +28,7 @@ export function Providers({ children }: ProvidersProps) {
   return (
     <QueryClientProvider client={queryClient}>
       <EncryptionStatusInit />
-      <MicrosoftClarityAnalytics />
+      {/* <MicrosoftClarityAnalytics /> */}
       <ScrollToTop />
       <Suspense fallback={null}>
         <MarketingAttributionPersistence />

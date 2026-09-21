@@ -3,9 +3,9 @@
 import { useSyncExternalStore } from "react";
 
 const PRODUCTION_HOSTNAMES = new Set([
-  "zapcash.in",
-  "www.zapcash.in",
-  "staging.zapcash.in",
+  "rupyaa.com",
+  "www.rupyaa.com",
+  "staging.rupyaa.com",
   // Temporary: allow local rendering for UI verification.
   // Seal "verification" isn't meaningful on localhost due to TLS/domain mismatch.
   "localhost",

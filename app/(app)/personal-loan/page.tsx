@@ -7,13 +7,13 @@ export const generateMetadata = () => getSeoMetadata("personalLoan");
 export default function PersonalLoanPage() {
   return (
     <>
-      <script
+      {/* <script
         id="zapcash-personal-loan-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(personalLoanSchema).replace(/</g, "\\u003c"),
         }}
-      />
+      /> */}
       <PersonalLoanPageClient />
     </>
   );
