@@ -67,13 +67,14 @@ function EmploymentModeFields({
     label: String(day),
   }));
 
-  let salariedFields: ReactNode = null;
+  let dayValue = "";
+  if (declaredSalaryDay !== "") {
+    dayValue = String(declaredSalaryDay);
+  }
+
+  let modeSpecificFields: ReactNode = null;
   if (mode === "salaried") {
-    let salaryDayValue = "";
-    if (declaredSalaryDay !== "") {
-      salaryDayValue = String(declaredSalaryDay);
-    }
-    salariedFields = (
+    modeSpecificFields = (
       <>
         <AppTextField
           id="organizationName"
@@ -92,7 +93,7 @@ function EmploymentModeFields({
         <AppSelectField
           id="declaredSalaryDay"
           label="Salary Day (1-31)"
-          value={salaryDayValue}
+          value={dayValue}
           onChange={(event) => {
             const value = event.target.value;
             onDeclaredSalaryDayChange(value === "" ? "" : Number(value));
@@ -104,6 +105,23 @@ function EmploymentModeFields({
           disabled={disabled}
         />
       </>
+    );
+  } else if (mode === "self-employed") {
+    modeSpecificFields = (
+      <AppSelectField
+        id="declaredEmiDay"
+        label="Choose your EMI date"
+        value={dayValue}
+        onChange={(event) => {
+          const value = event.target.value;
+          onDeclaredSalaryDayChange(value === "" ? "" : Number(value));
+        }}
+        placeholder="Select EMI date"
+        options={salaryDayOptions}
+        hint="Day of the month when you prefer to pay your EMI"
+        error={errors.declaredSalaryDay}
+        disabled={disabled}
+      />
     );
   }
 
@@ -132,7 +150,7 @@ function EmploymentModeFields({
         ]}
       />
 
-      {salariedFields}
+      {modeSpecificFields}
     </div>
   );
 }
@@ -209,6 +227,10 @@ function StandaloneEmploymentModeForm({ onContinue }: StandaloneProps) {
       if (declaredSalaryDay === "" || declaredSalaryDay < 1 || declaredSalaryDay > 31) {
         nextErrors.declaredSalaryDay = "Please select your salary day (1-31)";
       }
+    } else if (mode === "self-employed") {
+      if (declaredSalaryDay === "" || declaredSalaryDay < 1 || declaredSalaryDay > 31) {
+        nextErrors.declaredSalaryDay = "Please select your EMI date (1-31)";
+      }
     }
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0 || !mode) return;
@@ -217,6 +239,9 @@ function StandaloneEmploymentModeForm({ onContinue }: StandaloneProps) {
       employmentMode: mode,
       ...(mode === "salaried" && declaredSalaryDay !== ""
         ? { organization: organizationName.trim(), organizationName: organizationName.trim(), declaredSalaryDay }
+        : {}),
+      ...(mode === "self-employed" && declaredSalaryDay !== ""
+        ? { declaredSalaryDay }
         : {}),
     };
     submitMutation.mutate(payload);
