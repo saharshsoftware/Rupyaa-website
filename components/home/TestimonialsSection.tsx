@@ -8,11 +8,11 @@ import {
 
 /** Review quote card — compact mobile size (matches reference); equal to rating on `sm+`. */
 const REVIEW_CARD_CLASS_NAME =
-  "flex h-full min-h-[168px] w-[min(58vw,210px)] shrink-0 flex-col sm:min-h-[240px] sm:w-[300px] lg:min-h-[260px] lg:w-[320px]";
+  "flex w-[min(58vw,210px)] shrink-0 flex-col sm:w-[300px] lg:w-[320px]";
 
 /** Rating card — narrow yellow rail on mobile; equal to review cards from `sm` up. */
 const RATING_CARD_CLASS_NAME =
-  "flex h-full min-h-[168px] w-[min(32vw,120px)] shrink-0 flex-col sm:min-h-[240px] sm:w-[300px] lg:min-h-[260px] lg:w-[320px]";
+  "flex h-full w-[min(32vw,120px)] shrink-0 flex-col sm:w-[300px] lg:w-[320px]";
 
 function StarIcon({ size = 14 }: { readonly size?: number }): ReactElement {
   return (
@@ -161,8 +161,8 @@ function TestimonialCard({
 
   return (
     <div className={cardClassName}>
-      <p className="flex-1 text-[13px] leading-relaxed text-gray-600 sm:text-[15px]">{quote}</p>
-      <div className="mt-5 flex items-center gap-2.5 sm:mt-8 sm:gap-3">
+      <p className="text-[13px] leading-relaxed text-gray-600 sm:text-[15px]">{quote}</p>
+      <div className="mt-4 flex items-center gap-2.5 sm:mt-5 sm:gap-3">
         <div className="flex size-8 shrink-0 items-center justify-center rounded-full border border-[#FECA42] bg-gray-100 text-[11px] font-semibold text-gray-700 sm:size-9 sm:text-xs">
           {initials}
         </div>
