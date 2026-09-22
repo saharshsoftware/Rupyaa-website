@@ -57,11 +57,17 @@ function TermsContent() {
                 <p>
                   Welcome to Rupyaa. These Terms and Conditions
                   (&quot;Terms&quot;) govern your access to and use of the
-                  Rupyaa mobile application, website, and related services
-                  (collectively, the &quot;Platform&quot; or
-                  &quot;Services&quot;). By accessing or using the Platform, you
-                  agree to be bound by these Terms. If you do not agree, please
-                  refrain from using the Services.
+                  Rupyaa mobile application, website, and all related products
+                  and services made available through them (collectively
+                  referred to as the &quot;Platform&quot; or &quot;Services&quot;).
+                </p>
+                <p>Rupyaa is operated by Uptime Innovation Private Limited.</p>
+                <p>
+                  By accessing, registering on, or using the Platform, you
+                  confirm that you have read, understood, and agreed to be bound
+                  by these Terms. If you do not agree with any provision
+                  contained in these Terms, you should not access or use the
+                  Services.
                 </p>
 
                 <section className="pt-4 sm:pt-6 border-t border-gray-100">
@@ -71,28 +77,35 @@ function TermsContent() {
                     </span>
                     Definitions
                   </h2>
+                  <p className="mb-4">For the purposes of these Terms:</p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
                       <strong className="text-gray-800">
                         “Rupyaa” / “Company”
                       </strong>{" "}
-                      refers to Rupyaa, a technology platform facilitating loan
-                      services.
+                      refers to Rupyaa, a technology platform operated by Uptime
+                      Innovation Private Limited that enables Users to access
+                      loan-related services.
                     </li>
                     <li>
-                      <strong className="text-gray-800">“User” / “You”</strong>{" "}
-                      refers to any individual accessing or using the Platform.
+                      <strong className="text-gray-800">
+                        “User” / “You” / “Your”
+                      </strong>{" "}
+                      refers to any individual who visits, registers on,
+                      accesses, or uses the Platform.
                     </li>
                     <li>
                       <strong className="text-gray-800">
                         “Lending Partner”
                       </strong>{" "}
-                      refers to RBI-registered NBFCs or banks providing loans.
+                      refers to an RBI-registered Non-Banking Financial Company
+                      (NBFC) or bank that offers credit or loan facilities
+                      through the Platform.
                     </li>
                     <li>
                       <strong className="text-gray-800">“Loan”</strong> refers
-                      to any credit facility provided by Lending Partners
-                      through the Platform.
+                      to any credit facility approved, sanctioned, or provided
+                      to a User by a Lending Partner through the Platform.
                     </li>
                   </ul>
                 </section>
@@ -104,22 +117,26 @@ function TermsContent() {
                     </span>
                     Eligibility
                   </h2>
-                  <p className="mb-4">To use Rupyaa Services, you must:</p>
+                  <p className="mb-4">
+                    To access or use Rupyaa Services, you must:
+                  </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>Be at least 18 years of age.</li>
                     <li>Be a resident of India.</li>
                     <li>
-                      Possess valid KYC documents (such as Aadhaar and PAN).
+                      Possess valid KYC documentation, including documents such
+                      as Aadhaar and PAN.
                     </li>
-                    <li>Maintain an active bank account in your name.</li>
+                    <li>Maintain an active bank account in your own name.</li>
                     <li>
-                      Be legally capable of entering into a binding contract
-                      under applicable laws.
+                      Be legally capable of entering into a valid and binding
+                      contract under applicable Indian law.
                     </li>
                   </ul>
                   <p className="mb-0">
-                    Rupyaa reserves the right to deny access if eligibility
-                    criteria are not met.
+                    Rupyaa may restrict, suspend, or refuse access to the
+                    Services where the applicable eligibility criteria are not
+                    fulfilled.
                   </p>
                 </section>
 
@@ -132,16 +149,19 @@ function TermsContent() {
                   </h2>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      Rupyaa operates as a technology platform that connects
-                      Users with Lending Partners.
+                      Rupyaa operates as a technology platform that facilitates
+                      interaction between Users and Lending Partners.
                     </li>
                     <li>
-                      Rupyaa does not act as a lender and does not provide
-                      loans directly.
+                      Rupyaa is not itself a lender and does not directly
+                      approve, sanction, or disburse loans.
                     </li>
                     <li>
-                      All loan approvals, terms, disbursements, and collections
-                      are solely determined by the respective Lending Partner.
+                      All decisions concerning loan eligibility, approval,
+                      applicable terms, disbursement, repayment, servicing, and
+                      collection are independently made by the relevant Lending
+                      Partner in accordance with its internal policies and
+                      applicable laws.
                     </li>
                   </ul>
                 </section>
@@ -157,31 +177,42 @@ function TermsContent() {
                     4.1 Loan Approval
                   </h3>
                   <p className="mb-4">
-                    Loan approval is subject to the Lending Partner’s internal
-                    credit policies. Rupyaa does not guarantee approval.
+                    Any loan approval is subject to the underwriting standards,
+                    eligibility conditions, credit policies, and internal
+                    assessment processes of the applicable Lending Partner.
+                    Access to or use of Rupyaa does not guarantee approval of
+                    any loan application.
                   </p>
                   <h3 className="text-sm sm:text-base font-semibold text-gray-900 mb-1">
                     4.2 Interest &amp; Charges
                   </h3>
                   <p className="mb-4">
-                    All interest rates, processing fees, penalties, and other
-                    charges are determined by the Lending Partner and disclosed
-                    in the Key Fact Statement (KFS) prior to acceptance.
+                    Interest rates, processing fees, penalties, and any other
+                    fees or charges applicable to a loan are determined by the
+                    relevant Lending Partner. The applicable loan terms, rates,
+                    fees, and charges will be disclosed to you through the Key
+                    Fact Statement (KFS) before you accept the loan.
                   </p>
                   <h3 className="text-sm sm:text-base font-semibold text-gray-900 mb-1">
                     4.3 Disbursement
                   </h3>
                   <p className="mb-4">
-                    Loan amounts are typically disbursed within 2–24 hours,
-                    subject to successful KYC verification and agreement
-                    execution.
+                    Once KYC verification, documentation, and execution of the
+                    relevant loan agreement are successfully completed,
+                    approved loan amounts are generally disbursed within 2 to
+                    24 hours, subject to the Lending Partner’s internal
+                    procedures and requirements.
                   </p>
                   <h3 className="text-sm sm:text-base font-semibold text-gray-900 mb-1">
                     4.4 Repayment
                   </h3>
                   <p className="mb-0">
-                    You agree to repay the loan as per the agreed EMI schedule.
-                    Delays may result in penalties and adverse credit reporting.
+                    You are responsible for repaying the Loan in accordance
+                    with the repayment schedule or EMI terms agreed with the
+                    Lending Partner. Any delay or failure in repayment may
+                    result in applicable late fees, penalties, lawful recovery
+                    measures, and adverse reporting to credit information
+                    companies.
                   </p>
                 </section>
 
@@ -193,10 +224,13 @@ function TermsContent() {
                     Cooling-Off Period
                   </h2>
                   <p className="mb-0">
-                    In compliance with applicable guidelines, you may exit the
-                    loan within the cooling-off period specified in the KFS by
-                    repaying the principal and proportionate charges without
-                    penalty.
+                    Subject to applicable regulatory requirements, you may be
+                    provided with an option to exit the Loan within the
+                    cooling-off period specified in the applicable Key Fact
+                    Statement. During this period, you may repay the outstanding
+                    principal amount together with proportionate charges, where
+                    applicable, without any additional penalty, subject to the
+                    terms mentioned in the KFS.
                   </p>
                 </section>
 
@@ -208,9 +242,11 @@ function TermsContent() {
                     Prepayment and Foreclosure
                   </h2>
                   <p className="mb-0">
-                    You may prepay or foreclose your loan subject to the terms
-                    specified by the Lending Partner, including applicable
-                    charges, if any.
+                    You may be allowed to make a partial prepayment or fully
+                    foreclose your Loan in accordance with the terms specified
+                    by the relevant Lending Partner. Any charges applicable to
+                    prepayment or foreclosure will be governed by the Lending
+                    Partner’s policies and the terms disclosed to you.
                   </p>
                 </section>
 
@@ -221,12 +257,22 @@ function TermsContent() {
                     </span>
                     Credit Bureau Reporting
                   </h2>
+                  <p className="mb-4">
+                    You acknowledge and expressly consent that information
+                    concerning your Loan, repayment behaviour, outstanding
+                    dues, defaults, and other credit-related information may be
+                    reported to authorized Credit Information Companies.
+                  </p>
+                  <p className="mb-3">These may include, among others:</p>
+                  <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
+                    <li>TransUnion CIBIL</li>
+                    <li>Experian</li>
+                    <li>Equifax</li>
+                    <li>CRIF High Mark</li>
+                  </ul>
                   <p className="mb-0">
-                    You acknowledge and give your explicit consent that your
-                    loan details, repayment history, and defaults may be
-                    reported to Credit Information Companies, including but not
-                    limited to TransUnion CIBIL, Experian, Equifax, and CRIF
-                    High Mark.
+                    Such reporting will be carried out in accordance with
+                    applicable laws and regulatory requirements.
                   </p>
                 </section>
 
@@ -237,22 +283,40 @@ function TermsContent() {
                     </span>
                     User Obligations
                   </h2>
-                  <p className="mb-4">You agree to:</p>
+                  <p className="mb-4">
+                    While accessing or using Rupyaa, you agree to:
+                  </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
-                    <li>Provide accurate and complete information.</li>
-                    <li>Maintain confidentiality of login credentials.</li>
-                    <li>Use the Platform only for lawful purposes.</li>
                     <li>
-                      Not engage in fraud, misrepresentation, or identity theft.
+                      Provide information that is complete, correct, accurate,
+                      and current.
                     </li>
                     <li>
-                      Not attempt to hack, reverse-engineer, or disrupt the
-                      Platform.
+                      Maintain the confidentiality of your login credentials
+                      and account information.
                     </li>
                     <li>
-                      Comply with all applicable laws, including RBI guidelines.
+                      Use the Platform only for lawful and legitimate purposes.
+                    </li>
+                    <li>
+                      Refrain from fraud, impersonation, identity theft,
+                      misrepresentation, or other unlawful activity.
+                    </li>
+                    <li>
+                      Not attempt to hack, reverse-engineer, disrupt, damage,
+                      interfere with, or obtain unauthorized access to the
+                      Platform or its systems.
+                    </li>
+                    <li>
+                      Comply with applicable laws, regulations, and relevant RBI
+                      guidelines.
                     </li>
                   </ul>
+                  <p className="mb-0">
+                    You remain responsible for the correctness, authenticity,
+                    and validity of all information and documents submitted
+                    through the Platform.
+                  </p>
                 </section>
 
                 <section className="pt-4 sm:pt-6 border-t border-gray-100">
@@ -263,23 +327,33 @@ function TermsContent() {
                     Data Privacy and Consent
                   </h2>
                   <p className="mb-4">
-                    By using the Platform, you consent to the collection,
-                    storage, and processing of your personal and financial data,
-                    including:
+                    By using the Platform and providing the required consent,
+                    you authorize the collection, storage, processing, and use
+                    of personal and financial information that is necessary to
+                    provide the Services. Such information may include:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
-                    <li>KYC details</li>
-                    <li>Bank account information</li>
+                    <li>KYC-related information.</li>
+                    <li>Bank account information.</li>
+                    <li>Financial and loan-related details.</li>
                   </ul>
-                  <p className="mb-4">Such data may be shared with:</p>
+                  <p className="mb-4">
+                    Where required and permitted under applicable law, such
+                    information may be shared with:
+                  </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
-                    <li>Lending Partners</li>
-                    <li>Credit bureaus</li>
-                    <li>Service providers</li>
+                    <li>Lending Partners.</li>
+                    <li>Credit information companies.</li>
+                    <li>Authorized service providers.</li>
+                    <li>
+                      Other entities required for delivering the Services or
+                      fulfilling legal and regulatory obligations.
+                    </li>
                   </ul>
                   <p className="mb-0">
-                    in accordance with applicable laws, including the Digital
-                    Personal Data Protection Act, 2023.
+                    Personal information will be processed in accordance with
+                    applicable law, including the Digital Personal Data
+                    Protection Act, 2023, and the Rupyaa Privacy Policy.
                   </p>
                 </section>
 
@@ -291,16 +365,23 @@ function TermsContent() {
                     Device Permissions
                   </h2>
                   <p className="mb-4">
-                    The Platform may request access to certain device features
-                    such as location, SMS, or contacts strictly for:
+                    The Platform may request access to certain device
+                    permissions, features, or information where such access is
+                    reasonably required for purposes including:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
-                    <li>Credit assessment</li>
-                    <li>Fraud detection</li>
-                    <li>Regulatory compliance</li>
+                    <li>Credit assessment.</li>
+                    <li>Fraud detection and prevention.</li>
+                    <li>Identity and customer verification.</li>
+                    <li>Regulatory and compliance requirements.</li>
+                    <li>Delivery, operation, and security of the Services.</li>
                   </ul>
                   <p className="mb-0">
-                    Such access is subject to your explicit consent.
+                    Where applicable, such permissions may include access to
+                    location information or other permitted device-related
+                    information. Any permission or access will be requested
+                    with your consent and handled in accordance with applicable
+                    laws and our Privacy Policy.
                   </p>
                 </section>
 
@@ -312,17 +393,31 @@ function TermsContent() {
                     Communication Consent
                   </h2>
                   <p className="mb-4">
-                    You authorize Rupyaa and its partners to contact you via:
+                    By providing your contact details and the necessary
+                    consent, you authorize Rupyaa, its Lending Partners, and
+                    authorized service providers to communicate with you
+                    through channels including:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
-                    <li>Calls</li>
-                    <li>SMS</li>
-                    <li>Email</li>
-                    <li>WhatsApp</li>
+                    <li>Telephone calls.</li>
+                    <li>SMS.</li>
+                    <li>Email.</li>
+                    <li>WhatsApp.</li>
+                  </ul>
+                  <p className="mb-3">These communications may relate to:</p>
+                  <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
+                    <li>Processing of your loan application.</li>
+                    <li>KYC or identity verification.</li>
+                    <li>Loan servicing.</li>
+                    <li>Repayment reminders.</li>
+                    <li>Account or service-related notifications.</li>
+                    <li>
+                      Other relevant information concerning the Services.
+                    </li>
                   </ul>
                   <p className="mb-0">
-                    for purposes including loan processing, repayment reminders,
-                    and service updates.
+                    All communications will be made in accordance with
+                    applicable laws and consent requirements.
                   </p>
                 </section>
 
@@ -333,16 +428,28 @@ function TermsContent() {
                     </span>
                     Default and Recovery
                   </h2>
-                  <p className="mb-4">In case of default:</p>
+                  <p className="mb-4">
+                    If you fail to make repayments in accordance with the
+                    agreed schedule:
+                  </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
-                    <li>Late payment charges may apply.</li>
                     <li>
-                      The Lending Partner may initiate recovery actions in
-                      accordance with applicable laws and RBI guidelines.
+                      Applicable late fees, penalties, or other charges may
+                      become payable.
                     </li>
                     <li>
-                      Recovery practices shall not involve harassment, coercion,
-                      or unlawful methods.
+                      The Lending Partner may initiate lawful recovery or
+                      collection procedures.
+                    </li>
+                    <li>
+                      Missed or delayed payments may be reported to relevant
+                      credit information companies.
+                    </li>
+                    <li>
+                      Any recovery or collection activity must be carried out
+                      in accordance with applicable laws and RBI guidelines and
+                      shall not involve harassment, coercion, or unlawful
+                      methods.
                     </li>
                   </ul>
                 </section>

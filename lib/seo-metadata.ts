@@ -98,9 +98,9 @@ export const seoMetadata = {
     keywords: ["personal loan EMI calculator", "loan EMI calculator India"],
   }),
   creditScore: buildSeoMetadata({
-    title: "Check Your Free CIBIL Credit Score Online | Rupyaa",
+    title: "Check Your Free Equifax Credit Score Online | Rupyaa",
     description:
-      "Check your free credit score online instantly with Rupyaa. View your CIBIL score, see what affects it & get tips to improve it. Check your score now free!",
+      "Check your free Equifax credit score and report online with Rupyaa. Learn what affects your score and how to maintain a healthy credit profile.",
     path: "/credit-score",
     keywords: [
       "credit score check",

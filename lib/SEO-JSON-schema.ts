@@ -311,7 +311,7 @@ export const creditScoreSchema = {
       url: "https://rupyaa.com/credit-score",
       name: "Check Credit Score Free — Instant Report Online",
       description:
-        "Check your credit score and full report free in under a minute. Understand the new RBI weekly reporting rules effective 1 July 2026.",
+        "Check your Equifax credit score and report for free on Rupyaa. Understand your credit profile, score range, and the factors that affect it.",
       inLanguage: "en-IN",
       isPartOf: { "@id": "https://rupyaa.com/#website" },
       publisher: { "@id": "https://rupyaa.com/#organization" },
@@ -337,72 +337,15 @@ export const creditScoreSchema = {
     {
       "@type": "FAQPage",
       "@id": "https://rupyaa.com/credit-score#faq",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Is checking my credit score on Rupyaa really free?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. There is no charge and no card required. You get your Equifax score and full report at no cost.",
-          },
+      mainEntity: CREDIT_SCORE_FAQS.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
         },
-        {
-          "@type": "Question",
-          name: "Will checking my score affect it?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "No. This is a soft enquiry, a consumer-initiated check that is not visible to lenders and has no effect on your score.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Why is the score here different from my CIBIL score?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "This page shows your Equifax score. Different bureaus use different scoring models, and not every lender reports to every bureau. A gap of 30 to 50 points is normal and does not mean either score is inaccurate.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How often does my credit score update?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Since 1 July 2026, lenders report to credit bureaus four times a month on the 9th, 16th, 23rd and the last day, with a full file submission by the 5th of the following month.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is a good credit score in India?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "750 and above is generally treated as strong. 700 to 749 is good. Below 650, lenders examine the rest of your profile more closely.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can I check my credit score with only an Aadhaar card?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "No. A PAN is required. Credit bureaus use PAN as the primary identifier for consumer credit records.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What does NA or NH mean on my credit report?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "It means there is no credit history to score, either because you have never borrowed or because there has been no reportable activity in the last 24 months. It is not a negative mark.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How do I fix a mistake on my credit report?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Raise a dispute with the bureau that issued the report. The bureau is required to investigate with the lender that submitted the data and correct anything found to be incorrect.",
-          },
-        },
-      ],
+      })),
     },
   ],
 };
+import { CREDIT_SCORE_FAQS } from "@/components/credit-score/credit-score-guide-data";
