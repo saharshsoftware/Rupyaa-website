@@ -23,7 +23,7 @@ This document lists all APIs used in the Rupyaa project. The browser calls `NEXT
 |-------|----------|-----|-------------|
 | GET | `/api/v1/user/stage` | `lib/user-api.ts` | Get user stage. Query: `device` (web/android/ios) |
 | GET | `/api/v1/user/personal-details` | `lib/user-api.ts` | Get personal details (auth required) |
-| POST | `/api/v1/user/personal-details` | `lib/user-api.ts` | Submit personal and employment details. Body: `{ firstName?, lastName?, pincode, pan, dob, salary, gender?, employmentMode, declaredSalaryDay?, organization?, geolocation? }`; organization and salary day are sent for salaried users. |
+| POST | `/api/v1/user/personal-details` | `lib/user-api.ts` | Submit personal and employment details. Body: `{ firstName?, lastName?, pincode, pan, dob, salary, gender?, employmentMode, declaredSalaryDay?, organization?, purposeOfLoan?, geolocation? }`; organization and salary day are sent for salaried users; EMI day (`declaredSalaryDay`) is sent for self-employed users. |
 
 ---
 

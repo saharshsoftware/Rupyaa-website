@@ -218,7 +218,7 @@ export default function Footer(): ReactElement {
             ))}
           </div>
           <LegalLinksRow />
-          <p className="text-sm text-gray-700">© 2026 Rupyaa. All rights reserved.</p>
+          <p className="text-sm text-gray-700">© 2026 Uptime Innovation Private Limited. All rights reserved.</p>
         </div>
       </div>
     </footer>

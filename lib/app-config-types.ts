@@ -49,6 +49,8 @@ export interface ExternalAppConfigData {
   credeauServerUrl?: string;
   /** Web OAuth client ID for Google Sign-In */
   googleClientId?: string;
+  /** Web OAuth client ID for Google Sign-In (Rupyaa) */
+  googleClientIdRupyaa?: string;
   /** Android OAuth client ID (mobile only) */
   androidGoogleClientId?: string;
   /** iOS OAuth client ID (mobile only) */
