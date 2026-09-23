@@ -17,6 +17,10 @@ import { HeroLoggedOut } from "./HeroLoggedOut";
 import { REACT_QUERY_KEYS } from "@/utils/app-constants";
 import { PERSONAL_LOAN_PAGE_GRADIENT } from "@/lib/personal-loan-page-gradient";
 
+/**
+ * Home hero: yellow gradient + skyline image for all states.
+ * Matches the designed home landing surface (guest and logged-in).
+ */
 export default function HeroSection(): ReactElement {
   const queryClient = useQueryClient();
   const { isLoggedIn } = useAuthLoggedInHint();
@@ -74,7 +78,7 @@ export default function HeroSection(): ReactElement {
   const handleRefreshStatus = useCallback(() => {
     queryClient.invalidateQueries({ queryKey: [REACT_QUERY_KEYS.EXISTING_ACTIVE_LOAN] });
     queryClient.invalidateQueries({ queryKey: [REACT_QUERY_KEYS.USER_STAGE_WEB] });
-  }, [isLoggedIn, refetchActiveLoanQuery, refetchUserStageQuery]);
+  }, [queryClient, refetchActiveLoanQuery, refetchUserStageQuery]);
 
   const isRefreshingHeroData = isFetchingUserStage || isFetchingActiveLoan;
 

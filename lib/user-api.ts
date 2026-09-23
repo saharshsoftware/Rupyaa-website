@@ -70,6 +70,7 @@ export type GetPersonalDetailsResponse = {
   salary?: number;
   salaryMode?: string;
   organization?: string;
+  purposeOfLoan?: string;
   email?: string;
   officeEmail?: string;
   alternate_mobile?: string;
@@ -96,6 +97,7 @@ export type PostPersonalDetailsPayload = {
   employmentMode: "salaried" | "self-employed";
   declaredSalaryDay?: number;
   organization?: string;
+  purposeOfLoan?: string;
   geolocation?: { latitude: number; longitude: number };
 };
 

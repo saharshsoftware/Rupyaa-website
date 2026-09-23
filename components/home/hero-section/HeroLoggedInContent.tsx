@@ -61,9 +61,10 @@ export function HeroLoggedInContent({
   if (isLoading) {
     cardArea = (
       <div
-        className="flex min-h-[200px] w-full items-center justify-center rounded-2xl border border-white/60 p-6 backdrop-blur-xl"
+        className="flex min-h-[200px] w-full items-center justify-center rounded-[1.35rem] border border-white/70 p-6 shadow-[0_12px_40px_rgba(15,23,42,0.12)] backdrop-blur-md sm:rounded-[1.5rem]"
         style={{
-          background: "linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, #FFFCF5 100%)",
+          background:
+            "linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 252, 245, 0.88) 100%)",
         }}
       >
         <div className="flex animate-pulse flex-col items-center gap-2">
@@ -97,12 +98,12 @@ export function HeroLoggedInContent({
   return (
     <div className="mx-auto flex w-full max-w-[560px] flex-col items-center text-center sm:max-w-[640px]">
       <HeroTrustedBy />
-      <h1 className="mb-6 text-[2.35rem] font-extrabold leading-[1.05] tracking-tight text-[#111827] sm:text-5xl md:text-6xl lg:text-[4.5rem]">
+      <h1 className="mt-3 text-[2.1rem] font-extrabold leading-[1.1] tracking-tight text-[#111827] sm:mt-4 sm:text-5xl md:text-6xl lg:text-[4.5rem]">
         Choti si need,
         <br />
         Badi si Smile.
       </h1>
-      <div className="mt-16 w-full max-w-[520px] sm:mt-10 lg:mt-4">{cardArea}</div>
+      <div className="mt-8 w-full max-w-[520px] sm:mt-8 lg:mt-6">{cardArea}</div>
       {debugPanel}
     </div>
   );

@@ -3,163 +3,215 @@ import { getSeoMetadata } from "@/lib/seo-metadata";
 
 export const generateMetadata = () => getSeoMetadata("codeOfConduct");
 
+const listClassName =
+  "list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600";
+
 export default function CodeOfConductPage() {
   return (
     <PolicyPageLayout title="CODE OF CONDUCT" effectiveDate="February 25, 2026">
       <p>
-        Our Code of Conduct outlines the ethical standards and behavioral
-        expectations for all employees, partners, and stakeholders of Zapcash.
-        We are committed to maintaining integrity, transparency, and
-        professionalism in all our operations.
+        This Code of Conduct sets out the ethical principles, professional
+        standards, and expected behaviour for employees, partners, vendors, and
+        other stakeholders associated with Rupyaa. We are committed to
+        conducting our business with integrity, transparency, fairness, and
+        professionalism across all our activities.
       </p>
 
       <PolicySection number={1} title="Purpose of the Code">
+        <p className="mb-4">
+          The purpose of this Code of Conduct is to promote a workplace and
+          business environment based on integrity, responsibility,
+          accountability, and mutual respect within Rupyaa.
+        </p>
+        <p className="mb-4">
+          This Code applies to employees, directors, consultants, contractors,
+          vendors, service providers, and business partners who interact with
+          Rupyaa, its customers, or its operations.
+        </p>
         <p className="mb-0">
-          This Code of Conduct is designed to foster a culture of integrity,
-          accountability, and respect within Zapcash. It applies to all
-          employees, directors, contractors, vendors, and partners interacting
-          with our organization or customers. The code ensures compliance with
-          applicable laws, regulations, and ethical standards, particularly
-          those set by the Reserve Bank of India (RBI) and other regulatory
-          bodies in India.
+          It also supports compliance with applicable laws, regulatory
+          requirements, and ethical standards, including relevant guidelines
+          issued by the Reserve Bank of India (RBI) and other regulatory
+          authorities in India.
         </p>
       </PolicySection>
 
       <PolicySection number={2} title="Scope">
-        <p className="mb-0">
-          This policy applies to all individuals associated with Zapcash,
-          including full-time and part-time employees, consultants, and
-          third-party partners. It covers all aspects of our operations,
-          including customer interactions, financial dealings, marketing, and
-          internal conduct.
+        <p className="mb-4">
+          This Code applies to all individuals and entities associated with
+          Rupyaa, including:
+        </p>
+        <ul className={listClassName}>
+          <li>Full-time and part-time employees.</li>
+          <li>Directors and management personnel.</li>
+          <li>Consultants and contractors.</li>
+          <li>Vendors and service providers.</li>
+          <li>Business and third-party partners.</li>
+        </ul>
+        <p className="mt-4 mb-0">
+          The principles set out in this Code apply across all areas of our
+          operations, including customer interactions, financial activities,
+          marketing practices, data handling, business relationships, and
+          internal workplace conduct.
         </p>
       </PolicySection>
 
       <PolicySection number={3} title="Core Principles">
         <p className="mb-4">
-          We uphold the following principles in all our activities:
+          Rupyaa expects all individuals associated with the organization to
+          follow these fundamental principles:
         </p>
-        <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
+        <ul className={listClassName}>
           <li>
-            <strong className="text-gray-800">Integrity:</strong> Act honestly,
-            ethically, and with fairness in all dealings.
+            <strong className="text-gray-800">Integrity:</strong> Conduct all
+            activities honestly, ethically, fairly, and responsibly.
           </li>
           <li>
-            <strong className="text-gray-800">Transparency:</strong> Maintain
-            open and honest communication with customers, employees, and
-            stakeholders.
+            <strong className="text-gray-800">Transparency:</strong> Communicate
+            clearly and accurately with customers, employees, partners, and
+            other stakeholders.
           </li>
           <li>
-            <strong className="text-gray-800">Respect:</strong> Treat all
-            individuals with dignity, courtesy, and respect, regardless of
-            gender, background, or position.
+            <strong className="text-gray-800">Respect:</strong> Treat every
+            individual with dignity, fairness, and courtesy, irrespective of
+            gender, background, role, or position.
           </li>
           <li>
             <strong className="text-gray-800">Confidentiality:</strong> Protect
-            the privacy and sensitive information of customers and employees as
-            per our Privacy Policy.
+            confidential, personal, and sensitive information belonging to
+            customers, employees, and business partners in accordance with our
+            Privacy Policy and applicable law.
           </li>
           <li>
-            <strong className="text-gray-800">Compliance:</strong> Adhere to all
-            applicable laws, regulations, and internal policies, including
-            anti-corruption and anti-money laundering guidelines.
+            <strong className="text-gray-800">Compliance:</strong> Follow all
+            applicable laws, regulatory requirements, internal policies,
+            anti-corruption requirements, and anti-money laundering guidelines.
           </li>
         </ul>
       </PolicySection>
 
       <PolicySection number={4} title="Employee Responsibilities">
-        <p className="mb-4">Employees are expected to:</p>
-        <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
-          <li>
-            Maintain high standards of professional behaviour in all
-            interactions.
-          </li>
-          <li>
-            Avoid conflicts of interest and disclose any potential conflicts
-            promptly.
-          </li>
-          <li>
-            Refrain from engaging in bribery, corruption, or unethical
-            practices.
-          </li>
-          <li>
-            Protect company assets, including intellectual property and customer
-            data.
-          </li>
-          <li>
-            Report any violations of this Code to the Compliance Officer or
-            Grievance Redressal Officer.
-          </li>
+        <p className="mb-4">
+          Employees and personnel associated with Rupyaa are expected to:
+        </p>
+        <ul className={listClassName}>
+          <li>Maintain appropriate standards of professional and ethical conduct in all business interactions.</li>
+          <li>Identify, avoid, and promptly disclose any actual or potential conflict of interest.</li>
+          <li>Refrain from bribery, corruption, fraud, or any other unethical or unlawful activity.</li>
+          <li>Safeguard company property, systems, intellectual property, confidential information, and customer data.</li>
+          <li>Follow applicable company policies, laws, and regulatory requirements.</li>
+          <li>Promptly report any suspected or identified violation of this Code to the appropriate Compliance Officer or Grievance Redressal Officer.</li>
         </ul>
       </PolicySection>
 
       <PolicySection number={5} title="Customer Interactions">
         <p className="mb-4">
-          We are committed to providing fair, transparent, and respectful
-          service to our customers. This includes:
+          Rupyaa is committed to treating customers fairly, transparently, and
+          respectfully.
         </p>
-        <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
-          <li>
-            Providing accurate and complete information about loan products,
-            fees, and terms.
-          </li>
-          <li>
-            Ensuring timely responses to customer inquiries and complaints.
-          </li>
-          <li>
-            Adhering to data protection laws and safeguarding customer
-            information.
-          </li>
-          <li>Avoiding misleading or aggressive marketing practices.</li>
+        <p className="mb-4">Individuals dealing with customers are expected to:</p>
+        <ul className={listClassName}>
+          <li>Provide clear, accurate, and complete information concerning loan products, applicable fees, charges, and terms.</li>
+          <li>Respond to customer questions, complaints, and concerns within reasonable timelines.</li>
+          <li>Protect customer information and comply with applicable privacy and data-protection requirements.</li>
+          <li>Avoid false, misleading, deceptive, coercive, or excessively aggressive marketing practices.</li>
+          <li>Maintain professional and respectful communication throughout the customer relationship.</li>
         </ul>
       </PolicySection>
 
       <PolicySection number={6} title="Partner and Vendor Conduct">
+        <p className="mb-4">
+          Partners, vendors, contractors, and third-party service providers
+          working with Rupyaa are expected to maintain ethical and professional
+          standards consistent with this Code.
+        </p>
+        <p className="mb-4">
+          Rupyaa may conduct appropriate due diligence before and during its
+          relationship with third parties to assess their compliance with
+          applicable standards, regulatory obligations, and business
+          requirements.
+        </p>
         <p className="mb-0">
-          All partners, vendors, and third-party service providers must adhere
-          to the same ethical standards as our employees. We conduct due
-          diligence to ensure our partners align with our Code of Conduct and
-          terminate relationships if violations occur.
+          Where a serious or repeated violation is identified, Rupyaa may take
+          appropriate action, including suspension or termination of the
+          relevant business relationship, subject to contractual and legal
+          requirements.
         </p>
       </PolicySection>
 
       <PolicySection number={7} title="Reporting Violations">
+        <p className="mb-4">
+          Any suspected, observed, or known violation of this Code should be
+          reported promptly to the designated Compliance Officer or Grievance
+          Redressal Officer, Prashant Kabra.
+        </p>
+        <p className="mb-4">
+          Where permitted under applicable procedures, concerns may be raised
+          anonymously.
+        </p>
+        <p className="mb-4">
+          Rupyaa is committed to protecting individuals who report genuine
+          concerns in good faith from retaliation or unfair treatment.
+        </p>
         <p className="mb-0">
-          Any suspected or observed violation of this Code should be reported
-          immediately to our Compliance Officer or Grievance Redressal Officer
-          Prashant Kabra. Reports can be made anonymously, and we ensure
-          protection against retaliation for good-faith reporting.
+          All reported concerns may be reviewed and investigated in accordance
+          with applicable internal procedures and legal requirements.
         </p>
       </PolicySection>
 
       <PolicySection number={8} title="Consequences of Non-Compliance">
-        <p className="mb-0">
-          Violations of this Code may result in disciplinary action, including
-          termination of employment, legal action, or termination of
-          partnerships, depending on the severity of the breach. We also
-          cooperate fully with law enforcement and regulatory authorities as
-          required.
+        <p className="mb-4">
+          Failure to comply with this Code may result in appropriate corrective
+          or disciplinary action, depending on the nature and seriousness of the
+          violation.
+        </p>
+        <p className="mb-3">Such action may include:</p>
+        <ul className={listClassName}>
+          <li>Formal disciplinary proceedings.</li>
+          <li>Suspension or termination of employment.</li>
+          <li>Suspension or termination of a vendor or partnership arrangement.</li>
+          <li>Legal or regulatory action, where applicable.</li>
+        </ul>
+        <p className="mt-4 mb-0">
+          Rupyaa will cooperate with relevant law enforcement agencies,
+          regulatory bodies, and other competent authorities wherever required
+          by applicable law.
         </p>
       </PolicySection>
 
       <PolicySection number={9} title="Policy Updates">
+        <p className="mb-4">
+          Rupyaa may revise, modify, or update this Code of Conduct from time to
+          time to reflect changes in applicable laws, regulatory requirements,
+          organizational practices, or business operations.
+        </p>
+        <p className="mb-4">
+          Any updated version will become effective upon being published on the
+          Rupyaa website, mobile application, or other official platform,
+          unless otherwise specified.
+        </p>
         <p className="mb-0">
-          We reserve the right to update or modify this Code of Conduct at any
-          time. Any changes will be effective immediately upon posting on our
-          website or app. We recommend reviewing this policy periodically for
-          updates.
+          Employees, partners, vendors, and other relevant stakeholders are
+          encouraged to review this Code periodically for updates.
         </p>
       </PolicySection>
 
       <PolicySection number={10} title="Contact Us">
-        <p className="mb-0">
-          For any questions or to report concerns, please contact our customer
-          support team at{" "}
-          <a href="mailto:care@zapcash.in" className="break-all">
-            care@zapcash.in
+        <p className="mb-4">
+          For questions relating to this Code of Conduct or to report a concern,
+          please contact our customer support team at:
+        </p>
+        <p className="mb-4">
+          <strong className="text-gray-800">Email:</strong>{" "}
+          <a href="mailto:care@rupyaa.com" className="break-all">
+            care@rupyaa.com
           </a>
-          . We are committed to upholding the highest standards of conduct and
-          addressing your inquiries promptly.
+        </p>
+        <p className="mb-0">
+          Rupyaa remains committed to maintaining high standards of ethical
+          conduct, professionalism, accountability, and responsible business
+          practices, and to addressing genuine concerns in an appropriate and
+          timely manner.
         </p>
       </PolicySection>
     </PolicyPageLayout>

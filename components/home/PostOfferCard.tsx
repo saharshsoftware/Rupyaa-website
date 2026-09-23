@@ -14,7 +14,6 @@ import {
   HeroAppIdBadge,
   HeroCheckIcon,
   HeroStatusCardShell,
-  HeroYellowButton,
 } from "@/components/home/hero-status-card/HeroStatusCardShell";
 
 export interface PostOfferCardProps {
@@ -156,7 +155,7 @@ export function PostOfferCard({
 
   return (
     <HeroStatusCardShell badge={badge}>
-      <p className="text-sm font-medium text-gray-700 sm:text-base">Your Rupyaa Offer</p>
+      <p className="text-sm mt-2 font-medium text-gray-700 sm:text-base">Your Rupyaa Offer</p>
       {amountBlock}
       {tenureLabel ? (
         <p className="mt-2 text-base font-semibold text-gray-800 sm:text-lg">

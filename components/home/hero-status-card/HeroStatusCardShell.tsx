@@ -8,6 +8,7 @@ type HeroStatusCardShellProps = {
 
 /**
  * Shared marketing card chrome for logged-in hero status UIs.
+ * Soft frosted white — slightly translucent over the skyline gradient.
  */
 export function HeroStatusCardShell({
   children,
@@ -16,9 +17,10 @@ export function HeroStatusCardShell({
 }: HeroStatusCardShellProps): ReactElement {
   return (
     <div
-      className={`relative isolate w-full overflow-hidden rounded-[1.35rem] border border-white/60 px-5 pb-6 pt-7 text-center backdrop-blur-xl sm:rounded-[1.5rem] sm:px-7 sm:pb-7 sm:pt-8 ${className}`}
+      className={`relative isolate w-full overflow-hidden rounded-[1.35rem] border border-white/70 px-5 pb-6 pt-7 text-center shadow-[0_12px_40px_rgba(15,23,42,0.12)] backdrop-blur-md sm:rounded-[1.5rem] sm:px-7 sm:pb-7 sm:pt-8 ${className}`}
       style={{
-        background: "linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, #FFFCF5 100%)",
+        background:
+          "linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 252, 245, 0.88) 100%)",
       }}
     >
       {badge}

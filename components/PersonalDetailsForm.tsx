@@ -35,12 +35,22 @@ const GENDER_OPTIONS = [
   { value: "other", label: "Other" },
 ] as const;
 
+const PURPOSE_OF_LOAN_OPTIONS = [
+  { value: "Medical Emergency", label: "Medical Emergency" },
+  { value: "Debt Repayment", label: "Debt Repayment" },
+  { value: "Rent Payment", label: "Rent Payment" },
+  { value: "Home Expense", label: "Home Expense" },
+  { value: "Education Expenses", label: "Education Expenses" },
+  { value: "Other Personal Expense", label: "Other Personal Expense" },
+] as const;
+
 type FieldErrors = {
   panNumber?: string;
   dob?: string;
   income?: string;
   pincode?: string;
   gender?: string;
+  purposeOfLoan?: string;
   employmentMode?: string;
   organization?: string;
   declaredSalaryDay?: string;
@@ -52,6 +62,7 @@ type FormState = {
   income: string;
   pincode: string;
   gender: string;
+  purposeOfLoan: string;
   employmentMode: EmploymentMode | null;
   organization: string;
   declaredSalaryDay: number | "";
@@ -64,6 +75,7 @@ const INITIAL_STATE: FormState = {
   income: "",
   pincode: "",
   gender: "",
+  purposeOfLoan: "",
   employmentMode: null,
   organization: "",
   declaredSalaryDay: "",
@@ -76,6 +88,7 @@ type FormAction =
   | { type: "SET_INCOME"; payload: string }
   | { type: "SET_PINCODE"; payload: string }
   | { type: "SET_GENDER"; payload: string }
+  | { type: "SET_PURPOSE_OF_LOAN"; payload: string }
   | { type: "SET_EMPLOYMENT_MODE"; payload: EmploymentMode }
   | { type: "SET_ORGANIZATION"; payload: string }
   | { type: "SET_DECLARED_SALARY_DAY"; payload: number | "" }
@@ -94,6 +107,8 @@ function formReducer(state: FormState, action: FormAction): FormState {
       return { ...state, pincode: action.payload, errors: { ...state.errors, pincode: undefined } };
     case "SET_GENDER":
       return { ...state, gender: action.payload, errors: { ...state.errors, gender: undefined } };
+    case "SET_PURPOSE_OF_LOAN":
+      return { ...state, purposeOfLoan: action.payload, errors: { ...state.errors, purposeOfLoan: undefined } };
     case "SET_EMPLOYMENT_MODE":
       return { ...state, employmentMode: action.payload, errors: { ...state.errors, employmentMode: undefined } };
     case "SET_ORGANIZATION":
@@ -124,7 +139,18 @@ function formatIncomeDisplay(value: string): string {
 
 export default function PersonalDetailsForm() {
   const [state, dispatch] = useReducer(formReducer, INITIAL_STATE);
-  const { panNumber, dob, income, pincode, gender, employmentMode, organization, declaredSalaryDay, errors } = state;
+  const {
+    panNumber,
+    dob,
+    income,
+    pincode,
+    gender,
+    purposeOfLoan,
+    employmentMode,
+    organization,
+    declaredSalaryDay,
+    errors,
+  } = state;
   const setFlowFromUserStage = useFlowStore((flowState) => flowState.setFlowFromUserStage);
   const steps = useFlowStore((flowState) => flowState.steps);
   const phaseIndex = useFlowStore((flowState) => flowState.phaseIndex);
@@ -168,6 +194,7 @@ export default function PersonalDetailsForm() {
         income: personalDetails.salary != null ? String(personalDetails.salary) : "",
         pincode: pincodeStr,
         gender: personalDetails.gender ?? "",
+        purposeOfLoan: personalDetails.purposeOfLoan ?? "",
         employmentMode: getEmploymentMode(personalDetails.employmentMode),
         organization: personalDetails.organization ?? "",
         declaredSalaryDay: personalDetails.declaredSalaryDay ?? "",
@@ -213,6 +240,11 @@ export default function PersonalDetailsForm() {
         declaredSalaryDay === "" || declaredSalaryDay < 1 || declaredSalaryDay > 31
           ? "Please select your salary day (1-31)"
           : null;
+    } else if (employmentMode === "self-employed") {
+      declaredSalaryDayErr =
+        declaredSalaryDay === "" || declaredSalaryDay < 1 || declaredSalaryDay > 31
+          ? "Please select your EMI date (1-31)"
+          : null;
     }
     const newErrors: FieldErrors = {};
     if (panNumberErr) newErrors.panNumber = panNumberErr;
@@ -245,11 +277,15 @@ export default function PersonalDetailsForm() {
       salary: salaryNum,
       gender: gender.trim(),
       employmentMode,
+      ...(purposeOfLoan.trim() ? { purposeOfLoan: purposeOfLoan.trim() } : {}),
       ...(employmentMode === "salaried" && declaredSalaryDay !== ""
         ? {
             organization: organization.trim(),
             declaredSalaryDay,
           }
+        : {}),
+      ...(employmentMode === "self-employed" && declaredSalaryDay !== ""
+        ? { declaredSalaryDay }
         : {}),
       ...(location
         ? {
@@ -358,6 +394,17 @@ export default function PersonalDetailsForm() {
                   })
                 }
                 error={errors.pincode}
+                disabled={isBlocked}
+              />
+
+              <AppSelectField
+                id="purposeOfLoan"
+                label="Purpose of Loan"
+                value={purposeOfLoan}
+                onChange={(e) => dispatch({ type: "SET_PURPOSE_OF_LOAN", payload: e.target.value })}
+                placeholder="Select purpose of loan"
+                options={PURPOSE_OF_LOAN_OPTIONS}
+                error={errors.purposeOfLoan}
                 disabled={isBlocked}
               />
 

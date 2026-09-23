@@ -41,7 +41,7 @@ export default function UnderReviewCard({
         </HeroYellowButton>
       </div>
       <p className="mt-4 text-[11px] leading-relaxed text-gray-500 sm:text-xs">
-        We&apos;re carefully reviewing your application details. This process can take up to 5 days.
+        We&apos;re carefully reviewing your application details. This process can take up to 6 days.
       </p>
     </HeroStatusCardShell>
   );

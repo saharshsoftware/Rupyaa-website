@@ -12,7 +12,7 @@ import {
   validateAlternateMobileSchema,
   isAlternateMobileValidForProceed,
 } from "@/lib/contact-details-map";
-import { trackContactDetailPageSubmit } from "@/lib/gtm";
+// import { trackContactDetailPageSubmit } from "@/lib/gtm";
 import type { ContactFieldOptions, VerifyTarget } from "@/lib/kyc-contact-types";
 import {
   postContactDetails,
@@ -222,7 +222,7 @@ export default function ContactDetailsStep({ onContinue }: Props): ReactElement 
       return res;
     },
     onSuccess: async () => {
-      trackContactDetailPageSubmit();
+      // trackContactDetailPageSubmit();
       await queryClient.invalidateQueries({ queryKey: USER_CONTACT_DETAILS_QUERY_KEY });
       toast.success("Contact details saved");
       onContinue?.();

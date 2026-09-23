@@ -46,8 +46,8 @@ export default function SideBar() {
         `}
       >
         <Link href="/personal-loan" className="flex items-center px-2 py-3 gap-2">
-          <Image src={logo} alt="ZapCash" width={120} height={120} className="object-contain" />
-          {/* <span className="text-xl font-bold text-primary">ZapCash</span>      */}
+          <Image src={logo} alt="Rupyaa" width={120} height={120} className="object-contain" />
+          {/* <span className="text-xl font-bold text-primary">Rupyaa</span>      */}
         </Link>
         <nav className="flex flex-col gap-2 pl-3 *:transition-all duration-200 flex-1">
           {navLinks.map(({ href, label, icon }) => {
@@ -71,7 +71,7 @@ export default function SideBar() {
           <p className="text-xs font-medium text-gray-600 mb-2">Download the app to get started</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 flex-wrap">
             <GooglePlayBadge />
-            <AppStoreBadge />
+            {/* <AppStoreBadge /> */}
           </div>
         </div>
       </aside>

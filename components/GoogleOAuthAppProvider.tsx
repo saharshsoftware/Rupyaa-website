@@ -29,7 +29,8 @@ export function GoogleOAuthAppProvider({ children }: { children: React.ReactNode
 
   useEffect(() => {
     void fetchExternalAppConfig().then((config) => {
-      const remote = config?.googleClientId?.trim();
+      // const remote = config?.googleClientId?.trim();
+      const remote = config?.googleClientIdRupyaa?.trim();
       if (remote) {
         setState({ status: "ready", clientId: remote });
         return;

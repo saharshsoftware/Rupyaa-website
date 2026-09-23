@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import type { ReactElement, ReactNode } from "react";
 import { ActiveLoanHeroCard } from "@/components/home/ActiveLoanHeroCard";
 import HeroCblRejectedCard from "@/components/home/HeroCblRejectedCard";
 import HeroJourneyProgress from "@/components/home/HeroJourneyProgress";
@@ -90,7 +90,7 @@ export function resolveHeroCardNode({
     return (
       <UnderReviewDownloadCard
         variant="download"
-        title="Continue on the ZapCash app"
+        title="Continue on the Rupyaa app"
         description="This step is available in our mobile app. Download the app to continue your loan journey."
       />
     );
@@ -101,15 +101,20 @@ export function resolveHeroCardNode({
     return <HeroCblRejectedCard />;
   }
 
-  if (heroUiCase === "journey_pre_offer") {
-    logHeroLoggedInBranch("journey_pre_offer", {
-      actionLabel: "Apply for Loan",
-    });
-    return <HeroLimitCard actionLabel="Apply for Loan" actionHref="/personal-loan" />;
-  }
-
-  if (heroUiCase === "journey_post_offer") {
+  /**
+   * Journey: `journey_pre_offer` vs `journey_post_offer` from `getLoggedInHeroUiCase` / `evaluateHeroHomeBranch`.
+   * Pre-offer — limit marketing card. Post-offer — sanctioned summary + accept/continue.
+   */
+  if (heroUiCase === "journey_pre_offer" || heroUiCase === "journey_post_offer") {
     const hideStepper = copy.hideProgressStepper === true;
+
+    if (journeyMeta.isPreOffer) {
+      logHeroLoggedInBranch("journey_pre_offer", {
+        actionLabel: "Apply for Loan",
+      });
+      return <HeroLimitCard actionLabel="Apply for Loan" actionHref="/personal-loan" />;
+    }
+
     const loanForDisplay = resolved.loan as DisplayLoan | undefined;
     const tenureLabel =
       typeof loanForDisplay?.tenure === "string" && loanForDisplay.tenure.trim().length > 0
@@ -117,7 +122,7 @@ export function resolveHeroCardNode({
         : undefined;
     const isAcceptVariant = journeyMeta.shouldHandleOfferAccept === true;
 
-    let progress: ReactNode = null;
+    let progress: ReactElement | null = null;
     if (!hideStepper && !isAcceptVariant) {
       progress = (
         <HeroJourneyProgress currentStepIndex={journeyProgress.currentStepIndex} />

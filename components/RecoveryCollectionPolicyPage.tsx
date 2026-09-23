@@ -39,7 +39,7 @@ function RecoveryCollectionPolicyContent() {
                 </div>
                 <div className="min-w-0 flex-1">
                   <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
-                    Recovery and Collection Policy
+                    RECOVERY AND COLLECTION POLICY
                   </h1>
                   <p className="mt-1.5 sm:mt-2 text-sm sm:text-base text-gray-600">
                     Weekline Investment and Trading Company Limited
@@ -51,8 +51,8 @@ function RecoveryCollectionPolicyContent() {
             <div className="px-4 sm:px-10 py-5 sm:py-10">
               <div className="prose prose-gray max-w-none text-sm sm:text-base text-gray-700 leading-relaxed sm:leading-loose space-y-5 sm:space-y-6 hyphens-auto break-words">
                 <p className="italic text-gray-600">
-                  This policy was reviewed and approved by the Board of
-                  Directors in the Board Meeting held on 2nd March 2026.
+                  This Policy was reviewed and approved by the Board of
+                  Directors at the Board Meeting held on 2nd March 2026.
                 </p>
 
                 <div className="rounded-lg sm:rounded-xl bg-gray-50 border border-gray-100 p-3 sm:p-4 space-y-1.5 sm:space-y-2">
@@ -74,14 +74,14 @@ function RecoveryCollectionPolicyContent() {
                   </p>
                   <p className="text-sm sm:text-base">
                     <strong className="text-gray-800">
-                      RBI Registered NO.
+                      RBI Registration No.:
                     </strong>{" "}
                     14.01001
                   </p>
                   <p className="text-sm sm:text-base break-words">
                     <strong className="text-gray-800">Address:</strong> 79,
-                    Ground Floor, World Trade Centre, Babar Lane, New Delhi
-                    110001 India
+                    Ground Floor, World Trade Centre, Babar Lane, New Delhi –
+                    110001, India
                   </p>
                 </div>
 
@@ -93,30 +93,35 @@ function RecoveryCollectionPolicyContent() {
                     Preamble
                   </h2>
                   <p className="mb-3">
-                    Weekline Investment and Trading Company Limited (&quot;the
-                    Company&quot; / &quot;WITCL&quot;), a Non-Banking Financial
-                    Company (NBFC – Base Layer) registered with the Reserve Bank
-                    of India (RBI), is committed to adopting fair, transparent,
-                    ethical, and legally compliant recovery and collection
-                    practices. This Recovery and Collection Policy
-                    (&quot;Policy&quot;) is framed in alignment with:
+                    Weekline Investment and Trading Company Limited
+                    (&quot;Company&quot; / &quot;WITCL&quot;), a Non-Banking
+                    Financial Company classified under the Base Layer and
+                    registered with the Reserve Bank of India (&quot;RBI&quot;),
+                    is committed to following recovery and collection practices
+                    that are fair, transparent, ethical, respectful, and
+                    compliant with applicable laws and regulatory requirements.
+                  </p>
+                  <p className="mb-3">
+                    This Recovery and Collection Policy (&quot;Policy&quot;) has
+                    been formulated in line with, among others:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      RBI Act, 1934 and applicable RBI Master Directions for
-                      NBFCs
+                      The Reserve Bank of India Act, 1934 and applicable RBI
+                      Master Directions governing NBFCs.
                     </li>
-                    <li>RBI Fair Practices Code Guidelines</li>
+                    <li>RBI Fair Practices Code requirements.</li>
                     <li>
-                      RBI Digital Lending Guidelines and outsourcing norms
+                      RBI Digital Lending Guidelines and applicable outsourcing
+                      requirements.
                     </li>
                   </ul>
                   <p className="mt-4">
-                    This Policy governs all recovery and collection activities
-                    of the Company and forms an integral part of the overall
-                    credit governance framework, ensuring consistency across
-                    loan origination, servicing, recovery, settlement, and
-                    write-off stages.
+                    This Policy applies to the Company&apos;s recovery and
+                    collection activities and forms an important part of its
+                    overall credit governance framework. It is intended to
+                    provide consistency across loan servicing, delinquency
+                    management, recovery, settlement, and write-off processes.
                   </p>
                 </section>
 
@@ -127,30 +132,33 @@ function RecoveryCollectionPolicyContent() {
                     </span>
                     Objectives of the Policy
                   </h2>
-                  <p className="mb-3">The objectives of this Policy are to:</p>
+                  <p className="mb-3">
+                    The primary objectives of this Policy are to:
+                  </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
                       Establish a structured, transparent, and RBI-compliant
                       recovery framework
                     </li>
                     <li>
-                      Ensure dignified, non-coercive, and borrower-friendly
-                      recovery practices
+                      Ensure that borrowers are treated respectfully and that
+                      recovery activities remain non-coercive.
                     </li>
                     <li>
-                      Protect borrower rights, privacy, and confidentiality
+                      Safeguard borrower rights, privacy, confidentiality, and
+                      dignity.
                     </li>
                     <li>
                       Minimize delinquencies and credit losses through timely
                       intervention
                     </li>
                     <li>
-                      Clearly define escalation, settlement, and write-off
-                      processes
+                      Define clear procedures for escalation, settlement,
+                      restructuring, and write-off.
                     </li>
                     <li>
-                      Ensure accountability of employees and outsourced recovery
-                      agents
+                      Establish accountability for employees, collection
+                      personnel, and outsourced recovery agencies.
                     </li>
                   </ul>
                 </section>
@@ -281,7 +289,7 @@ function RecoveryCollectionPolicyContent() {
                   </p>
 
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    6.2 Delinquency Identification and Account Classification
+                    6.2 Identification of Delinquency and Account Classification
                   </h3>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
@@ -313,7 +321,7 @@ function RecoveryCollectionPolicyContent() {
                             Classification
                           </th>
                           <th className="px-3 py-2 text-left font-semibold text-gray-900 border-b border-gray-200">
-                            Recovery Actions
+                            Recovery Approach
                           </th>
                         </tr>
                       </thead>
@@ -326,10 +334,11 @@ function RecoveryCollectionPolicyContent() {
                             Soft Follow-up
                           </td>
                           <td className="px-3 py-2 align-top border-b border-gray-100">
-                            Automated SMS, email, app notifications; courtesy
-                            calls by in-house team to identify technical issues,
-                            salary delays, or inadvertent omissions. No pressure
-                            tactics permitted.
+                            Automated SMS, email, and app notifications may be
+                            sent. Courtesy calls may be made by the internal team
+                            to understand possible technical issues, salary
+                            delays, or inadvertent non-payment. Pressure or
+                            coercive practices are not permitted.
                           </td>
                         </tr>
                         <tr>
@@ -340,10 +349,11 @@ function RecoveryCollectionPolicyContent() {
                             Escalated Follow-up
                           </td>
                           <td className="px-3 py-2 align-top border-b border-gray-100">
-                            Structured outbound calls by trained collection
-                            executives; clear communication of dues; obtaining
-                            documented Promise-to-Pay (PTP); explanation of
-                            consequences of continued default.
+                            Trained collection executives may undertake
+                            structured outbound calls, communicate outstanding
+                            dues, obtain documented Promise-to-Pay
+                            (&quot;PTP&quot;), and explain the consequences of
+                            continued non-payment.
                           </td>
                         </tr>
                         <tr>
@@ -354,23 +364,25 @@ function RecoveryCollectionPolicyContent() {
                             Intensive Recovery
                           </td>
                           <td className="px-3 py-2 align-top border-b border-gray-100">
-                            Assignment to senior collectors; authorized field
-                            visits where required; issuance of formal demand
-                            notices; evaluation for legal action. Field visits
-                            must strictly follow RBI conduct norms.
+                            Accounts may be assigned to senior collection
+                            personnel. Authorized field visits may be undertaken
+                            where appropriate, formal demand notices may be
+                            issued, and legal options may be evaluated. Any field
+                            activity must comply with RBI conduct requirements.
                           </td>
                         </tr>
                         <tr>
                           <td className="px-3 py-2 align-top font-medium">
-                            &gt;30 DPD
+                            More than 30 DPD
                           </td>
                           <td className="px-3 py-2 align-top">
                             Final Recovery
                           </td>
                           <td className="px-3 py-2 align-top">
-                            Initiation of legal recovery proceedings; evaluation
-                            for write-off; transfer to specialized recovery
-                            agencies where approved.
+                            Legal recovery action may be initiated, accounts may
+                            be evaluated for write-off, and cases may be assigned
+                            to approved specialized recovery agencies where
+                            appropriate.
                           </td>
                         </tr>
                       </tbody>
@@ -378,7 +390,7 @@ function RecoveryCollectionPolicyContent() {
                   </div>
 
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    6.4 Telephonic and Digital Recovery Process
+                    6.4 Telephonic and Digital Recovery
                   </h3>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
@@ -386,15 +398,17 @@ function RecoveryCollectionPolicyContent() {
                       personnel using approved scripts.
                     </li>
                     <li>
-                      Contacts shall be made only between 8:00 AM and 7:00 PM.
+                      Borrowers shall ordinarily be contacted only between 8:00
+                      AM and 7:00 PM.
                     </li>
                     <li>
                       Digital communication shall comply with RBI Digital
                       Lending Guidelines.
                     </li>
                     <li>
-                      No access shall be taken to borrower contacts, gallery, or
-                      personal data.
+                      Recovery activities shall not involve unauthorized access
+                      to a borrower&apos;s contacts, photo gallery, or other
+                      personal information.
                     </li>
                     <li>
                       Frequency of communication shall be reasonable and
@@ -485,7 +499,7 @@ function RecoveryCollectionPolicyContent() {
                   </ul>
 
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    6.9 Recovery Agency Management
+                    6.9 Management of Recovery Agencies
                   </h3>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
@@ -503,7 +517,7 @@ function RecoveryCollectionPolicyContent() {
                   </ul>
 
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    6.10 Monitoring, MIS and Governance
+                    6.10 Monitoring, MIS, and Governance
                   </h3>
                   <p className="mb-2">
                     Recovery performance shall be monitored through MIS aligned
@@ -909,17 +923,17 @@ function RecoveryCollectionPolicyContent() {
                     Contact Us
                   </h2>
                   <p className="mb-4">
-                    For questions, concerns, or grievances relating to recovery
-                    and collection, contact:
+                    For any complaint, concern, query, or grievance relating to
+                    recovery and collection practices, you may contact:
                   </p>
                   <div className="rounded-lg sm:rounded-xl bg-gray-50 border border-gray-100 p-3 sm:p-4 space-y-1.5 sm:space-y-2">
                     <p className="text-sm sm:text-base">
                       <strong className="text-gray-800">Email:</strong>{" "}
                       <a
-                        href="mailto:grievance@zapcash.in"
+                        href="mailto:grievance@rupyaa.com"
                         className="break-all"
                       >
-                        grievance@zapcash.in
+                        grievance@rupyaa.com
                       </a>
                     </p>
                     <p className="text-sm sm:text-base">
@@ -931,8 +945,11 @@ function RecoveryCollectionPolicyContent() {
                       </a>
                     </p>
                     <p className="text-sm sm:text-base break-words">
-                      <strong className="text-gray-800">Address:</strong> 
-                      79, Ground Floor, World Trade Centre, Babar Lane, New Delhi - 110001, India
+                      <strong className="text-gray-800">Address:</strong>
+                      <br />
+                      79, Ground Floor, World Trade Centre,
+                      <br />
+                      Babar Lane, New Delhi – 110001, India
                     </p>
                   </div>
                 </section>

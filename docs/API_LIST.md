@@ -1,6 +1,6 @@
-# ZapCash – API List
+# Rupyaa – API List
 
-This document lists all APIs used in the ZapCash project. The browser calls `NEXT_PUBLIC_API_URL` directly (no Next.js API proxy).
+This document lists all APIs used in the Rupyaa project. The browser calls `NEXT_PUBLIC_API_URL` directly (no Next.js API proxy).
 
 **Base URL:** `NEXT_PUBLIC_API_URL` (default: `https://lending-api.wecredit.click`)  
 **Mock Base URL:** `NEXT_PUBLIC_MOCK_API_URL` (for mock/admin endpoints)
@@ -23,7 +23,7 @@ This document lists all APIs used in the ZapCash project. The browser calls `NEX
 |-------|----------|-----|-------------|
 | GET | `/api/v1/user/stage` | `lib/user-api.ts` | Get user stage. Query: `device` (web/android/ios) |
 | GET | `/api/v1/user/personal-details` | `lib/user-api.ts` | Get personal details (auth required) |
-| POST | `/api/v1/user/personal-details` | `lib/user-api.ts` | Submit personal and employment details. Body: `{ firstName?, lastName?, pincode, pan, dob, salary, gender?, employmentMode, declaredSalaryDay?, organization?, geolocation? }`; organization and salary day are sent for salaried users. |
+| POST | `/api/v1/user/personal-details` | `lib/user-api.ts` | Submit personal and employment details. Body: `{ firstName?, lastName?, pincode, pan, dob, salary, gender?, employmentMode, declaredSalaryDay?, organization?, purposeOfLoan?, geolocation? }`; organization and salary day are sent for salaried users; EMI day (`declaredSalaryDay`) is sent for self-employed users. |
 
 ---
 
@@ -32,7 +32,7 @@ This document lists all APIs used in the ZapCash project. The browser calls `NEX
 | Method | Endpoint | Lib | Description |
 |-------|----------|-----|-------------|
 | GET | `/api/v1/user/eligibility/experian` | `lib/eligibility-api.ts` | Trigger Experian soft pull. Query: `deviceType`.
-| GET | `/api/v1/loans/active` | `lib/eligibility-api.ts` | Get active loan. Header: `platform: ZAPCASH` |
+| GET | `/api/v1/loans/active` | `lib/eligibility-api.ts` | Get active loan. Header: `platform: Rupyaa` |
 
 ---
 

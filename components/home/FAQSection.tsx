@@ -30,7 +30,7 @@ const FAQ_ITEMS: readonly FAQItem[] = [
       "This is an illustrative example. Actual terms may vary based on eligibility and will be disclosed in the Key Fact Statement before loan acceptance.",
   },
   {
-    question: "Who is eligible to apply for a ZapCash personal loan?",
+    question: "Who is eligible to apply for a Rupyaa personal loan?",
     bulletPoints: [
       "Age: Minimum 21 years",
       "Employment Type: Salaried or Self-Employed",
@@ -192,7 +192,7 @@ type FAQSectionProps = {
 };
 
 export default function FAQSection({ startBatch = 0, layout = "centered" }: FAQSectionProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
 
   const orderedItems = getOrderedItems(startBatch);
@@ -275,13 +275,13 @@ export default function FAQSection({ startBatch = 0, layout = "centered" }: FAQS
       <section id="faq" className="bg-white">
         <div className={`${appShellContainerClassName} ${homeSectionSpacingClassName}`}>
           <div className="mt-8 grid gap-8 sm:mt-10 lg:mt-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:gap-12">
-            <div className="flex flex-col justify-center text-center sm:text-left">
-              <h2 className="text-2xl font-semibold tracking-[-0.03em] text-gray-900 sm:text-3xl lg:text-4xl">
+            <div className="flex flex-col justify-center">
+              <h2 className="text-center text-2xl font-semibold tracking-[-0.03em] text-gray-900 sm:text-3xl lg:text-left lg:text-4xl">
                 Frequently
                 <br />
                 Asked Questions
               </h2>
-              <p className="mt-3 hidden max-w-sm text-sm leading-6 text-slate-600 sm:block sm:text-base">
+              <p className="mx-auto mt-3 hidden max-w-sm text-center text-sm leading-6 text-slate-600 sm:block sm:text-base lg:mx-0 lg:text-left">
                 Need help with eligibility, your application, repayments or loan documents? Contact
                 the Rupyaa support team.
               </p>

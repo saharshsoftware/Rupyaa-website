@@ -42,12 +42,12 @@ export default function HeroLimitCard({
       <p className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-[2.75rem]">
         {formatCurrency(amount)}
       </p>
-      <p className="mt-2 text-sm text-gray-600 sm:text-[15px]">
-        Fast application. Hassle free process.
+      <p className="mt-2 text-sm font-medium text-gray-700 sm:text-[15px]">
+        Fast application. Hassle-free process.
       </p>
       <Link
         href={actionHref}
-        className="mt-6 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-full bg-[#FECA42] px-5 py-3 text-sm font-bold text-gray-900 transition hover:bg-[#F5C038] focus:outline-none focus:ring-2 focus:ring-[#FECA42] focus:ring-offset-2 sm:mt-7 sm:min-h-[52px] sm:text-base"
+        className="mt-6 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl bg-[#FECA42] px-5 py-3 text-sm font-bold text-gray-900 transition hover:bg-[#F5C038] focus:outline-none focus:ring-2 focus:ring-[#FECA42] focus:ring-offset-2 sm:mt-7 sm:min-h-[52px] sm:rounded-2xl sm:text-base"
       >
         {actionLabel}
         <ChevronIcon />

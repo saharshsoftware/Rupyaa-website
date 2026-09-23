@@ -8,13 +8,13 @@ export const metadata = seoMetadata.creditScore;
 export default function CreditScoreRoutePage() {
   return (
     <>
-      <script
+      {/* <script
         id="zapcash-credit-score-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(creditScoreSchema).replace(/</g, "\\u003c"),
         }}
-      />
+      /> */}
       <CreditScorePage />
       <Footer />
     </>

@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import { getUserEligibilityExperian, getCurrentOffer, getOfferLoanSubStatus } from "@/lib/eligibility-api";
-import { trackBureauPolicyResponseApp } from "@/lib/gtm";
+// import { getOfferLoanSubStatus } from "@/lib/eligibility-api";
+import { getUserEligibilityExperian, getCurrentOffer } from "@/lib/eligibility-api";
+// import { trackBureauPolicyResponseApp } from "@/lib/gtm";
 import { useFlowStore } from "@/store/useFlowStore";
 import BasicInfoFooter from "@/components/BasicInfoFooter";
 
@@ -58,13 +59,13 @@ export default function SoftPullScreen({ onContinue }: Props) {
         return;
       }
 
-      const analyticsPayload = {
-        status: "status" in experianRes ? experianRes.status : undefined,
-        decile: "decile" in experianRes ? experianRes.decile : undefined,
-        declaredSalary: "salary" in experianRes ? experianRes.salary : undefined,
-        empType: "empType" in experianRes ? experianRes.empType : undefined,
-        applicationType: 'fresh',
-      };
+      // const analyticsPayload = {
+        // status: "status" in experianRes ? experianRes.status : undefined,
+        // decile: "decile" in experianRes ? experianRes.decile : undefined,
+        // declaredSalary: "salary" in experianRes ? experianRes.salary : undefined,
+        // empType: "empType" in experianRes ? experianRes.empType : undefined,
+        // applicationType: 'fresh',
+      // };
 
       const smsBureauLoanCreated =
         "smsBureauLoanCreated" in experianRes && experianRes.smsBureauLoanCreated === true;
@@ -73,17 +74,17 @@ export default function SoftPullScreen({ onContinue }: Props) {
         // No inner try/catch: a failed offer fetch is a real error, not a
         // "fall back to default offer" case, so let it hit the catch below.
         const offerRes = await getCurrentOffer("components/SoftPullScreen.tsx");
-        const isReloan = getOfferLoanSubStatus(offerRes);
-        const applicationType: 'fresh' | 'reloan' = isReloan ? 'reloan' : 'fresh';
+        // const isReloan = getOfferLoanSubStatus(offerRes);
+        // const applicationType: 'fresh' | 'reloan' = isReloan ? 'reloan' : 'fresh';
         if (isCancelled()) return;
 
-        const payload = {
-          ...analyticsPayload,
-          offerAmount: offerRes.offer.offerAmount,
-          applicationType,
-        };
+        // const payload = {
+          // ...analyticsPayload,
+          // offerAmount: offerRes.offer.offerAmount,
+          // applicationType,
+        // };
 
-        trackBureauPolicyResponseApp(payload);
+        // trackBureauPolicyResponseApp(payload);
 
         setOfferAmount(offerRes.offer.offerAmount);
         setShowUpdateButton(offerRes.showUpdateButton ?? false);
@@ -92,7 +93,7 @@ export default function SoftPullScreen({ onContinue }: Props) {
         return;
       }
 
-      trackBureauPolicyResponseApp({...analyticsPayload, applicationType: 'fresh' as const});
+      // trackBureauPolicyResponseApp({...analyticsPayload, applicationType: 'fresh' as const});
       setOfferAmount(null);
       setShowUpdateButton(false);
       setFlowState("offer");

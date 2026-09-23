@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { ReactNode, useMemo, useState } from "react";
 import PolicyPageLayout from "@/components/PolicyPageLayout";
 
@@ -33,21 +32,6 @@ function ContactLine({
   );
 }
 
-function EscalationFlowchart() {
-  return (
-    <div className="pt-6 sm:pt-8 border-t border-gray-100">
-      <Image
-        src="/images/grievance-escalation-flowchart.png"
-        alt="Grievance escalation flowchart showing contact, escalation, and resolution steps"
-        width={800}
-        height={1200}
-        className="w-full max-w-md mx-auto h-auto"
-        priority
-      />
-    </div>
-  );
-}
-
 function getActiveLevelIndex(params: {
   activeLevelId: EscalationLevel["id"];
   levels: readonly EscalationLevel[];
@@ -68,18 +52,18 @@ export default function GrievanceRedressalMechanismPage() {
         content: (
           <div className="space-y-4 sm:space-y-5">
             <p>
-              Customers who wish to send in complaint/feedback over any issue
-              can use the following channels.
+              Customers who wish to raise a complaint, report an issue, or
+              provide feedback may contact the Customer Relationship Manager
+              using the following details:
             </p>
-            <p>Please contact Customer Relationship Manager.</p>
             <ContactCard>
               <ContactLine label="Email ID:">
-                <a href="mailto:grievance@zapcash.in" className="break-all">
-                  grievance@zapcash.in
+                <a href="mailto:grievance@rupyaa.com" className="break-all">
+                  grievance@rupyaa.com
                 </a>
               </ContactLine>
               <ContactLine label="Timings:">
-                10 am to 6 pm on week days
+                10:00 AM to 6:00 PM on weekdays
               </ContactLine>
             </ContactCard>
           </div>
@@ -92,22 +76,26 @@ export default function GrievanceRedressalMechanismPage() {
         content: (
           <div className="space-y-4 sm:space-y-5">
             <p>
-              If you are not satisfied with the response received from the
-              branch or if you don&apos;t receive a response in 3 working days,
-              please call our Help Desk Representatives available on the phone
-              to register your complaints.
+              If you are not satisfied with the response provided at Level 1,
+              or if you do not receive a response within 3 working days, you
+              may escalate your complaint to our Customer Service Help Desk.
+            </p>
+            <p>
+              Our Help Desk representatives are available to assist with
+              registering and reviewing your complaint through the following
+              channels:
             </p>
             <ContactCard>
               <ContactLine label="Helpline No.:">
                 <a href="tel:+918503090309">85-0309-0309</a>
               </ContactLine>
               <ContactLine label="Email ID:">
-                <a href="mailto:care@zapcash.in" className="break-all">
-                  care@zapcash.in
+                <a href="mailto:care@rupyaa.com" className="break-all">
+                  care@rupyaa.com
                 </a>
               </ContactLine>
               <ContactLine label="Timings:">
-                10 am to 6 pm on week days
+                10:00 AM to 6:00 PM on weekdays
               </ContactLine>
             </ContactCard>
           </div>
@@ -120,11 +108,14 @@ export default function GrievanceRedressalMechanismPage() {
         content: (
           <div className="space-y-4 sm:space-y-5">
             <p>
-              If you are not satisfied with the response from customer service
-              helpdesk or if you don&apos;t receive a response within 3 working
-              days, please call or write to the Grievance Redressal Officer. You
-              will receive a response within 5 working days of the Grievance
-              Redressal Officer receiving the complaint.
+              If your concern remains unresolved after contacting the Customer
+              Service Help Desk, or if you do not receive a response within 3
+              working days, you may further escalate the matter to the
+              designated Grievance Redressal Officer.
+            </p>
+            <p>
+              The Grievance Redressal Officer will aim to respond within 5
+              working days from the date the complaint is received.
             </p>
             <ContactCard>
               <p className="text-sm sm:text-base">
@@ -134,7 +125,11 @@ export default function GrievanceRedressalMechanismPage() {
               </p>
               <ContactLine label="Name:">Prashant Kabra</ContactLine>
               <ContactLine label="Address:">
-              79, Ground Floor, World Trade Centre, Babar Lane, New Delhi - 110001, India
+                <span>
+                  79, Ground Floor, World Trade Centre,
+                  <br />
+                  Babar Lane, New Delhi – 110001, India
+                </span>
               </ContactLine>
               <ContactLine label="Contact No.:">
                 <a href="tel:+917665466546">7665466546</a>
@@ -151,31 +146,31 @@ export default function GrievanceRedressalMechanismPage() {
       {
         id: "level-4",
         tabLabel: "Level 4",
-        tabSubLabel: "Escalation to RBI",
+        tabSubLabel: "Escalation to the Reserve Bank of India",
         content: (
           <div className="space-y-4 sm:space-y-5">
             <p>
-              Also, if the complaint / dispute is not redressed within a period
-              of one month, the customer may appeal to the RBI on the following
-              addresses:
+              If your complaint or dispute remains unresolved for a period of
+              one month, you may escalate the matter to the Reserve Bank of
+              India (RBI) through the following channels:
             </p>
             <ContactCard>
               <p className="text-sm sm:text-base">
                 <strong className="text-gray-800">The General Manager</strong>
               </p>
               <p className="text-sm sm:text-base">
-                Deptt. of Non-Banking Supervision (DNBS)
+                Department of Non-Banking Supervision (DNBS)
               </p>
               <p className="text-sm sm:text-base">Reserve Bank of India</p>
               <p className="text-sm sm:text-base">
-                6, Sansad Marg, New Delhi - 110001
+                6, Sansad Marg, New Delhi – 110001
               </p>
               <ContactLine label="Email:">
                 <a href="mailto:dnbsnewdelhi@rbi.org.in" className="break-all">
                   dnbsnewdelhi@rbi.org.in
                 </a>
               </ContactLine>
-              <ContactLine label="Online:">
+              <ContactLine label="Online Complaint Portal:">
                 <a
                   href="https://cms.rbi.org.in"
                   target="_blank"
@@ -214,7 +209,12 @@ export default function GrievanceRedressalMechanismPage() {
       title="GRIEVANCE REDRESSAL MECHANISM"
       effectiveDate="February 25, 2026"
     >
-      <div className="space-y-2 sm:space-y-2">
+      <p>
+        Rupyaa has established a clear grievance escalation process to ensure
+        that customer complaints, concerns, and feedback are reviewed and
+        addressed in a timely and appropriate manner.
+      </p>
+      <div className="space-y-2 sm:space-y-2 pt-4 sm:pt-6 border-t border-gray-100">
         <div className="bg-gray-50 border border-gray-100 rounded-xl ">
           <div
             className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 p-2 sm:p-3"
@@ -254,7 +254,6 @@ export default function GrievanceRedressalMechanismPage() {
         </div>
         <div className="pt-1" role="tabpanel">
           {activeLevel.content}
-          <EscalationFlowchart />
         </div>
       </div>
     </PolicyPageLayout>

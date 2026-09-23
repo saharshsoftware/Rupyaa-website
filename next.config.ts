@@ -28,7 +28,7 @@ const nextConfig: NextConfig = {
         has: [
           {
             type: "host",
-            value: "staging[\\w-]*\\.zapcash\\.in",
+            value: "staging[\\w-]*\\.rupyaa\\.com",
           },
         ],
         headers: [

@@ -75,13 +75,13 @@ export function ActiveLoanCard({
       <h3 className="text-xl font-bold text-gray-900 sm:text-2xl">Loan Status</h3>
       <p className="mt-2 text-sm leading-relaxed text-gray-600 sm:text-[15px]">{description}</p>
       <div className="mt-5 grid grid-cols-2 gap-3 text-left sm:mt-6">
-        <div className="rounded-xl border border-gray-200 bg-white px-3 py-3 sm:px-4 sm:py-4">
+        <div className="rounded-xl border border-[#FECA42]/50 bg-white px-3 py-3 sm:px-4 sm:py-4">
           <p className="text-xs font-medium text-gray-700 sm:text-sm">Total Amount Due</p>
           <p className="mt-1 text-lg font-bold tabular-nums text-[#C9920F] sm:text-xl">
             {formatCurrency(totalPayable)}
           </p>
         </div>
-        <div className="rounded-xl border border-gray-200 bg-white px-3 py-3 sm:px-4 sm:py-4">
+        <div className="rounded-xl border border-[#FECA42]/50 bg-white px-3 py-3 sm:px-4 sm:py-4">
           <p className="text-xs font-medium text-gray-700 sm:text-sm">Due Date</p>
           <p className="mt-1 text-sm font-bold text-[#C9920F] sm:text-base">
             {dueDateFormatted || "—"}

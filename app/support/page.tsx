@@ -9,13 +9,13 @@ export const generateMetadata = () => getSeoMetadata("support");
 const page = () => {
   return (
     <>
-      <script
+      {/* <script
         id="zapcash-support-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(supportPageSchema).replace(/</g, "\\u003c"),
         }}
-      />
+      /> */}
       <SupportPage />
     </>
   );

@@ -12,13 +12,13 @@ export const generateMetadata = () => getSeoMetadata("emiCalculator");
 export default function EMICalculatorPage() {
   return (
     <>
-      <script
+      {/* <script
         id="zapcash-emi-calculator-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(emiCalculatorSchema).replace(/</g, "\\u003c"),
         }}
-      />
+      /> */}
       <SiteChrome className="emi-calculator-page min-h-screen bg-white">
         <EMICalculatorSection />
         <LoanHighlightsSection />

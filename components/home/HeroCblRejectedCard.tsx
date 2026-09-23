@@ -27,6 +27,22 @@ function HourglassIcon(): ReactElement {
   );
 }
 
+function StayTunedSmileIcon(): ReactElement {
+  return (
+    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden>
+      <circle cx="8" cy="8" r="7" fill="#FECA42" />
+      <circle cx="5.5" cy="6.5" r="1" fill="#1A1A1A" />
+      <circle cx="10.5" cy="6.5" r="1" fill="#1A1A1A" />
+      <path
+        d="M5 9.5c.8 1.2 2 1.8 3 1.8s2.2-.6 3-1.8"
+        stroke="#1A1A1A"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
 /**
  * CBL / rejected hero card — Coming Soon / better options.
  */
@@ -37,11 +53,9 @@ export default function HeroCblRejectedCard({
 }: Props): ReactElement {
   return (
     <HeroStatusCardShell>
-      <div className="mx-auto mb-3 inline-flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-gray-800 shadow-sm">
+      <div className="mx-auto mb-3 inline-flex items-center gap-1.5 rounded-full border border-[#FECA42]/70 bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-gray-800 shadow-sm">
         Stay Tuned
-        <span className="inline-flex size-4 items-center justify-center rounded-full bg-[#FECA42] text-[9px]" aria-hidden>
-          🙂
-        </span>
+        <StayTunedSmileIcon />
       </div>
       <p className="text-sm font-medium text-gray-700 sm:text-base">{title}</p>
       <h2 className="mt-1 text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
