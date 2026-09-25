@@ -1,3 +1,5 @@
+import { OG_IMAGE_URL } from "@/utils/app-constants";
+
 export const personalLoanSchema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -101,7 +103,7 @@ export const zapcashJsonLdSchema = {
         url: "https://rupyaa.com/images/logo.png",
       },
       image:
-        "https://zapcash-assets.s3.ap-south-1.amazonaws.com/zapcash-og-image.jpg",
+        OG_IMAGE_URL,
       priceRange: "Personal loans up to Rs. 5,00,000",
       description:
         "Rupyaa helps eligible users apply for unsecured personal loans of up to Rs. 5,00,000 through a digital process.",
