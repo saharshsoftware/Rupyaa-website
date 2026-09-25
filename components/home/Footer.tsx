@@ -39,19 +39,24 @@ const LEGAL_LINKS = [
 
 const SOCIAL_LINKS = [
   {
-    href: "https://www.linkedin.com/company/zapcash-in/?viewAsMember=true",
+    href: "https://www.linkedin.com/company/rupyaaindia/",
     label: "LinkedIn",
     icon: "linkedin",
   },
+  // {
+  //   href: "https://www.facebook.com/profile.php?id=61587821694569",
+  //   label: "Facebook",
+  //   icon: "facebook",
+  // },
   {
-    href: "https://www.facebook.com/profile.php?id=61587821694569",
-    label: "Facebook",
-    icon: "facebook",
-  },
-  {
-    href: "https://www.instagram.com/zapcash.in/",
+    href: "https://www.instagram.com/rupyaa__?stkn=MWc2NXkyMHdrYml6Ng%3D%3D&utm_source=qr&wa_status_inline=true",
     label: "Instagram",
     icon: "instagram",
+  },
+  {
+    href: "https://youtube.com/@rupyaa-w7q?si=LV_sEiNZg6luSv3C",
+    label: "YouTube",
+    icon: "youtube",
   },
 ] as const;
 
@@ -62,6 +67,13 @@ type FooterLink = {
 
 function SocialIcon({ icon }: { readonly icon: string }): ReactElement | null {
   const className = "size-5";
+  if (icon === "youtube") {
+    return (
+      <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.121 2.136c1.872.505 9.377.505 9.377.505s7.505 0 9.376-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+      </svg>
+    );
+  }
   if (icon === "twitter") {
     return (
       <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
@@ -218,7 +230,7 @@ export default function Footer(): ReactElement {
             ))}
           </div>
           <LegalLinksRow />
-          <p className="text-sm text-gray-700">© 2026 Rupyaa. All rights reserved.</p>
+          <p className="text-sm text-gray-700">© 2026 Uptime Innovation Private Limited. All rights reserved.</p>
         </div>
       </div>
     </footer>
