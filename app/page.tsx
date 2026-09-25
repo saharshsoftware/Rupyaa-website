@@ -36,7 +36,7 @@ export default function HomeLandingPage() {
         <EligibilitySection />
         <StatsSection />
         <TestimonialsSection />
-        <DownloadAppSection />
+        <DownloadAppSection heading="Your loan journey, made Simple." />
         <FAQSection startBatch={0} layout="split" />
         
       </SiteChrome>
