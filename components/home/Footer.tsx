@@ -43,11 +43,11 @@ const SOCIAL_LINKS = [
     label: "LinkedIn",
     icon: "linkedin",
   },
-  // {
-  //   href: "https://www.facebook.com/profile.php?id=61587821694569",
-  //   label: "Facebook",
-  //   icon: "facebook",
-  // },
+  {
+    href: "https://www.facebook.com/share/196wiH2RD5/?mibextid=wwXIfr",
+    label: "Facebook",
+    icon: "facebook",
+  },
   {
     href: "https://www.instagram.com/rupyaa__?stkn=MWc2NXkyMHdrYml6Ng%3D%3D&utm_source=qr&wa_status_inline=true",
     label: "Instagram",
