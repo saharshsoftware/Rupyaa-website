@@ -27,10 +27,12 @@ function FileIcon() {
 function PolicyShell({
   title,
   effectiveDate,
+  boldEffectiveDate = false,
   children,
 }: {
   title: string;
   effectiveDate?: string;
+  boldEffectiveDate?: boolean;
   children: ReactNode;
 }) {
   return (
@@ -46,11 +48,11 @@ function PolicyShell({
                 <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
                   {title}
                 </h1>
-                {effectiveDate ? (
-                  <p className="text-xs sm:text-sm text-gray-600 mt-1 sm:mt-2">
+                {effectiveDate && (
+                  <p className={`text-xs sm:text-sm text-gray-600 mt-1 sm:mt-2 ${boldEffectiveDate ? "font-bold" : ""}`}>
                     Effective Date: {effectiveDate}
                   </p>
-                ) : null}
+                )}
               </div>
             </div>
           </div>
@@ -68,18 +70,20 @@ function PolicyShell({
 
 export function PolicySection({
   number,
+  plainNumber = false,
   title,
   children,
 }: {
   number: number | string;
+  plainNumber?: boolean;
   title: string;
   children: ReactNode;
 }) {
   return (
     <section className="pt-4 sm:pt-6 border-t border-gray-100">
       <h2 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 sm:mb-3 flex items-center gap-2 flex-wrap">
-        <span className="w-7 h-7 rounded-lg bg-primary/10 text-primary text-sm font-bold flex items-center justify-center">
-          {number}
+        <span className={plainNumber ? "" : "w-7 h-7 rounded-lg bg-primary/10 text-primary text-sm font-bold flex items-center justify-center"}>
+          {number}{plainNumber && "."}
         </span>
         {title}
       </h2>
@@ -91,10 +95,12 @@ export function PolicySection({
 export default function PolicyPageLayout({
   title,
   effectiveDate,
+  boldEffectiveDate = false,
   children,
 }: {
   title: string;
   effectiveDate?: string;
+  boldEffectiveDate?: boolean;
   children: ReactNode;
 }) {
   return (
@@ -107,7 +113,7 @@ export default function PolicyPageLayout({
         </SiteChrome>
       }
     >
-      <PolicyShell title={title} effectiveDate={effectiveDate}>
+      <PolicyShell title={title} effectiveDate={effectiveDate} boldEffectiveDate={boldEffectiveDate}>
         {children}
       </PolicyShell>
     </Suspense>
