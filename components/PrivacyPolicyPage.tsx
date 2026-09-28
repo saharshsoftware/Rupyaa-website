@@ -48,56 +48,29 @@ function PrivacyPolicyContent() {
             <div className="px-4 sm:px-10 py-5 sm:py-10">
               <div className="prose prose-gray max-w-none text-sm sm:text-base text-gray-700 leading-relaxed sm:leading-loose space-y-5 sm:space-y-6 hyphens-auto break-words">
                   <p className="mb-3">
-                    Rupyaa Personal Loan (“Rupyaa”, “we”, “our”, or “us”) values your
-                    privacy and is committed to safeguarding the personal information
-                    you share with us. This Privacy Policy explains the manner in which
-                    we collect, process, use, disclose, retain, and protect your
-                    information when you access or use our mobile application (the
-                    “App”), website (the “Site”), or any personal loan and financial
-                    services made available through these platforms (collectively
-                    referred to as the “Services”).
+                    Rupyaa Personal Loan (“Rupyaa”, “We”, “Us”, or “Our”) is committed to protecting your privacy and safeguarding your personal information. This Privacy Policy explains how we collect, use, process, disclose, and protect your information when you use our mobile application (the “App”), website (the “Site”), and related services for personal loans and financial products (collectively referred to as the “Services”).
                   </p>
                   <p className="mb-3">
-                    By accessing or using our App, Site, or Services, you acknowledge
-                    the data-handling practices described in this Privacy Policy and
-                    provide consent wherever such consent is required.
+                    By accessing or using the App, Site, or Services, you acknowledge and consent to the practices described in this Privacy Policy.
                   </p>
                   <p className="mb-3">
-                    Rupyaa is operated by Uptime Innovation Private Limited. Services
-                    offered under the Rupyaa brand are provided by Uptime Innovation
-                    Private Limited either directly or through authorized service
-                    providers and business partners, wherever applicable.
+                    Rupyaa is operated by Uptime Innovation Private Limited, and all services offered under the Rupyaa brand are provided by Uptime Innovation Private Limited or through its authorized service partners, wherever applicable.
                   </p>
                   <p className="mb-3">
-                    This Privacy Policy has been prepared with the intention of
-                    complying with applicable Indian laws and regulatory requirements,
-                    including the Information Technology Act, 2000, the Digital Personal
-                    Data Protection Act, 2023, the Digital Personal Data Protection
-                    Rules, 2025, and relevant guidelines issued by the Reserve Bank of
-                    India in relation to digital lending.
+                    This Privacy Policy is intended to comply with applicable laws and regulatory requirements, including the Information Technology Act, 2000, the Digital Personal Data Protection Act, 2023, the Digital Personal Data Protection Rules, 2025, and applicable guidelines issued by the Reserve Bank of India relating to digital lending.
                   </p>
                   <p className="mb-3">
-                    Rupyaa operates as a digital lending platform and facilitates
-                    personal loan services in association with an RBI-registered Non-Banking Financial Company (NBFC), WEEKLINE INVESTMENT AND TRADING
-                    COMPANY LTD.
+                    Rupyaa is a digital lending platform that facilitates personal loan services in partnership with an RBI-registered Non-Banking Financial Company (NBFC), WEEKLINE INVESTMENT AND TRADING COMPANY LTD.
                   </p>
                   <p className="mb-3">
-                    All decisions relating to credit assessment, loan approval,
-                    sanction, eligibility, and disbursement are made by the relevant
-                    registered lending partner in accordance with applicable laws and
-                    regulatory requirements prescribed by the Reserve Bank of India.
+                    All decisions relating to loan approval, sanction, disbursement, and credit assessment are made by our registered lending partners in accordance with applicable laws and regulatory guidelines issued by the Reserve Bank of India.
                   </p>
                   <p className="mb-3">
-                    Rupyaa primarily acts as a technology and service platform
-                    supporting the loan application process, customer onboarding,
-                    documentation, verification, and other associated services. All
-                    lending-related activities are undertaken in accordance with
-                    applicable regulatory requirements, including the Digital Personal
-                    Data Protection Act, 2023 and other relevant Indian laws.
+                    Rupyaa acts as a technology and service platform that supports the loan application process, customer onboarding, documentation, and other related services. All lending activities are conducted in accordance with applicable regulations, including requirements under the Digital Personal Data Protection Act, 2023 and other relevant Indian laws.
                   </p>
                 <div className="rounded-lg sm:rounded-xl bg-gray-50 border border-gray-100 p-3 sm:p-4 space-y-1.5 sm:space-y-2">
                   <p className="font-semibold text-gray-900">
-                    NBFC Information:
+                    NBFC Information
                   </p>
                   <p className="font-semibold text-gray-900">
                     <a href="https://www.weekline.in/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
@@ -105,10 +78,10 @@ function PrivacyPolicyContent() {
                     </a>
                   </p>
                   <p className="mb-3">
-                    RBI Registration No.: 14.01001
+                    <b>RBI Registration No.:</b> 14.01001
                   </p>
                   <p className="mb-3">
-                    Address: 79, Ground Floor, World Trade Centre, Babar Lane, New Delhi
+                    <b>Address:</b> 79, Ground Floor, World Trade Centre, Babar Lane, New Delhi
                     – 110001, India
                   </p>
                 </div>
@@ -121,103 +94,80 @@ function PrivacyPolicyContent() {
                     Information We Collect
                   </h2>
                   <p className="mb-3">
-                    We collect certain categories of information that are necessary to
-                    operate, provide, secure, enhance, and personalize our Services. The
-                    types of information that may be collected are described below.
+                    We collect information that is required to provide, improve, secure, and personalize our Services. The categories of information we may collect include the following:
                   </p>
-                  <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    Registration and Account Details
-                  </h3>
-                  <p className="mb-3">
-                    We may collect details such as your name, email address, mobile
-                    number, date of birth, residential address, and government-issued
-                    identification details, including Aadhaar and PAN information,
-                    wherever such information is required for verification or regulatory
-                    purposes.
-                  </p>
-                  <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    Financial Information
-                  </h3>
-                  <p className="mb-3">
-                    We may collect financial and loan-related information including bank
-                    account details, income information, employment details, loan
-                    application information, credit-related details, transaction
-                    history, and repayment information.
-                  </p>
-                  <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    Contact and Communication Details
-                  </h3>
-                  <p className="mb-3">
-                    Information voluntarily shared with us while contacting Rupyaa
-                    through email, chat, customer support forms, or any other support
-                    channel may also be collected and processed.
-                  </p>
-                  <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    Other Information Provided by You
-                  </h3>
-                  <p className="mb-3">
-                    We may collect additional information that you voluntarily submit
-                    through surveys, feedback forms, promotional activities, or other
-                    interactions with our Services.
-                  </p>
-                  <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    Device and Usage Information
-                  </h3>
-                  <p className="mb-3">
-                    When you access our Services, certain technical and usage-related
-                    information may be collected automatically. This may include your IP
-                    address, device type, operating system, browser type, mobile network
-                    provider, App version, pages or screens accessed, time spent using
-                    the Services, and associated usage logs.
-                  </p>
-                  <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    Location Information
-                  </h3>
-                  <p className="mb-3">
-                    Subject to your consent, we may collect approximate or limited
-                    location information through GPS, Wi-Fi, IP-based signals, or
-                    similar technologies. Such information may be used for purposes
-                    including determining service availability, supporting loan
-                    eligibility checks, preventing fraud, and assisting with
-                    verification.
-                  </p>
-                  <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    Application Permissions
-                  </h3>
-                  <p className="mb-3">
-                    Our application is designed with user privacy in mind. We do not
-                    access your personal contacts, personal SMS history, or other
-                    information unless such access has been specifically disclosed and
-                    appropriate consent has been obtained.
-                  </p>
-                  <p className="mb-3">
-                    We only rely on limited information collected with user consent or
-                    received from authorized sources for purposes such as identity
-                    verification, credit assessment, fraud prevention, and improving the
-                    customer experience.
-                  </p>
-                  <p className="mb-3">
-                    Where such access applies, information is collected and processed
-                    only for the purposes described in Section 12 of this Privacy Policy
-                    and in accordance with applicable laws, including the Digital
-                    Personal Data Protection Act, 2023.
-                  </p>
-                  <p className="mb-3">
-                    We may receive information from authorized third-party sources,
-                    which may include:
+                  <p className="mb-3 mt-3 sm:mt-4">
+                    <b>a. Information You Provide</b>
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Credit scores, credit reports, and associated credit information
-                      obtained from credit information companies such as CIBIL and
-                      Experian.
+                      <b className="text-gray-900">Registration and Account Information:</b>{' '}
+                      This may include your name, email address, phone number, date of
+                      birth, residential address, and government-issued identification
+                      details such as Aadhaar and PAN for verification purposes.
                     </li>
                     <li>
-                      Information received from authorized lending partners, payment
-                      gateways, mobile network providers, verification service
-                      providers, and other third parties involved in providing or
-                      supporting the Services.
+                      <b className="text-gray-900">Financial Information:</b>{' '}
+                      This may include bank account details, income information,
+                      employment information, loan application data, credit history, and
+                      transaction records.
                     </li>
+                    <li>
+                      <b className="text-gray-900">Contact Information:</b>{' '}
+                      This includes information you choose to provide through email,
+                      chat, customer support forms, or other communication channels.
+                    </li>
+                    <li>
+                      <b className="text-gray-900">Other Submitted Data:</b>{' '}
+                      This may include your responses to surveys, feedback, promotional
+                      activities, or other information voluntarily submitted by you.
+                    </li>
+                  </ul>
+                  <p className="mb-3">
+                    <b>b. Information Collected Automatically</b>
+                  </p>
+                  <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
+                    <li>
+                      <b className="text-gray-900">Device and Usage Data:</b>{' '}
+                      We may collect information such as your IP address, device type,
+                      operating system, browser type, mobile carrier, application
+                      version, and usage logs, including pages visited and time spent
+                      using our Services.
+                    </li>
+                    <li>
+                      <b className="text-gray-900">Location Data:</b>{' '}
+                      With your consent, we may collect approximate location information
+                      through GPS, Wi-Fi, or IP address for purposes such as assessing
+                      loan eligibility, determining serviceability, verification, and
+                      fraud prevention.
+                    </li>
+                    <li>
+                      <b className="text-gray-900">App Permissions:</b>{' '}
+                      Our application is designed to respect your privacy and does not
+                      access contacts, personal SMS history, or installed application
+                      information except where such access is specifically disclosed,
+                      permitted, and consented to as described under Section 12 of this
+                      Privacy Policy.
+                    </li>
+                  </ul>
+
+                  <p className="mb-3">
+                  We rely only on limited, user-consented information obtained through authorized sources to support credit assessment, verification, fraud prevention, and improvement of the customer experience.
+                  </p>
+                  <p className="mb-3">
+                    Where any such access is applicable, it is restricted to the purposes described under Section 12 of this Privacy Policy and handled in accordance with applicable laws, including the Digital Personal Data Protection Act, 2023.
+                  </p>
+                  <p className="mb-3"><b>c. Information from Third Parties</b></p>
+                  <p className="mb-3">
+                    We may receive information from authorized third-party sources, including:
+                  </p>
+                  <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
+                    <li>
+                    Credit scores and credit reports obtained from credit bureaus such as CIBIL and Experian.
+                  </li>
+                    <li>
+                    Information received from partners such as mobile network providers, payment gateways, lending partners, verification providers, and other authorized service providers.
+                  </li>
                   </ul>
                 </section>
 
@@ -229,25 +179,21 @@ function PrivacyPolicyContent() {
                     Lawful Basis of Processing
                   </h2>
                   <p className="mb-3">
-                    We process personal information only where such processing is
-                    permitted under applicable law and may rely on one or more of the
-                    following grounds:
+                  We process your personal information on one or more of the following lawful grounds:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      You have provided explicit consent for the processing.
+                    Your explicit consent.
                     </li>
                     <li>
-                      Processing is required to provide the requested Services or fulfil
-                      contractual obligations.
+                    Contractual necessity.
                     </li>
                     <li>
-                      Processing is necessary to comply with applicable legal or
-                      regulatory requirements.
+                    Compliance with legal obligations.
+
                     </li>
                     <li>
-                      Processing is required for legitimate business purposes, where
-                      such processing is permitted under applicable law.
+                    Legitimate business interests, where permitted under applicable law.
                     </li>
                   </ul>
                 </section>
@@ -260,97 +206,84 @@ function PrivacyPolicyContent() {
                     How We Use Your Information
                   </h2>
                   <p className="mb-3">
-                    Information collected through Rupyaa may be used for legitimate
-                    operational, regulatory, business, and service-related purposes.
+                  We use the information collected from you for legitimate business, operational, regulatory, and service-related purposes, including the following:
                   </p>
+                  <h3 className="font-semibold text-gray-900 mt-4 sm:mt-6 mb-2 sm:mb-3 text-sm sm:text-base">
+                    a. Providing and Managing Services
+                  </h3>
                   <p className="mb-3">
-                    Your information may be used to:
-                  </p>
-                  <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
-                    <li>
-                      Receive, process, and evaluate your loan application.
-                    </li>
-                    <li>
-                      Verify your identity and validate information submitted by you.
-                    </li>
-                    <li>
-                      Assess your creditworthiness and loan eligibility.
-                    </li>
-                    <li>
-                      Facilitate loan approval, sanction, and disbursement through our
-                      lending partners.
-                    </li>
-                    <li>
-                      Manage repayment-related activities, payment reminders, loan
-                      servicing, and collection processes.
-                    </li>
-                    <li>
-                      Provide customer support and address service-related concerns or
-                      requests.
-                    </li>
-                  </ul>
-                  <p className="mb-3">
-                    We may process your information to:
+                    We may use your information for:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Meet applicable legal and regulatory obligations, including KYC,
-                      AML, digital lending, and RBI-related requirements.
+                      Processing loan applications.
                     </li>
                     <li>
-                      Detect, investigate, prevent, and manage fraud, money laundering,
-                      suspicious transactions, security risks, misuse, or unauthorized
-                      use of our Services.
+                      Verifying your identity.
+                    </li>
+                    <li>
+                      Assessing your creditworthiness.
+                    </li>
+                    <li>
+                      Facilitating disbursement of funds through the applicable Lending Partner.
+                    </li>
+                    <li>
+                      Managing repayments.
+                    </li>
+                    <li>
+                      Sending repayment reminders.
+                    </li>
+                    <li>
+                      Supporting collection-related activities.
                     </li>
                   </ul>
+                  <h3 className="font-semibold text-gray-900 mt-4 sm:mt-6 mb-2 sm:mb-3 text-sm sm:text-base">
+                    b. Compliance and Risk Management
+                  </h3>
                   <p className="mb-3">
-                    Your information may also be used to:
+                    Your information may be processed for:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Understand the manner in which users interact with our Services.
+                      Complying with legal and regulatory requirements, including KYC, AML, and RBI requirements.
                     </li>
                     <li>
-                      Improve the functionality, reliability, performance, customer
-                      experience, and features of our App and Services.
-                    </li>
-                    <li>
-                      Provide personalized loan offers, educational information, or
-                      promotional communications, subject to applicable consent
-                      requirements and available opt-out choices.
+                      Detecting and preventing fraud, money laundering, suspicious activities, misuse, or security risks.
                     </li>
                   </ul>
+                  <h3 className="font-semibold text-gray-900 mt-4 sm:mt-6 mb-2 sm:mb-3 text-sm sm:text-base">
+                    c. Improving and Personalizing Services
+                  </h3>
                   <p className="mb-3">
-                    We may contact you regarding:
+                    We may use information for:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Updates relating to your account.
+                      Analysing usage patterns to improve the App and our Services.
                     </li>
                     <li>
-                      Your loan application, servicing, or repayment.
+                      Providing personalized loan offers, promotions, or educational content, subject to applicable consent requirements and opt-out options.
+                    </li>
+                  </ul>
+                  <h3 className="font-semibold text-gray-900 mt-4 sm:mt-6 mb-2 sm:mb-3 text-sm sm:text-base">
+                    d. Communication
+                  </h3>
+                  <p className="mb-3">
+                    We may use your information for:
+                  </p>
+                  <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
+                    <li>
+                      Notifying you about account updates, policy changes, or service-related matters.
                     </li>
                     <li>
-                      Changes to our Services or policies.
-                    </li>
-                    <li>
-                      Security, operational, or service-related notifications.
-                    </li>
-                    <li>
-                      Responses to customer support requests, grievances, or other
-                      inquiries.
+                      Responding to inquiries, complaints, or customer support requests.
                     </li>
                   </ul>
                   <p className="mb-3">
-                    Depending on the circumstances, information may be processed on the
-                    basis of your consent, contractual requirements, legal obligations,
-                    or legitimate interests permitted by applicable law.
+                    We process information based on your consent, contractual requirements, legal obligations, or legitimate interests, as applicable.
                   </p>
                   <p className="mb-3">
-                    We may also process aggregated, statistical, or anonymized
-                    information for analytics, research, service improvement, and other
-                    legitimate purposes, provided such information cannot reasonably
-                    identify you personally.
+                    Aggregated or anonymized information may also be used for research, analytics, or statistical purposes, provided such information does not identify an individual.
                   </p>
                 </section>
 
@@ -365,91 +298,86 @@ function PrivacyPolicyContent() {
                     We do not sell your personal information.
                   </p>
                   <p className="mb-3">
-                    However, personal information may be shared where necessary to
-                    provide our Services, meet legal or regulatory requirements, or
-                    support legitimate business and operational activities.
+                    We may share your information only where necessary for providing the Services, complying with
+                    applicable requirements, or supporting legitimate operational purposes.
                   </p>
+                  <h3 className="font-semibold text-gray-900 mt-4 sm:mt-6 mb-2 sm:mb-3 text-sm sm:text-base">
+                    a. With Service Providers
+                  </h3>
                   <p className="mb-3">
-                    We may share relevant information with third-party service providers
-                    that support functions such as:
+                    We may share information with third-party service providers that assist us with:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
                       Payment processing.
                     </li>
                     <li>
-                      Credit bureau checks.
+                      Credit checks.
                     </li>
                     <li>
-                      Identity and KYC verification.
+                    Data storage.
                     </li>
                     <li>
-                      Data hosting and storage.
+                    Analytics.
                     </li>
                     <li>
-                      Analytics.
+                    Cloud infrastructure.
                     </li>
                     <li>
-                      Technology infrastructure and related services.
+                    Verification.
                     </li>
                     <li>
-                      Fraud detection, security, and risk management.
+                    Technology services.
                     </li>
                   </ul>
                   <p className="mb-3">
-                    Such service providers are expected to process information in
-                    accordance with applicable confidentiality, data protection, and
-                    information-security requirements.
+                    Such service providers are expected to handle information subject to appropriate confidentiality
+                    and data protection requirements.
                   </p>
+                  <h3 className="font-semibold text-gray-900 mt-4 sm:mt-6 mb-2 sm:mb-3 text-sm sm:text-base">
+                    b. With Affiliates and Partners
+                  </h3>
                   <p className="mb-3">
-                    Where required for legitimate operational purposes, information may
-                    be shared:
+                    Information may be shared:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Within the Rupyaa group.
+                      Within the <strong>Rupyaa group</strong> for legitimate operational purposes.
                     </li>
                     <li>
-                      With NBFCs, lending partners, financial institutions, and other
-                      authorized entities involved in facilitating, processing, or
-                      servicing your loan.
+                      With Lending Partners or financial institutions involved in facilitating loan-related services.
                     </li>
                   </ul>
+                  <h3 className="font-semibold text-gray-900 mt-4 sm:mt-6 mb-2 sm:mb-3 text-sm sm:text-base">
+                    c. For Legal Reasons
+                  </h3>
                   <p className="mb-3">
-                    We may disclose your information where such disclosure is reasonably
-                    necessary:
+                    We may disclose information where required:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      To comply with applicable laws, regulations, legal proceedings,
-                      court orders, or regulatory requirements.
+                      To comply with applicable laws, court orders, regulatory requirements, or lawful
+                      requests, including reporting requirements involving the RBI or credit bureaus.
                     </li>
                     <li>
-                      To respond to lawful requests from regulatory authorities, law
-                      enforcement agencies, credit bureaus, or government authorities.
-                    </li>
-                    <li>
-                      To protect our rights, users, employees, partners, property, or
-                      Services where fraud, unlawful activity, security threats, or
-                      disputes are suspected.
+                      To protect our rights, property, users, employees, partners, or others in situations
+                      involving fraud, disputes, unlawful activity, or security concerns.
                     </li>
                   </ul>
+                  <h3 className="font-semibold text-gray-900 mt-4 sm:mt-6 mb-2 sm:mb-3 text-sm sm:text-base">
+                    d. Business Transfers
+                  </h3>
                   <p className="mb-3">
-                    If Rupyaa or Uptime Innovation Private Limited undergoes a merger,
-                    acquisition, restructuring, financing arrangement, sale of assets,
-                    or another similar corporate transaction, relevant user information
-                    may be transferred as part of that transaction, subject to
-                    applicable legal requirements.
+                    In the event of a merger, acquisition, restructuring, or sale of assets, relevant personal
+                    information may be transferred as part of the applicable business transaction.
                   </p>
                   <p className="mb-3">
-                    All sharing of personal information is subject to appropriate
-                    confidentiality, contractual, security, and data-protection
-                    safeguards.
+                    All sharing of personal information is governed by appropriate contractual safeguards intended
+                    to ensure suitable data protection standards.
                   </p>
                   <p className="mb-3">
-                    We do not share personally identifiable information with third
-                    parties for their independent marketing activities without your
-                    consent.
+                    We do not share personally identifiable information for third-party marketing purposes without
+                    your consent.
                   </p>
                 </section>
 
@@ -461,30 +389,28 @@ function PrivacyPolicyContent() {
                     Automated Decision-Making
                   </h2>
                   <p className="mb-3">
-                    Technology, algorithms, or automated systems may be used to assist
-                    with certain processes, including:
+                    We may use automated systems, technologies, and algorithms to assist with:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Evaluation of creditworthiness.
+                      Assessing creditworthiness.
                     </li>
                     <li>
-                      Assessment of loan eligibility.
+                      Determining loan eligibility.
                     </li>
                     <li>
-                      Determination of applicable loan limits.
+                      Determining applicable loan limits.
                     </li>
                   </ul>
                   <p className="mb-3">
-                    Where applicable and subject to applicable laws and lender policies,
-                    you may request:
+                    Where applicable, you may have the right to:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      A human review of an automated decision.
+                      Request human review of an automated decision.
                     </li>
                     <li>
-                      Clarification regarding the basis or result of such a decision.
+                      Seek clarification regarding the outcome of such a decision.
                     </li>
                   </ul>
                 </section>
@@ -497,48 +423,39 @@ function PrivacyPolicyContent() {
                     Data Security
                   </h2>
                   <p className="mb-3">
-                    We implement reasonable administrative, technical, organizational,
-                    and physical safeguards designed to protect personal information
-                    against unauthorized access, disclosure, alteration, misuse, loss,
-                    or destruction.
+                    We prioritize the security of your personal information and implement reasonable administrative,
+                    technical, and physical safeguards designed to protect your data.
                   </p>
                   <p className="mb-3">
-                    Our security controls may include:
+                    These measures may include:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      SSL/TLS encryption for information transmitted through our
-                      Services.
+                      Encryption of data during transmission using SSL/TLS and encryption of stored
+                      information.
                     </li>
                     <li>
-                      Encryption and other safeguards for information stored within our
-                      systems.
-                    </li>
-                    <li>
-                      Authentication and access-control mechanisms.
-                    </li>
-                    <li>
-                      Network security controls and firewalls.
-                    </li>
-                    <li>
-                      Periodic security reviews, assessments, and audits.
+                      Access controls, firewalls, and regular security audits.
                     </li>
                     <li>
                       Compliance with ISO 2700, ISO 17802 standards and applicable RBI
-                      requirements.
+                      guidelines.
                     </li>
                   </ul>
                   <p className="mt-4">
-                    However, no system is completely secure. You are responsible
-                    for keeping your login credentials confidential. We limit
-                    data retention to what&apos;s necessary (e.g., 7 years for
-                    loan records per RBI rules) and securely delete or anonymize
-                    it afterward.
+                  However, no electronic system or method of data transmission can be guaranteed to be completely secure.
                   </p>
                   <p className="mt-3">
-                    Data may be processed or stored within India or in secure
-                    jurisdictions permitted under applicable Indian laws.
+                  You are responsible for maintaining the confidentiality of your account credentials and authentication information.
                   </p>
+                  <p className="mt-3">
+                  We retain personal information only for as long as it is necessary for the purpose for which it was collected or as required under applicable legal and regulatory requirements.
+ </p>
+ <p className="mt-3">
+ For example, certain loan-related records may need to be retained for up to 7 years in accordance with applicable RBI requirements.
+ </p>
+ <p className="mt-3">After the applicable retention period, information may be securely deleted or anonymized.</p>
+ <p className="mt-3">Personal information may be processed or stored within India or in other secure jurisdictions permitted under applicable Indian laws. </p>
                 </section>
 
                 <section className="pt-4 sm:pt-6 border-t border-gray-100">
@@ -548,42 +465,51 @@ function PrivacyPolicyContent() {
                     </span>
                     Your Rights and Choices
                   </h2>
-                  <p className="mb-4">
-                    You have rights over your personal information:
+                  <p className="mb-3">
+                    You may have certain rights regarding your personal information.
                   </p>
-                  <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
-                    <li>
-                      <strong className="text-gray-800">
-                        Access and Correction:
-                      </strong>{" "}
-                      Request a copy of your data or correct inaccuracies by
-                      contacting us.
-                    </li>
-                    <li>
-                      <strong className="text-gray-800">Deletion:</strong>{" "}
-                      Request deletion of your data (subject to legal retention
-                      requirements).
-                    </li>
-                    <li>
-                      <strong className="text-gray-800">Opt-Out:</strong>{" "}
-                      Unsubscribe from marketing emails or withdraw consents
-                      (e.g., location access) via App settings.
-                    </li>
-                    <li>
-                      <strong className="text-gray-800">Portability:</strong>{" "}
-                      Receive your data in a structured format.
-                    </li>
-                    <li>
-                      <strong className="text-gray-800">Complaints:</strong>{" "}
-                      Lodge concerns with us or data protection authorities
-                      (e.g., under DPDPA).
-                    </li>
-                  </ul>
-                  <p className="mt-4">
-                    To exercise rights, email to care@rupyaa.com. We respond
-                    within 30 days.
+                  <h3 className="font-semibold text-gray-900 mt-4 sm:mt-6 mb-2 sm:mb-3 text-sm sm:text-base">
+                    Access and Correction
+                  </h3>
+                  <p className="mb-3">
+                    You may request access to your personal information or ask us to correct inaccurate or incomplete information.
                   </p>
-                  <p className="mt-3">For cookies, see Section 8.</p>
+                  <h3 className="font-semibold text-gray-900 mt-4 sm:mt-6 mb-2 sm:mb-3 text-sm sm:text-base">
+                    Deletion
+                  </h3>
+                  <p className="mb-3">
+                    You may request deletion of your information, subject to applicable legal, regulatory, contractual, and retention requirements.
+                  </p>
+                  <h3 className="font-semibold text-gray-900 mt-4 sm:mt-6 mb-2 sm:mb-3 text-sm sm:text-base">
+                    Opt-Out and Withdrawal of Consent
+                  </h3>
+                  <p className="mb-3">
+                    You may unsubscribe from eligible marketing communications or withdraw applicable consent, including permissions such as location access, through the App or your device settings.
+                  </p>
+                  <h3 className="font-semibold text-gray-900 mt-4 sm:mt-6 mb-2 sm:mb-3 text-sm sm:text-base">
+                    Portability
+                  </h3>
+                  <p className="mb-3">
+                    Where applicable, you may request to receive your information in a structured format.
+                  </p>
+                  <h3 className="font-semibold text-gray-900 mt-4 sm:mt-6 mb-2 sm:mb-3 text-sm sm:text-base">
+                    Complaints
+                  </h3>
+                  <p className="mb-3">
+                    You may raise concerns or complaints with us or with the applicable data protection authority in accordance with relevant laws, including the Digital Personal Data Protection Act, 2023.
+                  </p>
+                  <p className="mb-3">
+                    To exercise your applicable rights, please contact us at:
+                  </p>
+                  <p className="mb-3">
+                    <strong><a href="mailto:care@rupyaa.com">care@rupyaa.com</a></strong>
+                  </p>
+                  <p className="mb-3">
+                    We aim to respond to valid requests within <strong>30 days</strong>, subject to applicable requirements.
+                  </p>
+                  <p className="mb-3">
+                    For information regarding cookies, please refer to <strong>Section 8</strong>.
+                  </p>
                 </section>
 
                 <section className="pt-4 sm:pt-6 border-t border-gray-100">
@@ -593,20 +519,22 @@ function PrivacyPolicyContent() {
                     </span>
                     Cookies and Tracking Technologies
                   </h2>
-                  <p className="mb-4">
-                    We use cookies, pixels, and similar tools to:
+                  <p className="mb-3">
+                    We may use cookies, pixels, device identifiers, and similar technologies to:
                   </p>
-                  <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
-                    <li>
-                      Enhance functionality (e.g., remembering preferences).
-                    </li>
-                    <li>Analyze usage and improve Services.</li>
-                    <li>Deliver targeted ads.</li>
+                  <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
+                    <li>Improve functionality, including remembering user preferences.</li>
+                    <li>Analyse usage patterns and improve our Services.</li>
+                    <li>Deliver targeted advertising, where legally permitted and subject to applicable consent requirements.</li>
                   </ul>
-                  <p className="mt-4">
-                    You can manage cookies via browser settings. Our App uses
-                    similar device identifiers. For details, review our Cookie
-                    Policy (linked in the App).
+                  <p className="mb-3">
+                    You can manage or disable cookies through your browser settings.
+                  </p>
+                  <p className="mb-3">
+                    Our mobile application may use similar device identifiers and technologies for functionality, security, analytics, and performance.
+                  </p>
+                  <p className="mb-3">
+                    For additional information, please review our Cookie Policy available through the App.
                   </p>
                 </section>
 
@@ -617,10 +545,14 @@ function PrivacyPolicyContent() {
                     </span>
                     Children&apos;s Privacy
                   </h2>
-                  <p>
-                    Our Services are not directed at individuals under 18. We do
-                    not knowingly collect data from children. If we discover
-                    such data, we will delete it promptly.
+                  <p className="mb-3">
+                    Our Services are intended only for individuals who are <strong>18 years of age or older</strong>.
+                  </p>
+                  <p className="mb-3">
+                    We do not knowingly collect personal information belonging to children below the age of 18.
+                  </p>
+                  <p className="mb-3">
+                    If we become aware that such information has been collected, we will take reasonable steps to delete it promptly in accordance with applicable law.
                   </p>
                 </section>
 
@@ -632,32 +564,22 @@ function PrivacyPolicyContent() {
                     Changes to This Privacy Policy
                   </h2>
                   <p className="mb-3">
-                    We have the right to revise or modify this Privacy Policy at
-                    any time to reflect changes in legal requirements,
-                    regulatory guidelines, technology, or our operational
-                    practices.
+                    We reserve the right to revise, amend, or modify this Privacy Policy from time to time to reflect
+                    changes in legal requirements, regulatory guidelines, technology, business practices, or our
+                    operational processes.
                   </p>
                   <p className="mb-3">
-                    The latest version of this Privacy Policy will always be
-                    available on our Website, Mobile Application, or other
-                    official digital platforms. The Company will notify
-                    customers of any material changes to this section through
-                    email communication.
+                    The latest version of this Privacy Policy will always be made available through our Website,
+                    Mobile Application, or other official digital platforms.
                   </p>
                   <p className="mb-3">
-                    Your continued use of Rupyaa services after the updated
-                    Privacy Policy becomes effective will constitute your
-                    acceptance of the revised terms. If you do not agree with
-                    the updated policy, you should discontinue use of our
-                    services and may reach out to us for further clarification.
+                    Where any material changes are made to this Privacy Policy, the Company may notify customers through email communication or another appropriate communication channel.
+                  </p>
+                  <p className="mb-3">
+                    Your continued use of Rupyaa Services after an updated Privacy Policy becomes effective will constitute your acceptance of the revised terms. If you do not agree with the updated Privacy Policy, you should discontinue use of our Services and may contact us for further clarification.
                   </p>
                   <p>
-                    You are responsible for ensuring that the Personal
-                    Information and Sensitive Personal Data you provide to
-                    Rupyaa remains accurate and current. Please inform us
-                    promptly of any updates or corrections to your information
-                    so that we can maintain accurate records and provide our
-                    services effectively.
+                    You are responsible for ensuring that the Personal Information and Sensitive Personal Data you provide to Rupyaa remains accurate, complete, and current. Please inform us promptly if any information changes or requires correction so that we can maintain accurate records and provide our Services effectively.
                   </p>
                 </section>
 
@@ -677,81 +599,78 @@ function PrivacyPolicyContent() {
                     Important Condition Before Deletion
                   </h3>
                   <p className="mb-3">
-                    Before submitting a deletion request, please ensure that:
+                    Before submitting an account deletion request, please ensure that:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
                       All loans taken through Rupyaa have been fully repaid.
                     </li>
                     <li>
-                      There are no outstanding dues, EMIs, penalties, or
-                      charges.
-                    </li>
+                    There are no outstanding dues, EMIs, penalties, fees, or charges.
+                  </li>
                     <li>
-                      There are no ongoing disputes or investigations linked to
-                      your account.
-                    </li>
+                    There are no ongoing disputes or investigations associated with your account.
+                  </li>
                   </ul>
                   <p className="mb-4">
-                    Account deletion requests cannot be processed if any
-                    financial obligation remains pending.
+                    Account deletion requests cannot be processed where any financial obligation remains outstanding.
                   </p>
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
                     How to Request Account Deletion
                   </h3>
                   <p className="mb-3">
-                    You can request deletion of your Rupyaa account through the
-                    following method:
+                    You may request deletion of your Rupyaa account through the following method:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      <strong className="text-gray-800">Email Request:</strong>{" "}
-                      Send a deletion request from your registered email ID to:
-                      care@rupyaa.com - Subject line: Account Deletion Request
-                    </li>
+                    Email Request: Send an account deletion request from your registered email address to <a href="mailto:care@rupyaa.com">care@rupyaa.com</a>. Subject Line: Account Deletion Request.
+                  </li>
                   </ul>
                   <p className="mt-4">
-                    For security purposes, we may verify your identity before
-                    processing the request.
+                    For security and fraud-prevention purposes, we may verify your identity before processing the request.
                   </p>
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
                     What Happens After Deletion
                   </h3>
                   <p className="mb-3">
-                    Once your request is verified and approved:
+                    Once your account deletion request has been successfully verified and approved:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
                       Your Rupyaa account will be permanently deactivated.
                     </li>
-                    <li>You will no longer be able to log in to the app.</li>
                     <li>
-                      Your personal profile data will be deleted or anonymized.
-                    </li>
+                    You will no longer be able to log in to the App using that account.
+                  </li>
+                    <li>
+                    Your eligible personal profile information will be deleted or anonymized.
+                  </li>
                   </ul>
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
                     Data That May Be Retained
                   </h3>
                   <p className="mb-3">
-                    Certain information may be retained even after account
-                    deletion if required under applicable laws, including:
+                    Certain information may continue to be retained after account deletion where required under applicable laws and regulatory requirements. This may include:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
-                    <li>Financial transaction records</li>
-                    <li>Loan agreements and repayment history</li>
-                    <li>KYC records</li>
                     <li>
-                      Data required under RBI regulations, tax laws, audit, or
-                      fraud prevention requirements
-                    </li>
+                    Financial transaction records.
+                  </li>
+                    <li>
+                    Loan agreements and repayment history.
+                  </li>
+                    <li>
+                    KYC records.
+                  </li>
+                    <li>
+                    Information required under RBI regulations, tax laws, audit requirements, or fraud-prevention obligations.
+                  </li>
                   </ul>
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
                     Processing Time
                   </h3>
                   <p>
-                    Deletion requests are typically processed within a
-                    reasonable timeframe after successful verification and
-                    subject to regulatory checks.
+                    Account deletion requests are generally processed within a reasonable period following successful verification and completion of applicable regulatory checks.
                   </p>
                 </section>
 
@@ -763,186 +682,158 @@ function PrivacyPolicyContent() {
                     App Permissions and Data Collection
                   </h2>
                   <p className="mb-4">
-                    Our mobile application requires certain permissions to
-                    function effectively and provide you with our services.
-                    Below are the specific permissions we request and how the
-                    collected data is used:
+                  Our mobile application may request certain permissions that are required to function effectively and provide our Services.
+                  </p>
+                  <p className="mb-4">The specific permissions requested, the information associated with those permissions, and the purposes for which the information is used are described below.
                   </p>
                   <p className="mb-4">
-                    The key data collected from each permission granted in the
-                    device and how this data is used is further detailed below:
+                    The key data collected from each permission granted on your device and how such information may be used is further explained below.
                   </p>
 
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    SMS Permissions
+                    <b>SMS Permissions</b>
                   </h3>
                   <p className="mb-3">
-                    Our application does not access, read, or store personal SMS
-                    content on your device. We do not collect or process OTP
-                    messages, personal communications, or any sensitive message
-                    content under any circumstances.
+                    Our application does not access, read, or store personal SMS content on your device. We do not collect or process OTP messages, personal communications, or sensitive personal message content.
                   </p>
                   <p className="mb-3">
-                    With your explicit and informed consent, we may access
-                    limited and anonymized metadata related to transactional SMS
-                    (such as sender category, timestamps, and message type
-                    classification) solely for the purpose of:
+                    With your explicit and informed consent, we may access limited and anonymized metadata relating to transactional SMS, such as sender category, timestamps, and message-type classification, solely for the purpose of:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Verifying financial transactions and income patterns
-                    </li>
-                    <li>Enhancing creditworthiness assessment</li>
-                    <li>Detecting and preventing fraud</li>
+                    Verifying financial transactions and income patterns.
+                  </li>
+                    <li>
+                    Enhancing creditworthiness assessment.
+                  </li>
+                    <li>
+                    Detecting and preventing fraud.
+                  </li>
                   </ul>
                   <p className="mb-3">
-                    At no point is full SMS content collected, stored, or
-                    shared. All data processing is carried out in a
-                    privacy-preserving manner, using secure systems and strict
-                    access controls.
+                  At no point is the complete content of SMS messages collected, stored, or shared.
+                  </p>
+                  <p className="mb-3">
+                  All processing is carried out using secure systems, appropriate safeguards, and restricted access controls.
                   </p>
                   <p className="mb-4">
-                    Any information, if required to be shared, is done strictly
-                    on a need-to-know basis with regulated partner NBFCs and
-                    authorized service providers, in compliance with applicable
-                    laws and only for the stated purposes.
+                  Where any information is required to be shared, such sharing is done strictly on a need-to-know basis with regulated partner NBFCs and authorized service providers, in accordance with applicable laws and only for the stated purposes.
                   </p>
 
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    Installed Apps Permissions
+                    <b>Installed Apps Permissions</b>
                   </h3>
                   <p className="mb-3">
-                    With your explicit, informed, and revocable consent, our
-                    application may collect limited and non-personal metadata
-                    about installed and system applications on your device.
+                    With your explicit, informed, and revocable consent, our application may collect limited and non-personal metadata relating to installed applications and system applications present on your device.
                   </p>
                   <p className="mb-3">
-                    This information is processed in a privacy-preserving manner
-                    through our trusted technology partner, Credeau (
-                    <a
-                      href="https://www.credeau.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary font-medium hover:underline"
-                    >
-                      www.credeau.com
-                    </a>
-                    ), solely for providing regulated financial services in
-                    association with our Partner NBFCs.
+                    This information may be processed in a privacy-preserving manner through our trusted technology partner, Credeau (<a href="https://www.credeau.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">www.credeau.com</a>), solely for supporting regulated financial services provided in association with our Partner NBFCs.
                   </p>
-                  <p className="mb-2">This data is used strictly for:</p>
+                  <p className="mb-2">
+                    This information is used strictly for:
+                  </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Detecting potential fraud risks (such as presence of
-                      high-risk or potentially harmful applications)
-                    </li>
+                    Detecting potential fraud risks, including the presence of high-risk or potentially harmful applications.
+                  </li>
                     <li>
-                      Supporting identity verification and responsible credit
-                      risk assessment
-                    </li>
+                    Supporting identity verification and responsible credit-risk assessment.
+                  </li>
                     <li>
-                      Enabling faster loan approvals and appropriate credit
-                      limits
-                    </li>
+                    Enabling faster loan approvals and appropriate credit limits.
+                  </li>
                   </ul>
                   <p className="mb-2 font-medium text-gray-800">
-                    Important safeguards:
+                    Important Safeguards
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-4">
                     <li>
-                      Only minimal metadata (such as application name, category,
-                      and install/update indicators) is collected; intrusive or
-                      excessive data points are not accessed.
-                    </li>
+                    Only minimal metadata, such as application name, category, and installation or update indicators, is collected. Intrusive or excessive data points are not accessed.
+                  </li>
                     <li>
-                      No personal data, app usage behavior, messages, or content
-                      from other applications is accessed or processed.
-                    </li>
+                    Personal information, application usage behaviour, messages, or content stored within other applications is not accessed or processed.
+                  </li>
                     <li>
-                      Data is not used for advertising, profiling, or marketing
-                      purposes.
-                    </li>
+                    This information is not used for advertising, unrelated profiling, or marketing purposes.
+                  </li>
                     <li>
-                      Processing is carried out in accordance with the
-                      principles of data minimization and purpose limitation
-                      under the Digital Personal Data Protection Act, 2023 and
-                      applicable regulatory guidelines.
-                    </li>
+                    Processing is carried out in accordance with data-minimization and purpose-limitation principles under the Digital Personal Data Protection Act, 2023 and applicable regulatory requirements.
+                  </li>
                   </ul>
 
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    Location Permissions
+                    <b>Location Permissions</b>
                   </h3>
                   <p className="mb-3">
-                    With your explicit consent, our application may request
-                    limited, one-time access to your device location.
+                    With your explicit consent, our application may request limited and one-time access to your device location.
                   </p>
-                  <p className="mb-3">This access is used strictly for:</p>
+                  <p className="mb-3">
+                    Location access is used strictly for:
+                  </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
-                    <li>Determining serviceability of your loan application</li>
-                    <li>Supporting risk checks and fraud prevention</li>
-                    <li>Enabling customized or pre-qualified loan offerings</li>
                     <li>
-                      Facilitating address verification and KYC compliance
-                    </li>
+                    Determining serviceability of your loan application.
+                  </li>
+                    <li>
+                    Supporting risk checks and fraud prevention.
+                  </li>
+                    <li>
+                    Enabling customized or pre-qualified loan offerings.
+                  </li>
+                    <li>
+                    Facilitating address verification and KYC compliance.
+                  </li>
                   </ul>
                   <p className="mb-4">
-                    We do not track your location continuously or in the
-                    background. Location data is collected only at the time of
-                    requirement, retained for the minimum necessary duration,
-                    and processed strictly for the stated purposes in compliance
-                    with the Digital Personal Data Protection Act, 2023.
+                  We do not continuously monitor or track your location in the background.
+
+                  </p>
+                  <p className="mb-4">
+                  Location information is collected only when required, retained for the minimum period necessary, and processed strictly for the purposes stated above in accordance with the Digital Personal Data Protection Act, 2023.
+
                   </p>
 
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
-                    Device Permissions
+                    <b>Device Permissions</b>
                   </h3>
                   <p className="mb-3">
-                    With your consent, our application may collect limited,
-                    non-sensitive device information to enhance platform
-                    security and prevent fraud.
+                    With your consent, our application may collect limited and non-sensitive technical information about your device to improve platform security and assist with fraud prevention.
                   </p>
                   <p className="mb-3">This may include:</p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
-                    <li>Device model</li>
-                    <li>Operating system version</li>
                     <li>
-                      Basic device configuration (such as RAM/storage ranges)
+                    Device model.
+                  </li>
+                    <li>
+                    Operating system version.
+                  </li>
+                    <li>
+                    Basic device configuration, including approximate RAM or storage ranges.
                     </li>
                   </ul>
                   <p className="mb-4">
-                    We do not collect or store persistent or uniquely
-                    identifiable device identifiers (such as IMEI, serial
-                    number, or MAC address). All processing follows
-                    privacy-by-design principles and applicable legal
-                    requirements.
+                  We do not collect or retain persistent or uniquely identifiable device identifiers such as IMEI numbers, device serial numbers, or MAC addresses.
+                  </p>
+                  <p className="mb-4">
+                  All such processing is carried out in accordance with privacy-by-design principles and applicable legal requirements.
                   </p>
 
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
                     Phone State Permissions
                   </h3>
                   <p className="mb-3">
-                    Our application may request Phone State permission only with
-                    your explicit consent and strictly for limited verification
-                    purposes, including:
+                    Our application may request Phone State permission only with your explicit consent and solely for limited verification purposes, including:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Verifying that the device has an active SIM and valid
-                      network connection at the time of onboarding and
-                      disbursement
-                    </li>
+                    Confirming that the device has an active SIM and valid network connection during onboarding and disbursement.
+                  </li>
                     <li>
-                      Ensuring the transaction is carried out by the rightful
-                      customer and preventing spoofing/fraud
-                    </li>
+                    Helping ensure that transactions are carried out by the legitimate customer and preventing spoofing or fraudulent activity.
+                  </li>
                   </ul>
                   <p className="mb-4">
-                    We do not access or collect call logs, contacts, or
-                    communication data. Any permissions requested are strictly
-                    limited to what is necessary for the stated purpose and are
-                    obtained and used in compliance with applicable laws and
-                    regulatory standards.
+                    We do not access or collect your call logs, contacts, or private communication data through this permission. Any permission requested is strictly limited to what is necessary for the stated purpose and is obtained and used in accordance with applicable laws and regulatory standards.
                   </p>
 
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
@@ -950,66 +841,61 @@ function PrivacyPolicyContent() {
                   </h3>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      <strong className="text-gray-800">
-                        Purpose of access:
-                      </strong>{" "}
-                      Camera access is required solely to facilitate digital KYC
-                      (eKYC) and document capture.
-                    </li>
+                    Purpose of Access: Camera access is required solely to facilitate digital KYC (eKYC) and document capture.
+                  </li>
                     <li>
-                      <strong className="text-gray-800">Usage:</strong> The
-                      captured information is used only for identity
-                      verification and regulatory compliance.
-                    </li>
+                    Usage: Information captured through the camera is used only for identity verification and regulatory compliance.
+                  </li>
                   </ul>
                   <p className="mb-2 font-medium text-gray-800">
-                    We ensure that:
+                    We Ensure That:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Data captured is limited to what is necessary for KYC
-                      compliance
-                    </li>
+                    Information captured is limited to what is required for KYC compliance.
+                  </li>
                     <li>
-                      No unrelated images or videos are accessed or stored
-                    </li>
+                    Unrelated images or videos stored on your device are not accessed or stored.
+                  </li>
                     <li>
-                      We do not collect or process biometric identifiers, except
-                      where explicitly required under applicable law and with
-                      consent
-                    </li>
+                    We do not collect or process biometric identifiers except where specifically required under applicable law and with appropriate consent.
+                  </li>
                   </ul>
 
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
                     Data Storage and Consent Framework
                   </h3>
-                  <p className="mb-2">All data collected is:</p>
+                  <p className="mb-2">
+                    All information collected through our Services is:
+                  </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
-                    <li>Stored securely on servers located within India</li>
                     <li>
-                      Processed strictly for lawful purposes related to lending
-                      services
-                    </li>
+                    Stored securely on servers located within India.
+                  </li>
                     <li>
-                      Retained only for the duration necessary to fulfill
-                      regulatory and business requirements
-                    </li>
+                    Processed strictly for lawful purposes relating to lending services.
+                  </li>
+                    <li>
+                    Retained only for the period required to meet applicable regulatory and business requirements.
+                  </li>
                   </ul>
                   <p className="mb-2">We follow the principles of:</p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
-                    <li>Lawful processing and transparency</li>
-                    <li>Purpose limitation and data minimization</li>
-                    <li>Storage limitation and security safeguards</li>
+                    <li>
+                    Lawful processing and transparency.
+                  </li>
+                    <li>
+                    Purpose limitation and data minimization.
+                  </li>
+                    <li>
+                    Storage limitation and appropriate security safeguards.
+                  </li>
                   </ul>
                   <p className="mb-3">
-                    In full compliance with the Digital Personal Data Protection
-                    Act, 2023 and applicable regulatory guidelines.
+                    Our data-handling practices are intended to comply with the Digital Personal Data Protection Act, 2023 and applicable regulatory requirements.
                   </p>
                   <p>
-                    We also provide clear, just-in-time consent notices before
-                    requesting any sensitive permission (such as location or
-                    device data), ensuring that you remain in control of your
-                    personal data at all times.
+                    We also provide clear, just-in-time consent notices before requesting access to sensitive permissions, including location or device information, to help ensure that you remain informed and in control of your personal information.
                   </p>
                 </section>
 
@@ -1020,13 +906,19 @@ function PrivacyPolicyContent() {
                     </span>
                     Fair Practices &amp; Recovery Conduct
                   </h2>
-                  <p className="mb-3">We are committed to ethical practices:</p>
+                  <p className="mb-3">
+                    We are committed to following ethical and responsible recovery practices. Accordingly:
+                  </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
-                    <li>No harassment or abusive recovery methods</li>
-                    <li>No misuse of contact data for recovery pressure</li>
                     <li>
-                      All recovery practices comply with RBI Fair Practices Code
-                    </li>
+                    We do not permit harassment or abusive recovery practices.
+                  </li>
+                    <li>
+                    Customer contact information must not be misused to create improper recovery pressure.
+                  </li>
+                    <li>
+                    Recovery activities must comply with applicable RBI Fair Practices Code requirements.
+                  </li>
                   </ul>
                 </section>
 
@@ -1039,23 +931,15 @@ function PrivacyPolicyContent() {
                   </h2>
 
                   <p className="mb-4">
-                    For questions, concerns, or requests, contact:
+                    For any questions, concerns, complaints, or requests relating to this Privacy Policy or your personal information, please contact:
                   </p>
                   <div className="rounded-lg sm:rounded-xl bg-gray-50 border border-gray-100 p-3 sm:p-4 space-y-1.5 sm:space-y-2">
                     <p className="text-sm sm:text-base break-words">
-                      <strong className="text-gray-800">
-                        Data Protection Officer:
-                      </strong>{" "}
-                    </p>
+                    Data Protection Officer
+                  </p>
                     <p className="text-sm sm:text-base">
-                      <strong className="text-gray-800">Email:</strong>{" "}
-                      <a
-                        href="mailto:grievance@rupyaa.in"
-                        className="break-all"
-                      >
-                        grievance@rupyaa.in
-                      </a>
-                    </p>
+                    Email: <a href="mailto:grievance@rupyaa.com">grievance@rupyaa.com</a>
+                  </p>
                     <p className="text-sm sm:text-base">
                       <strong className="text-gray-800">
                         Grievance Number:
@@ -1065,13 +949,11 @@ function PrivacyPolicyContent() {
                       </a>
                     </p>
                     <p className="text-sm sm:text-base break-words">
-                      <strong className="text-gray-800">Address:</strong> 
-                      79, Ground Floor, World Trade Centre, Babar Lane, New Delhi - 110001, India
-                    </p>
+                    Address: 79, Ground Floor, World Trade Centre, Babar Lane, New Delhi – 110001, India
+                  </p>
                   </div>
                   <p className="mt-6">
-                    Thank you for trusting Rupyaa with your financial journey.
-                    We value your privacy as much as you do.
+                    Thank you for trusting Rupyaa with your financial journey. We value your privacy and remain committed to handling your personal information responsibly.
                   </p>
                 </section>
               </div>

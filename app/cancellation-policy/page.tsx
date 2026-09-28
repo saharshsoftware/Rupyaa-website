@@ -3,9 +3,6 @@ import { getSeoMetadata } from "@/lib/seo-metadata";
 
 export const generateMetadata = () => getSeoMetadata("cancellationPolicy");
 
-const listClassName =
-  "list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600";
-
 export default function CancellationPolicyPage() {
   return (
     <PolicyPageLayout
@@ -13,10 +10,10 @@ export default function CancellationPolicyPage() {
       effectiveDate="February 25, 2026"
     >
       <p>
-        This Cancellation Policy (&quot;Policy&quot;) explains the terms and
+        This Cancellation Policy (“Policy”) explains the terms and
         conditions applicable to cancellation requests for services accessed
-        through Rupyaa, operated by Uptime Innovation Private Limited
-        (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;).
+        through Rupyaa, operated by Uptime Innovation Private Limited (“we”,
+        “us”, or “our”).
       </p>
       <p>
         By accessing the Rupyaa platform or initiating any transaction through
@@ -24,12 +21,12 @@ export default function CancellationPolicyPage() {
         updates made to it from time to time.
       </p>
 
-      <PolicySection number={1} title="Nature of Services">
+      <PolicySection plainNumber number={1} title="Nature of Services">
         <p className="mb-4">
           Rupyaa operates as a technology platform that enables users to access
           credit and other financial products offered by regulated financial
           institutions, including banks and Non-Banking Financial Companies
-          (&quot;Lending Partners&quot;).
+          (“Lending Partners”).
         </p>
         <p className="mb-0">
           Rupyaa does not independently approve, sanction, or disburse loans.
@@ -40,60 +37,56 @@ export default function CancellationPolicyPage() {
         </p>
       </PolicySection>
 
-      <PolicySection number={2} title="Cancellation of a Loan Application">
-        <ul className={listClassName}>
-          <li>
-            You may request cancellation of a loan application submitted
-            through Rupyaa at any time before the loan receives final approval
-            or is disbursed by the applicable Lending Partner.
-          </li>
-          <li>
-            Cancellation requests may be submitted through your registered
-            account or by contacting our customer support team at{" "}
-            <a href="mailto:care@rupyaa.com" className="break-all">
-              care@rupyaa.com
-            </a>
-            .
-          </li>
-          <li>
-            If your loan application has already been forwarded to or is being
-            processed by a Lending Partner, cancellation will be governed by
-            that Lending Partner&apos;s internal policies and procedures.
-          </li>
-          <li>
-            Rupyaa cannot guarantee that an application can be cancelled once
-            it has entered the Lending Partner&apos;s review or approval process.
-          </li>
-        </ul>
-      </PolicySection>
-
-      <PolicySection number={3} title="Cancellation After Loan Disbursement">
-        <ul className={listClassName}>
-          <li>
-            Once the approved loan amount has been credited to your bank
-            account, the loan transaction cannot ordinarily be cancelled.
-          </li>
-          <li>
-            If you no longer wish to use the disbursed amount, you may repay the
-            outstanding loan amount together with any applicable interest,
-            fees, or charges in accordance with the loan agreement entered into
-            with the Lending Partner.
-          </li>
-          <li>
-            Any early repayment, prepayment, or foreclosure may be subject to
-            conditions, fees, or charges specified by the applicable Lending
-            Partner.
-          </li>
-        </ul>
-      </PolicySection>
-
-      <PolicySection number={4} title="Cancellation of Ancillary Services">
+      <PolicySection plainNumber number={2} title="Cancellation of a Loan Application">
         <p className="mb-4">
-          If you have opted for any additional or ancillary services through
-          the Rupyaa platform, such as insurance products, value-added
-          financial tools, verification services, or other third-party
-          offerings, cancellation of those services will be governed by the
-          terms and conditions of the respective service provider.
+          You may request cancellation of a loan application submitted through
+          Rupyaa at any time before the loan receives final approval or is
+          disbursed by the applicable Lending Partner.
+        </p>
+        <p className="mb-4">
+          Cancellation requests may be submitted through your registered account
+          or by contacting our customer support team at{" "}
+          <a href="mailto:care@rupyaa.com" className="break-all">
+            care@rupyaa.com
+          </a>
+          .
+        </p>
+        <p className="mb-4">
+          If your loan application has already been forwarded to or is being
+          processed by a Lending Partner, cancellation will be governed by that
+          Lending Partner’s internal policies and procedures.
+        </p>
+        <p className="mb-0">
+          Rupyaa cannot guarantee that an application can be cancelled once it
+          has entered the Lending Partner’s review or approval process.
+        </p>
+      </PolicySection>
+
+      <PolicySection plainNumber number={3} title="Cancellation After Loan Disbursement">
+        <p className="mb-4">
+          Once the approved loan amount has been credited to your bank account,
+          the loan transaction cannot ordinarily be cancelled.
+        </p>
+        <p className="mb-4">
+          If you no longer wish to use the disbursed amount, you may repay the
+          outstanding loan amount together with any applicable interest, fees, or
+          charges in accordance with the loan agreement entered into with the
+          Lending Partner.
+        </p>
+        <p className="mb-0">
+          Any early repayment, prepayment, or foreclosure may be subject to
+          conditions, fees, or charges specified by the applicable Lending
+          Partner.
+        </p>
+      </PolicySection>
+
+      <PolicySection plainNumber number={4} title="Cancellation of Ancillary Services">
+        <p className="mb-4">
+          If you have opted for any additional or ancillary services through the
+          Rupyaa platform, such as insurance products, value-added financial
+          tools, verification services, or other third-party offerings,
+          cancellation of those services will be governed by the terms and
+          conditions of the respective service provider.
         </p>
         <p className="mb-0">
           Where reasonably possible, Rupyaa may assist you in coordinating with
@@ -101,46 +94,40 @@ export default function CancellationPolicyPage() {
         </p>
       </PolicySection>
 
-      <PolicySection number={5} title="Processing Fees and Other Charges">
-        <ul className={listClassName}>
-          <li>
-            Processing fees, administrative charges, verification fees, or
-            other non-refundable charges already incurred or paid may not be
-            refundable in the event of cancellation.
-          </li>
-          <li>
-            Where a fee or charge has been collected directly by a Lending
-            Partner or third-party service provider, you may be required to
-            contact the relevant entity directly for clarification,
-            cancellation, or refund-related assistance.
-          </li>
-        </ul>
+      <PolicySection plainNumber number={5} title="Processing Fees and Other Charges">
+        <p className="mb-4">
+          Processing fees, administrative charges, verification fees, or other
+          non-refundable charges already incurred or paid may not be refundable
+          in the event of cancellation.
+        </p>
+        <p className="mb-0">
+          Where a fee or charge has been collected directly by a Lending Partner
+          or third-party service provider, you may be required to contact the
+          relevant entity directly for clarification, cancellation, or
+          refund-related assistance.
+        </p>
       </PolicySection>
 
-      <PolicySection number={6} title="Refunds, Where Applicable">
-        <ul className={listClassName}>
-          <li>
-            If you are eligible for a refund, the approved amount will generally
-            be processed to the original payment method within 7 to 10 business
-            days, subject to the processing timelines of the relevant bank,
-            payment gateway, or financial institution.
-          </li>
-          <li>
-            Refunds will generally not be available for services that have
-            already been fully provided or partially completed before the
-            cancellation request was received.
-          </li>
-        </ul>
-        <p className="mt-4 mb-0">
+      <PolicySection plainNumber number={6} title="Refunds, Where Applicable">
+        <p className="mb-4">
+          If you are eligible for a refund, the approved amount will generally
+          be processed to the original payment method within 7 to 10 business
+          days, subject to the processing timelines of the relevant bank,
+          payment gateway, or financial institution.
+        </p>
+        <p className="mb-4">
+          Refunds will generally not be available for services that have already
+          been fully provided or partially completed before the cancellation
+          request was received.
+        </p>
+        <p className="mb-0">
           Any refund will also remain subject to the applicable terms of the
           relevant Lending Partner or third-party service provider.
         </p>
       </PolicySection>
 
-      <PolicySection number={7} title="Role of Rupyaa">
-        <p className="mb-4">
-          Rupyaa is <strong className="text-gray-800">not a lender</strong>.
-        </p>
+      <PolicySection plainNumber number={7} title="Role of Rupyaa">
+        <p className="mb-4">Rupyaa is not a lender.</p>
         <p className="mb-4">
           Our role is limited to providing a technology platform that
           facilitates communication, application processing, and access to
@@ -153,12 +140,12 @@ export default function CancellationPolicyPage() {
         </p>
         <p className="mb-0">
           Once an application or loan has been transferred to or processed
-          within a Lending Partner&apos;s systems, the applicable Lending
-          Partner&apos;s policies and terms will govern the relevant transaction.
+          within a Lending Partner’s systems, the applicable Lending Partner’s
+          policies and terms will govern the relevant transaction.
         </p>
       </PolicySection>
 
-      <PolicySection number={8} title="Changes to This Policy">
+      <PolicySection plainNumber number={8} title="Changes to This Policy">
         <p className="mb-4">
           Rupyaa may amend, revise, or update this Cancellation Policy from time
           to time to reflect changes in applicable laws, regulatory
@@ -175,7 +162,7 @@ export default function CancellationPolicyPage() {
         </p>
       </PolicySection>
 
-      <PolicySection number={9} title="Contact Information">
+      <PolicySection plainNumber number={9} title="Contact Information">
         <p className="mb-4">
           For assistance regarding cancellation requests, please contact:
         </p>
