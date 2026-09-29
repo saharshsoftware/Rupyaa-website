@@ -8,6 +8,7 @@ import { useEnableFullWebJourney } from "@/hooks/useEnableFullWebJourney";
 import { useApprovedOfferStep } from "@/hooks/useApprovedOfferStep";
 import { ensureCurrentOfferForApprovedStep } from "@/lib/fetch-current-offer";
 import type { CurrentOffer, LoanType } from "@/lib/eligibility-api";
+import { isStarterTierVerifiedOffer } from "@/lib/verified-offer-status";
 import { useCurrentOfferStore } from "@/store/useCurrentOfferStore";
 // import { trackReviewOfferPageLand, trackReviewOfferPageClick } from "@/lib/gtm";
 import ZapcashLoading from "@/components/ZapcashLoading";
@@ -294,17 +295,27 @@ function ApprovedOfferReview({ onContinue }: { onContinue?: () => void }) {
 
   let offerContent: ReactNode;
   if (offerViewStatus === OFFER_VIEW_STATUS.APPROVED && offer) {
+    const isStarterTier = isStarterTierVerifiedOffer(offer.offerAmount);
+    let approvedOfferBody: ReactNode = null;
+    if (!isStarterTier) {
+      approvedOfferBody = (
+        <>
+          <div className="text-center py-6">
+            <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">
+              Your Loan Amount
+            </p>
+            <p className="text-3xl sm:text-4xl font-semibold text-gray-900">
+              {formatCurrency(offer.offerAmount ?? 0, true)}
+            </p>
+          </div>
+          <OfferDetailsCard offer={offer} loanType={loanType} />
+        </>
+      );
+    }
+    // else: starter-tier verified offer UI — add when new web design is ready
     offerContent = (
       <>
-        <div className="text-center py-6">
-          <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">
-            Your Loan Amount
-          </p>
-          <p className="text-3xl sm:text-4xl font-semibold text-gray-900">
-            {formatCurrency(offer.offerAmount ?? 0, true)}
-          </p>
-        </div>
-        <OfferDetailsCard offer={offer} loanType={loanType} />
+        {approvedOfferBody}
         {improveOfferContent}
         {acceptErrorContent}
       </>
