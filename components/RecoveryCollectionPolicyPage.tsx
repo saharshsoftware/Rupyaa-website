@@ -138,7 +138,7 @@ function RecoveryCollectionPolicyContent() {
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
                       Establish a structured, transparent, and RBI-compliant
-                      recovery framework
+                      recovery framework.
                     </li>
                     <li>
                       Ensure that borrowers are treated respectfully and that
@@ -149,8 +149,8 @@ function RecoveryCollectionPolicyContent() {
                       dignity.
                     </li>
                     <li>
-                      Minimize delinquencies and credit losses through timely
-                      intervention
+                      Reduce delinquencies and credit losses through timely and
+                      appropriate intervention.
                     </li>
                     <li>
                       Define clear procedures for escalation, settlement,
@@ -170,19 +170,20 @@ function RecoveryCollectionPolicyContent() {
                     </span>
                     Applicability
                   </h2>
-                  <p className="mb-3">This Policy shall apply to:</p>
+                  <p className="mb-3">This Policy applies to:</p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      All loan products offered by the Company including payday
-                      loans, personal loans, EMI-based loans.
+                      All lending products offered by the Company, including
+                      payday loans, personal loans, and EMI-based loan products.
                     </li>
                     <li>
-                      All recovery actions undertaken by in-house teams or
-                      outsourced agencies.
+                      Recovery and collection activities undertaken by internal
+                      teams as well as outsourced agencies.
                     </li>
                     <li>
-                      All employees, officers, representatives, and third-party
-                      service providers engaged in recovery and collection.
+                      All employees, officers, authorized representatives,
+                      collection personnel, and third-party service providers
+                      involved in recovery and collection.
                     </li>
                   </ul>
                 </section>
@@ -195,38 +196,43 @@ function RecoveryCollectionPolicyContent() {
                     Guiding Principles
                   </h2>
                   <p className="mb-3">
-                    The Company shall adhere to the following principles:
+                    All recovery and collection activities shall be governed by
+                    the following principles:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
                       <strong className="text-gray-800">
                         Fairness and Respect:
                       </strong>{" "}
-                      Borrowers shall be treated with dignity and respect at all
-                      times.
+                      Borrowers must be treated with dignity, courtesy, and
+                      fairness at all times.
                     </li>
                     <li>
                       <strong className="text-gray-800">Transparency:</strong>{" "}
-                      Clear communication of dues, charges, consequences, and
-                      options.
+                      Borrowers shall receive clear and accurate information
+                      regarding outstanding amounts, charges, repayment
+                      consequences, and available options.
                     </li>
                     <li>
                       <strong className="text-gray-800">Non-Coercion:</strong>{" "}
-                      No harassment, intimidation, abuse, or force.
+                      Harassment, intimidation, threats, abusive conduct, use of
+                      force, or any other coercive practice is strictly
+                      prohibited.
                     </li>
                     <li>
                       <strong className="text-gray-800">
                         Confidentiality:
                       </strong>{" "}
-                      Borrower data shall be protected and used strictly for
-                      recovery purposes.
+                      Borrower information must be protected and used only for
+                      legitimate recovery, servicing, and compliance purposes.
                     </li>
                     <li>
                       <strong className="text-gray-800">
-                        Legal Compliance:
+                        Legal and Regulatory Compliance:
                       </strong>{" "}
-                      All actions shall be within the framework of applicable
-                      laws and RBI directions.
+                      All recovery activities must be conducted within the
+                      framework of applicable laws, contractual terms, RBI
+                      directions, and internal policies.
                     </li>
                   </ul>
                 </section>
@@ -240,20 +246,23 @@ function RecoveryCollectionPolicyContent() {
                   </h2>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      Overall oversight shall vest with the Board of Directors /
-                      Board Risk Committee.
+                      Overall supervision and governance of recovery activities
+                      shall remain with the Board of Directors and/or the Board
+                      Risk Committee.
                     </li>
                     <li>
-                      Day-to-day recovery operations shall be managed by the
-                      Collections Department.
+                      Day-to-day recovery and collection activities shall be
+                      managed by the Collections Department.
                     </li>
                     <li>
-                      Legal actions shall be routed through the Legal
-                      Department.
+                      Any legal recovery action shall be coordinated through the
+                      Legal Department.
                     </li>
                     <li>
-                      Settlement and write-off decisions shall be governed by
-                      the Settlement &amp; Write-off Policy.
+                      Settlement, compromise, restructuring, and write-off
+                      decisions shall be governed by the Company&apos;s
+                      applicable Settlement &amp; Write-off Policy and internal
+                      approval framework.
                     </li>
                   </ul>
                 </section>
@@ -270,22 +279,26 @@ function RecoveryCollectionPolicyContent() {
                     6.1 Product-Specific Alignment with Credit Policy
                   </h3>
                   <p className="mb-3">
-                    The recovery and collection framework for payday loans shall
-                    be strictly governed by the Company&apos;s approved Credit
-                    Policy, particularly:
+                    Recovery and collection activities relating to payday loans
+                    shall be aligned with the Company&apos;s approved Credit
+                    Policy, including in particular:
                   </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
-                    <li>Section 6: Collection Risk Strategy</li>
-                    <li>Section 6.1: Delinquency Management Framework</li>
-                    <li>Section 6.2: Escalation &amp; Write-Off Protocols</li>
+                    <li>Section 6: Collection Risk Strategy.</li>
+                    <li>Section 6.1: Delinquency Management Framework.</li>
+                    <li>Section 6.2: Escalation &amp; Write-Off Protocols.</li>
                   </ul>
+                  <p className="mb-3">
+                    Payday loans are short-tenure, bullet-repayment products
+                    generally having a tenure of 6 to 40 days and may carry
+                    relatively higher risk pricing.
+                  </p>
                   <p className="mb-4">
-                    Given that Payday Loans are short-tenure, bullet repayment
-                    loans (6–40 days) with relatively higher risk pricing, the
-                    recovery strategy emphasizes early intervention, structured
-                    escalation, and time-bound resolution, while ensuring full
-                    compliance with RBI Fair Practices Code and borrower
-                    protection norms.
+                    Accordingly, the Company&apos;s recovery strategy places
+                    emphasis on early intervention, structured follow-up, timely
+                    escalation, and defined resolution timelines while ensuring
+                    compliance with RBI Fair Practices Code requirements and
+                    borrower-protection principles.
                   </p>
 
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
@@ -293,17 +306,19 @@ function RecoveryCollectionPolicyContent() {
                   </h3>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      An account shall be treated as overdue if the full
-                      repayment amount (principal, interest, and applicable
-                      charges) is not received on the due date.
+                      A loan account shall be considered overdue where the full
+                      amount payable, including principal, interest, and
+                      applicable charges, is not received on the scheduled due
+                      date.
                     </li>
                     <li>
-                      Days Past Due (DPD) shall be computed from the day
-                      immediately following the due date.
+                      Days Past Due (&quot;DPD&quot;) shall be calculated
+                      beginning from the day immediately following the repayment
+                      due date.
                     </li>
                     <li>
-                      All recovery actions shall be mapped to DPD buckets as
-                      defined below.
+                      Recovery activities shall be aligned with the relevant DPD
+                      category described below.
                     </li>
                   </ul>
 
@@ -394,16 +409,18 @@ function RecoveryCollectionPolicyContent() {
                   </h3>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Telephonic recovery shall be conducted only by trained
-                      personnel using approved scripts.
+                      All telephonic recovery communication shall be conducted
+                      only by appropriately trained and authorized personnel
+                      using approved communication scripts.
                     </li>
                     <li>
                       Borrowers shall ordinarily be contacted only between 8:00
                       AM and 7:00 PM.
                     </li>
                     <li>
-                      Digital communication shall comply with RBI Digital
-                      Lending Guidelines.
+                      Digital collection communications shall comply with
+                      applicable RBI Digital Lending Guidelines and internal
+                      policies.
                     </li>
                     <li>
                       Recovery activities shall not involve unauthorized access
@@ -411,8 +428,9 @@ function RecoveryCollectionPolicyContent() {
                       personal information.
                     </li>
                     <li>
-                      Frequency of communication shall be reasonable and
-                      proportionate to the DPD status.
+                      The frequency and manner of communication must remain
+                      reasonable and proportionate to the borrower&apos;s DPD
+                      status and circumstances.
                     </li>
                   </ul>
 
@@ -421,24 +439,42 @@ function RecoveryCollectionPolicyContent() {
                   </h3>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Field visits shall be initiated only after exhaustion of
-                      telephonic efforts and normally after 15 DPD.
+                      Field visits shall generally be considered only after
+                      reasonable telephonic and digital recovery efforts have
+                      been exhausted and ordinarily after 15 DPD.
                     </li>
                     <li>
-                      Recovery agents shall carry valid authorization letters
-                      and identity cards.
+                      Authorized recovery representatives conducting field visits
+                      shall carry:
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>Valid identification.</li>
+                        <li>
+                          Appropriate authorization issued by the Company or
+                          authorized recovery agency.
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      Visits shall be conducted during permitted hours and in a
-                      dignified manner.
+                      All visits shall take place during permitted hours and must
+                      be conducted respectfully and professionally.
                     </li>
                     <li>
-                      Under no circumstances shall agents indulge in public
-                      shaming, intimidation, or coercion.
+                      Recovery personnel are strictly prohibited from engaging
+                      in:
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>Public humiliation or shaming.</li>
+                        <li>Intimidation or threats.</li>
+                        <li>Coercion.</li>
+                        <li>
+                          Disclosure of borrower information to unauthorized
+                          persons.
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      Special care shall be taken in cases involving elderly
-                      borrowers, women borrowers, or vulnerable customers.
+                      Additional care and sensitivity shall be exercised when
+                      dealing with elderly borrowers, women borrowers, and
+                      customers who may be considered vulnerable.
                     </li>
                   </ul>
 
@@ -447,17 +483,24 @@ function RecoveryCollectionPolicyContent() {
                   </h3>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Legal action shall be considered only after reasonable
-                      opportunities for repayment have been provided.
+                      Legal proceedings shall be considered only after reasonable
+                      opportunities have been provided to the borrower to
+                      regularize or repay the outstanding amount.
                     </li>
                     <li>
-                      Legal measures may include issuance of demand notices,
-                      arbitration, civil proceedings, or other remedies as
-                      permitted by law.
+                      Depending on the circumstances and applicable law, legal
+                      measures may include:
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>Formal demand notices.</li>
+                        <li>Arbitration proceedings.</li>
+                        <li>Civil proceedings.</li>
+                        <li>Other legally permissible recovery remedies.</li>
+                      </ul>
                     </li>
                     <li>
-                      All legal actions shall be approved by the designated
-                      authority as per the internal approval matrix.
+                      Any legal action must receive appropriate approval from
+                      the designated authority under the Company&apos;s internal
+                      approval matrix.
                     </li>
                   </ul>
 
@@ -466,17 +509,24 @@ function RecoveryCollectionPolicyContent() {
                   </h3>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Settlement or restructuring may be considered on a
-                      case-to-case basis, based on borrower profile, repayment
-                      intent, and recovery potential.
+                      Settlement, restructuring, or compromise may be considered
+                      on an individual basis after reviewing factors such as:
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>Borrower circumstances.</li>
+                        <li>Repayment capacity and intent.</li>
+                        <li>Outstanding amount.</li>
+                        <li>Recovery prospects.</li>
+                        <li>Applicable internal policies.</li>
+                      </ul>
                     </li>
                     <li>
-                      Any compromise or waiver shall require prior internal
-                      approvals.
+                      Any waiver, compromise, or settlement must receive the
+                      necessary internal approvals before being offered or
+                      finalized.
                     </li>
                     <li>
-                      Settlement terms shall be documented in writing and
-                      communicated transparently to the borrower.
+                      The terms of any approved settlement shall be documented
+                      and clearly communicated to the borrower in writing.
                     </li>
                   </ul>
 
@@ -485,16 +535,19 @@ function RecoveryCollectionPolicyContent() {
                   </h3>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Accounts exceeding 30 DPD and assessed as uncollectible
-                      may be considered for write-off for accounting purposes.
+                      Loan accounts exceeding 30 DPD that are assessed as
+                      unlikely to be recovered may be considered for write-off
+                      for accounting purposes in accordance with the
+                      Company&apos;s policies and applicable regulations.
                     </li>
                     <li>
-                      Write-off shall not extinguish the borrower&apos;s
-                      liability.
+                      A write-off does not eliminate or discharge the
+                      borrower&apos;s underlying repayment obligation.
                     </li>
                     <li>
-                      Post write-off recovery efforts may continue through legal
-                      means or empaneled recovery agencies.
+                      Recovery efforts on written-off accounts may continue
+                      through legally permissible means, including through
+                      authorized and empanelled recovery agencies.
                     </li>
                   </ul>
 
@@ -503,35 +556,48 @@ function RecoveryCollectionPolicyContent() {
                   </h3>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      Recovery agencies shall be appointed after due diligence
-                      and RBI-compliant agreements.
+                      Recovery agencies shall be appointed only after
+                      appropriate due diligence and execution of agreements that
+                      comply with applicable RBI requirements.
                     </li>
                     <li>
-                      Agencies shall follow this Policy, Fair Practices Code,
-                      and RBI Code of Conduct.
+                      All appointed recovery agencies must comply with:
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>This Policy.</li>
+                        <li>Applicable Fair Practices Code requirements.</li>
+                        <li>RBI recovery and collection standards.</li>
+                        <li>
+                          The Company&apos;s Code of Conduct and other
+                          applicable policies.
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      The Company shall remain fully responsible for the acts of
-                      its recovery agents.
+                      The Company shall retain responsibility and oversight for
+                      the conduct of recovery agencies acting on its behalf.
                     </li>
                   </ul>
 
                   <h3 className="font-medium text-gray-900 mt-3 sm:mt-4 mb-1.5 sm:mb-2 text-sm sm:text-base">
                     6.10 Monitoring, MIS, and Governance
                   </h3>
-                  <p className="mb-2">
-                    Recovery performance shall be monitored through MIS aligned
-                    with the Credit Policy, including:
+                  <p className="mb-3">
+                    Recovery performance shall be monitored through appropriate
+                    Management Information Systems (&quot;MIS&quot;) aligned
+                    with the Company&apos;s Credit Policy.
                   </p>
+                  <p className="mb-2">Monitoring may include:</p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
-                    <li>DPD bucket movement</li>
-                    <li>Bounce trends</li>
-                    <li>Risk-grade-wise delinquency</li>
-                    <li>City-wise and device-wise delinquency trends</li>
+                    <li>Movement across DPD buckets.</li>
+                    <li>Repayment bounce trends.</li>
+                    <li>Risk-grade-wise delinquency.</li>
+                    <li>City-wise delinquency trends.</li>
+                    <li>Device-wise delinquency trends.</li>
                   </ul>
                   <p>
-                    Deviations from approved recovery strategy shall be
-                    escalated to senior management.
+                    Any material deviation from the approved recovery strategy
+                    shall be escalated to the appropriate senior management
+                    authority.
                   </p>
                 </section>
 
@@ -542,21 +608,31 @@ function RecoveryCollectionPolicyContent() {
                     </span>
                     Conduct of Recovery Staff and Agents
                   </h2>
-                  <p className="mb-3">Recovery staff and agents shall:</p>
+                  <p className="mb-3">
+                    All recovery personnel and agents shall:
+                  </p>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
-                    <li>Carry valid authorization and identity proof</li>
-                    <li>Clearly identify themselves and the Company</li>
-                    <li>Be courteous, professional, and non-threatening</li>
+                    <li>Carry valid identification and authorization.</li>
                     <li>
-                      Not use abusive language or make false representations
+                      Clearly identify themselves and disclose the name of the
+                      Company they represent.
                     </li>
                     <li>
-                      Not threaten arrest, imprisonment, or legal action without
-                      basis
+                      Communicate professionally, courteously, and respectfully.
                     </li>
                     <li>
-                      Not contact borrowers&apos; relatives, friends, or
-                      employers except as legally permitted
+                      Refrain from abusive, threatening, misleading, or
+                      intimidating behaviour.
+                    </li>
+                    <li>Avoid false statements or misrepresentation.</li>
+                    <li>
+                      Not threaten arrest, imprisonment, or legal proceedings
+                      without a valid legal basis.
+                    </li>
+                    <li>
+                      Not contact relatives, friends, employers, colleagues, or
+                      other third parties except where expressly permitted under
+                      applicable law.
                     </li>
                   </ul>
                 </section>
@@ -570,17 +646,26 @@ function RecoveryCollectionPolicyContent() {
                   </h2>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      Field visits shall be conducted only when necessary.
+                      Field recovery visits shall be undertaken only where
+                      necessary and proportionate to the circumstances of the
+                      account.
                     </li>
                     <li>
-                      Visits shall respect borrower privacy and social standing.
+                      Borrower privacy, dignity, and social standing must be
+                      respected during every interaction.
                     </li>
                     <li>
-                      No public humiliation or display of borrower information.
+                      Recovery personnel shall not publicly display, disclose, or
+                      communicate information relating to a borrower&apos;s
+                      outstanding loan or repayment status.
                     </li>
                     <li>
-                      Female borrowers shall not be visited by male agents
-                      alone.
+                      Public humiliation or embarrassment of borrowers is
+                      strictly prohibited.
+                    </li>
+                    <li>
+                      Female borrowers shall not be visited by male recovery
+                      agents alone.
                     </li>
                   </ul>
                 </section>
@@ -594,16 +679,19 @@ function RecoveryCollectionPolicyContent() {
                   </h2>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      Digital communication shall comply with RBI Digital
-                      Lending Guidelines.
+                      All electronic and telephonic collection activity shall
+                      comply with applicable RBI Digital Lending Guidelines and
+                      other regulatory requirements.
                     </li>
                     <li>
-                      No unauthorized access to borrower&apos;s contacts,
-                      gallery, or personal data.
+                      Recovery personnel shall not obtain unauthorized access to
+                      a borrower&apos;s contacts, photographs, gallery, private
+                      files, or other personal information.
                     </li>
                     <li>
-                      All digital communications shall be auditable and
-                      traceable.
+                      Digital recovery communications shall be maintained in a
+                      manner that allows appropriate auditability and
+                      traceability.
                     </li>
                   </ul>
                 </section>
@@ -617,21 +705,28 @@ function RecoveryCollectionPolicyContent() {
                   </h2>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      Legal recovery actions shall be initiated strictly as a
-                      measure of last resort, after exhaustion of amicable and
-                      operational recovery efforts.
+                      Legal recovery shall be pursued only as a measure of last
+                      resort after reasonable amicable and operational recovery
+                      options have been exhausted.
                     </li>
                     <li>
-                      All legal actions shall be consistent with the loan
-                      agreement, Fair Practices Code, and applicable laws.
+                      Any legal action shall be consistent with:
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>The applicable loan agreement.</li>
+                        <li>The Company&apos;s Fair Practices Code.</li>
+                        <li>Applicable laws and regulations.</li>
+                        <li>Internal approval requirements.</li>
+                      </ul>
                     </li>
                     <li>
-                      Borrowers shall be given reasonable notice and opportunity
-                      before initiation of legal proceedings.
+                      Borrowers shall be provided reasonable notice and an
+                      appropriate opportunity to respond or repay before legal
+                      proceedings are initiated.
                     </li>
                     <li>
-                      Legal recovery shall be approved as per the internal
-                      authority matrix and documented appropriately.
+                      Legal recovery actions must be appropriately documented
+                      and approved in accordance with the Company&apos;s
+                      internal authority matrix.
                     </li>
                   </ul>
                 </section>
@@ -641,37 +736,54 @@ function RecoveryCollectionPolicyContent() {
                     <span className="w-7 h-7 rounded-lg bg-primary/10 text-primary text-sm font-bold flex items-center justify-center">
                       11
                     </span>
-                    Settlement, Restructuring and Waiver
+                    Settlement, Restructuring, and Waiver
                   </h2>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      Settlement, compromise, or restructuring shall be governed
-                      by the Company&apos;s Comprehensive Policy on Settlements
-                      &amp; Write-offs.
+                      Any settlement, compromise, restructuring, or waiver shall
+                      be governed by the Company&apos;s Comprehensive Policy on
+                      Settlements &amp; Write-offs.
                     </li>
                     <li>
-                      Settlements may be considered for accounts with DPD &gt;
-                      30 days, NPAs, written-off accounts, or cases involving
-                      genuine borrower hardship.
+                      Settlement may be considered in appropriate cases,
+                      including:
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>Accounts exceeding 30 DPD.</li>
+                        <li>
+                          Non-Performing Assets (&quot;NPAs&quot;).
+                        </li>
+                        <li>Written-off accounts.</li>
+                        <li>Cases involving genuine financial hardship.</li>
+                      </ul>
                     </li>
                     <li>
-                      No settlement or waiver shall be granted arbitrarily or as
-                      a recovery shortcut.
+                      No settlement or waiver shall be granted arbitrarily or
+                      used merely as a shortcut to complete recovery.
                     </li>
                     <li>
-                      Settlement approvals shall be strictly as per the
-                      Delegation of Authority defined in the Settlement &amp;
-                      Write-off Policy and shall be one level higher than the
-                      loan sanctioning authority.
+                      Approvals shall follow the applicable Delegation of
+                      Authority under the Settlement &amp; Write-off Policy and
+                      shall ordinarily be obtained from an authority at least
+                      one level higher than the original loan-sanctioning
+                      authority.
                     </li>
                     <li>
-                      Borrowers shall be informed about the credit bureau impact
-                      of settlement or write-off prior to acceptance.
+                      Before accepting a settlement or write-off arrangement,
+                      borrowers shall be informed of any applicable impact on
+                      their credit bureau records.
                     </li>
                     <li>
-                      All settlement terms shall be communicated in writing,
-                      including payable amount, waived amount, timelines, and
-                      consequences of non-compliance.
+                      Approved settlement terms shall be communicated in writing
+                      and should clearly specify:
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>Amount payable.</li>
+                        <li>Amount waived, where applicable.</li>
+                        <li>Payment timelines.</li>
+                        <li>
+                          Consequences of failure to comply with the agreed
+                          terms.
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </section>
@@ -685,25 +797,24 @@ function RecoveryCollectionPolicyContent() {
                   </h2>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      Write-offs shall be technical write-offs only and shall
-                      not extinguish the borrower&apos;s liability.
+                      Write-offs shall be treated as technical or accounting
+                      write-offs only and shall not extinguish the
+                      borrower&apos;s repayment liability.
                     </li>
                     <li>
-                      Written-off accounts shall continue to be pursued for
-                      recovery, settlement, or legal action.
+                      Written-off accounts may continue to be pursued for
+                      recovery, legal action, or settlement.
                     </li>
                     <li>Re-aging of accounts is strictly prohibited.</li>
                     <li>
-                      Accounting treatment and provisioning shall be in
-                      accordance with RBI norms and the Settlement &amp;
-                      Write-off Policy.
+                      Accounting treatment, provisioning, and write-off
+                      practices shall comply with applicable RBI norms and the
+                      Company&apos;s Settlement &amp; Write-off Policy.
                     </li>
                     <li>
-                      The Company may consider restructuring, rescheduling, or
-                      settlement on a case-to-case basis.
-                    </li>
-                    <li>
-                      Any waiver or compromise shall follow internal approval.
+                      Restructuring, rescheduling, settlement, waiver, or
+                      compromise may be considered on a case-by-case basis,
+                      subject to applicable internal approvals.
                     </li>
                   </ul>
                 </section>
@@ -717,29 +828,40 @@ function RecoveryCollectionPolicyContent() {
                   </h2>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      All borrower information, records, call recordings, field
-                      visit notes, and recovery-related communications shall be
-                      treated as strictly confidential.
+                      All information relating to borrowers, including records,
+                      call recordings, field visit notes, repayment information,
+                      and recovery communications, shall be treated as
+                      confidential.
                     </li>
                     <li>
-                      Access to borrower data shall be restricted to authorised
-                      personnel strictly on a need-to-know basis for recovery
-                      and compliance purposes.
+                      Access to borrower information shall be restricted to
+                      authorized personnel on a strict need-to-know basis for
+                      legitimate recovery, servicing, compliance, and regulatory
+                      purposes.
                     </li>
                     <li>
-                      The Company shall comply with RBI Digital Lending
-                      Guidelines, Information Technology Act, 2000, and
-                      applicable data protection and privacy laws while handling
-                      borrower data.
+                      The Company shall handle borrower information in
+                      accordance with:
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>Applicable RBI Digital Lending Guidelines.</li>
+                        <li>The Information Technology Act, 2000.</li>
+                        <li>Applicable data protection and privacy laws.</li>
+                        <li>
+                          Relevant internal information-security policies.
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      Recovery agents shall not copy, store, misuse, or share
-                      borrower data in any physical or electronic form.
+                      Recovery agents and third-party agencies are prohibited
+                      from improperly copying, storing, using, disclosing, or
+                      sharing borrower information in physical or electronic
+                      form.
                     </li>
                     <li>
-                      Any data breach, misuse, or unauthorised disclosure shall
-                      attract strict disciplinary action, termination of
-                      contracts, and legal proceedings, as applicable.
+                      Any unauthorized access, misuse, disclosure, or data
+                      breach may result in disciplinary action, termination of
+                      contractual arrangements, and legal proceedings, wherever
+                      applicable.
                     </li>
                   </ul>
                 </section>
@@ -753,30 +875,33 @@ function RecoveryCollectionPolicyContent() {
                   </h2>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600 mb-3">
                     <li>
-                      All recovery-related communications shall be factual,
-                      transparent, non-misleading, and respectful.
+                      All recovery-related communications shall be accurate,
+                      transparent, respectful, factual, and free from misleading
+                      representations.
                     </li>
                     <li>
-                      Borrowers shall be clearly informed of:
+                      Borrowers shall be informed, where applicable, about:
                       <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>The total outstanding amount.</li>
                         <li>
-                          Total outstanding amount with breakup of principal,
-                          interest, penal charges, and other dues
+                          Break-up of principal, interest, penal charges, and
+                          other dues.
                         </li>
-                        <li>Consequences of continued default</li>
+                        <li>Consequences of continued non-payment.</li>
                         <li>
                           Available repayment, restructuring, or settlement
-                          options, where applicable
+                          options.
                         </li>
                       </ul>
                     </li>
                     <li>
-                      Any levy of penal charges or overdue charges shall be
-                      communicated along with the specific reason for such levy.
+                      Where penal or overdue charges are imposed, the reason and
+                      basis for such charges shall be appropriately communicated
+                      to the borrower.
                     </li>
                     <li>
-                      Communications shall be made, as far as practicable, in a
-                      language understood by the borrower.
+                      As far as reasonably practicable, communications should be
+                      made in a language that the borrower understands.
                     </li>
                   </ul>
                 </section>
@@ -790,29 +915,32 @@ function RecoveryCollectionPolicyContent() {
                   </h2>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      The Company shall maintain a robust grievance redressal
-                      mechanism for complaints relating to recovery and
-                      collection practices.
+                      The Company shall maintain an appropriate grievance
+                      redressal mechanism for complaints connected with recovery
+                      and collection practices.
                     </li>
                     <li>
-                      Borrowers may lodge complaints through the channels
-                      specified in the Fair Practices Code, including email,
-                      written communication, or customer support channels.
+                      Borrowers may submit complaints through channels specified
+                      under the Company&apos;s Fair Practices Code, including
+                      email, written correspondence, and authorized
+                      customer-support channels.
                     </li>
                     <li>
-                      Complaints alleging harassment, coercion,
-                      misrepresentation, or misconduct by employees or recovery
-                      agents shall be investigated on priority.
+                      Complaints involving allegations of harassment, coercion,
+                      intimidation, misrepresentation, or misconduct by employees
+                      or recovery agents shall be reviewed and investigated on
+                      priority.
                     </li>
                     <li>
-                      All grievances shall be resolved within the timelines
-                      prescribed by RBI.
+                      Grievances shall be addressed within applicable
+                      RBI-prescribed timelines.
                     </li>
                     <li>
-                      Where the borrower is not satisfied with the resolution,
-                      escalation to the RBI Ombudsman / Department of
-                      Supervision shall be facilitated in accordance with
-                      applicable guidelines.
+                      Where a borrower remains dissatisfied with the resolution,
+                      information regarding escalation to the applicable RBI
+                      Ombudsman or Department of Supervision mechanism shall be
+                      provided in accordance with prevailing regulatory
+                      requirements.
                     </li>
                   </ul>
                 </section>
@@ -822,29 +950,37 @@ function RecoveryCollectionPolicyContent() {
                     <span className="w-7 h-7 rounded-lg bg-primary/10 text-primary text-sm font-bold flex items-center justify-center">
                       15
                     </span>
-                    Training, Supervision and Audit
+                    Training, Supervision, and Audit
                   </h2>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      The Company shall conduct regular training programmes for
-                      employees and recovery agents covering RBI recovery
-                      guidelines, Fair Practices Code, borrower rights, and
-                      ethical conduct.
+                      The Company shall conduct periodic training for employees,
+                      collection personnel, and recovery agents covering matters
+                      including:
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>RBI recovery and collection guidelines.</li>
+                        <li>Fair Practices Code requirements.</li>
+                        <li>Borrower rights.</li>
+                        <li>Privacy and confidentiality.</li>
+                        <li>Professional and ethical conduct.</li>
+                      </ul>
                     </li>
                     <li>
-                      Telephonic calls, digital communications, and field visits
-                      may be recorded, monitored, and audited for quality,
-                      compliance, and behavioural standards.
+                      Telephonic interactions, digital communications, and field
+                      activities may be recorded, monitored, reviewed, or
+                      audited to assess service quality, regulatory compliance,
+                      and behavioural standards.
                     </li>
                     <li>
-                      Internal audit and compliance teams shall periodically
-                      review recovery operations, outsourced agencies,
-                      documentation, and adherence to this Policy.
+                      The Internal Audit and Compliance functions shall
+                      periodically review recovery activities, third-party
+                      agencies, documentation, operational processes, and
+                      adherence to this Policy.
                     </li>
                     <li>
-                      Observations and non-compliances identified during audits
-                      shall be promptly addressed and reported to senior
-                      management.
+                      Any gaps, exceptions, or non-compliances identified
+                      through audits or reviews shall be addressed promptly and
+                      escalated to senior management where appropriate.
                     </li>
                   </ul>
                 </section>
@@ -858,24 +994,37 @@ function RecoveryCollectionPolicyContent() {
                   </h2>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      The Company follows a zero-tolerance approach towards
-                      harassment, coercion, intimidation, abuse, or any
-                      unethical recovery practice.
+                      The Company follows a zero-tolerance approach toward
+                      harassment, coercion, threats, intimidation, abuse, public
+                      humiliation, or any unethical recovery practice.
                     </li>
                     <li>
-                      Employees violating this Policy may face disciplinary
-                      action including warning, suspension, recovery-linked
-                      penalties, or termination.
+                      Employees found to have violated this Policy may face
+                      appropriate disciplinary measures, including:
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>Formal warning.</li>
+                        <li>Suspension.</li>
+                        <li>
+                          Recovery-linked disciplinary penalties, where
+                          applicable.
+                        </li>
+                        <li>Termination of employment.</li>
+                      </ul>
                     </li>
                     <li>
-                      Recovery agencies found in violation shall be immediately
-                      suspended or terminated and may be permanently
-                      blacklisted.
+                      Recovery agencies found to be in violation may be:
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>Immediately suspended.</li>
+                        <li>Terminated.</li>
+                        <li>
+                          Permanently removed or blacklisted from the
+                          Company&apos;s approved agency panel.
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      Serious violations may be reported to regulatory
-                      authorities or law enforcement agencies, wherever
-                      required.
+                      Serious misconduct may also be reported to regulatory
+                      authorities or law-enforcement agencies wherever required.
                     </li>
                   </ul>
                 </section>
@@ -889,13 +1038,21 @@ function RecoveryCollectionPolicyContent() {
                   </h2>
                   <ul className="list-disc pl-5 sm:pl-6 space-y-1.5 sm:space-y-2 text-gray-600">
                     <li>
-                      This Policy shall be reviewed at least annually by the
-                      Board of Directors or earlier if required due to
-                      regulatory changes, RBI circulars, or business needs.
+                      This Policy shall be reviewed by the Board of Directors at
+                      least once every year or earlier where necessary due to:
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-1 mt-2">
+                        <li>Changes in applicable laws or regulations.</li>
+                        <li>New or revised RBI circulars or directions.</li>
+                        <li>
+                          Changes in the Company&apos;s business model or
+                          products.
+                        </li>
+                        <li>Operational or risk-management requirements.</li>
+                      </ul>
                     </li>
                     <li>
-                      Any amendment to this Policy shall require prior approval
-                      of the Board of Directors.
+                      Any amendment or material revision to this Policy shall
+                      require prior approval from the Board of Directors.
                     </li>
                   </ul>
                 </section>
@@ -907,11 +1064,13 @@ function RecoveryCollectionPolicyContent() {
                     </span>
                     Board Approval and Effective Date
                   </h2>
-                  <p>
-                    This Recovery and Collection Policy has been approved by the
+                  <p className="mb-3">
+                    This Recovery and Collection Policy was approved by the
                     Board of Directors of Weekline Investment and Trading
-                    Company Limited at its meeting held on 2nd March 2026 and
-                    shall be effective from the same day.
+                    Company Limited at its meeting held on 2nd March 2026.
+                  </p>
+                  <p>
+                    The Policy shall be effective from 2nd March 2026.
                   </p>
                 </section>
 

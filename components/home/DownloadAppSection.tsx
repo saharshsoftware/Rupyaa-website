@@ -15,7 +15,11 @@ import { HOME_IMAGES } from "@/lib/images";
 const SECTION_GRADIENT =
   "radial-gradient(ellipse 70% 120% at 88% 55%, #FECA42 0%, #FFE899 42%, #FFF3D1 72%, #FFFCF4 100%)";
 
-export default function DownloadAppSection(): ReactElement {
+export default function DownloadAppSection({
+  heading = "Your loan journey, in one app.",
+}: {
+  readonly heading?: string;
+}): ReactElement {
   const downloadConfig = useAppDownload();
   return (
     <section className="bg-white">
@@ -27,7 +31,7 @@ export default function DownloadAppSection(): ReactElement {
           <div className="relative z-10 flex w-full flex-col justify-center gap-6 p-6 sm:gap-8 sm:p-8 md:p-10 lg:max-w-[58%] lg:p-12 xl:max-w-[55%]">
             <div>
               <h2 className="text-2xl font-bold leading-tight text-gray-900 sm:text-3xl md:text-4xl lg:text-[2.75rem]">
-                Your loan journey, in one app.
+                {heading}
               </h2>
               <p className="mt-3 max-w-xl text-sm leading-relaxed text-gray-600 sm:mt-4 sm:text-base md:text-lg">
                 Apply, verify, review your offer, track repayments and access your KFS, agreement
