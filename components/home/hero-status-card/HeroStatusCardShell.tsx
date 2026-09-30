@@ -1,4 +1,5 @@
 import type { ReactElement, ReactNode } from "react";
+import { cn } from "@/utils/cn-utils";
 
 type HeroStatusCardShellProps = {
   readonly children: ReactNode;
@@ -17,7 +18,10 @@ export function HeroStatusCardShell({
 }: HeroStatusCardShellProps): ReactElement {
   return (
     <div
-      className={`relative isolate w-full overflow-hidden rounded-[1.35rem] border border-white/70 px-5 pb-6 pt-7 text-center shadow-[0_12px_40px_rgba(15,23,42,0.12)] backdrop-blur-md sm:rounded-[1.5rem] sm:px-7 sm:pb-7 sm:pt-8 ${className}`}
+      className={cn(
+        "relative isolate w-full overflow-hidden rounded-[1.35rem] border border-white/70 px-5 pb-6 pt-7 text-center shadow-[0_12px_40px_rgba(15,23,42,0.12)] backdrop-blur-md sm:rounded-[1.5rem] sm:px-7 sm:pb-7 sm:pt-8",
+        className,
+      )}
       style={{
         background:
           "linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 252, 245, 0.88) 100%)",

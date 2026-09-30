@@ -1,13 +1,14 @@
 "use client";
 
 import type { ReactElement, ReactNode } from "react";
+import { useRouter } from "next/navigation";
 import type { GetExistingActiveLoanResponse } from "@/lib/eligibility-api";
 import { buildHeroHomeCard } from "@/lib/build-hero-home-card";
 import { getLoggedInHeroUiCase } from "@/lib/hero-home-card-case";
 import HeroLoggedInCardArea from "@/components/home/HeroLoggedInCardArea";
 import HeroTrustedBy from "@/components/home/HeroTrustedBy";
 import { isHeroCardDebugEnabled, logHeroCardDebug } from "@/lib/hero-card-debug";
-import { STRING_CONSTANTS } from "@/utils/app-constants";
+import { POST_OFFER_CTA_DEFAULT_HREF } from "@/utils/app-constants";
 import { HeroDebugPanel } from "@/components/home/hero-section/HeroDebugPanel";
 
 export type HeroLoggedInContentProps = {
@@ -40,6 +41,7 @@ export function HeroLoggedInContent({
   canCancelLoan = false,
   onCancelLoanPress,
 }: HeroLoggedInContentProps): ReactElement {
+  const router = useRouter();
   const isLoading = isLoadingStage || isLoadingLoan;
   const resolved = buildHeroHomeCard(activeLoan, userStage);
   logHeroCardDebug("HeroLoggedInContent.resolved", {
@@ -54,7 +56,7 @@ export function HeroLoggedInContent({
   });
 
   const handleAcceptOffer = (): void => {
-    window.location.href = STRING_CONSTANTS.PLAY_STORE_URL;
+    router.push(POST_OFFER_CTA_DEFAULT_HREF);
   };
 
   let cardArea: ReactNode;
