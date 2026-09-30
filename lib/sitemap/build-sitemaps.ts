@@ -1,5 +1,4 @@
 import type { SheetRouteMapping } from "@/constants/fetch-sheet-routes";
-import { fetchBlogRoutesFromSheet } from "@/sitemap/fetch-blog-routes-from-sheet";
 import { fetchPageRoutesFromSheet } from "@/sitemap/fetch-page-routes-from-sheet";
 import { SITE_URL } from "@/utils/app-constants";
 import { readdirSync, statSync } from "node:fs";
@@ -145,11 +144,7 @@ export async function getPageSitemapEntries(): Promise<SitemapEntry[]> {
 }
 
 export async function getPostSitemapEntries(): Promise<SitemapEntry[]> {
-  const blogRoutes = await fetchBlogRoutesFromSheet();
-
-  return dedupeAndSortEntries(
-    blogRoutes
-      .filter(shouldIncludeInSitemap)
-      .map(sheetRouteToSitemapEntry),
-  );
+  // Rupyaa has no published blog posts. Legacy mirror mappings are not a
+  // publication source; only add entries when Rupyaa blog publishing exists.
+  return [];
 }
