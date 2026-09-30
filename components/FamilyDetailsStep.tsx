@@ -16,7 +16,6 @@ import {
 import AppButton from "@/components/app-button";
 import AppSelectField from "@/components/app-select-field";
 import AppTextField from "@/components/app-text-field";
-import NeedContactSupport from "./NeedContactSupport";
 
 type Props = { onContinue?: () => void };
 
@@ -152,7 +151,6 @@ export default function FamilyDetailsStep({ onContinue }: Props) {
         </AppButton>
       </form>
 
-      <NeedContactSupport />
     </div>
   );
 }

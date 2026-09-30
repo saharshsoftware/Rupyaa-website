@@ -386,9 +386,6 @@ export default function BankStatementVerification({
             </button>
           </form>
 
-          <p className="text-sm text-gray-500 mt-6">
-            Need help? <a href="/support" className="text-primary font-medium hover:underline">Contact Support</a>
-          </p>
       </div>
 
       <BasicInfoFooter />

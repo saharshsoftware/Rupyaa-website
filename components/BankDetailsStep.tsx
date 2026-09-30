@@ -28,7 +28,6 @@ import NonSalaryAccountModal from "@/components/non-salary-account/NonSalaryAcco
 import AppButton from "@/components/app-button";
 import AppSelectField from "@/components/app-select-field";
 import AppTextField from "@/components/app-text-field";
-import NeedContactSupport from "./NeedContactSupport";
 
 type Props = { onContinue?: () => void };
 
@@ -495,7 +494,6 @@ export default function BankDetailsStep({ onContinue }: Props) {
         </div>
       </form>
 
-      <NeedContactSupport />
 
       <NonSalaryAccountModal
         isOpen={showNonSalaryWarning}
