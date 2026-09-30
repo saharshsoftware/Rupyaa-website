@@ -64,12 +64,6 @@ function alternateRequiredWhenShown(opts: ContactFieldOptions | undefined): bool
   return opts.alternateMobile.required !== false;
 }
 
-function maskEmailAddress(email: string): string {
-  if (!email.includes("@")) return "";
-  const domain = email.split("@").slice(1).join("@");
-  return `***@${domain}`;
-}
-
 export default function ContactDetailsStep({ onContinue }: Props): ReactElement {
   const queryClient = useQueryClient();
   const { data: contactRaw, isLoading, isError, error, refetch } = useUserContactDetails({
@@ -147,7 +141,6 @@ export default function ContactDetailsStep({ onContinue }: Props): ReactElement 
   }, [otpModalOpen, resendAvailableAt]);
 
   const otpEmailForModal = otpTarget === "office" ? officeEmail.trim() : email.trim();
-  const maskedOtpEmail = maskEmailAddress(otpEmailForModal);
 
   const openOtpModal = (target: VerifyTarget) => {
     setOtpTarget(target);
@@ -518,7 +511,7 @@ export default function ContactDetailsStep({ onContinue }: Props): ReactElement 
         title="Verify email"
         otpLength={EMAIL_OTP_LENGTH}
         otpDigits={otp}
-        maskedEmail={maskedOtpEmail}
+        email={otpEmailForModal}
         error={otpModalError}
         resendSecondsLeft={resendSecondsLeft}
         resendPending={sendOtpMutation.isPending}
