@@ -391,7 +391,7 @@ export default function ContactDetailsStep({ onContinue }: Props): ReactElement 
       </>
     );
   } else {
-    alternateMobileLabel = <>Alternate Mobile</>;
+    alternateMobileLabel = <>Alternate Mobile (optional)</>;
   }
 
   let submitLabel: string;
