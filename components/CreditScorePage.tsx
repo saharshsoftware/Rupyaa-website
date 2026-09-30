@@ -18,19 +18,19 @@ type CreditScoreLayoutProps = {
 };
 
 /**
- * Desktop: fixed viewport — left column scrolls, one sticky sidebar.
+ * Desktop: natural page scrolling with a viewport-sized sticky sidebar.
  * Mobile: natural page stack (content then promo).
  */
 function CreditScoreLayout({ children }: CreditScoreLayoutProps) {
   return (
     <div
-      className={`${appShellContainerClassName} box-border flex flex-col py-4 sm:py-6 lg:h-[calc(100dvh-4rem)] lg:max-h-[calc(100dvh-4rem)] lg:overflow-hidden`}
+      className={`${appShellContainerClassName} box-border flex flex-col py-4 sm:py-6`}
     >
-      <div className="flex min-h-0 flex-1 flex-col gap-6 lg:flex-row lg:gap-8 lg:overflow-hidden xl:gap-12">
-        <div className="min-w-0 w-full lg:min-h-0 lg:flex-1 lg:overflow-x-hidden lg:overflow-y-auto lg:overscroll-contain">
+      <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-8 xl:gap-12">
+        <div className="min-w-0 w-full lg:flex-1">
           {children}
         </div>
-        <div className="w-full shrink-0 lg:h-full lg:min-h-0 lg:w-[300px] xl:w-[340px]">
+        <div className="w-full shrink-0 lg:sticky lg:top-24 lg:h-[calc(100dvh-7rem)] lg:w-[300px] xl:w-[340px]">
           <div className="h-auto min-h-[420px] w-full lg:h-full lg:min-h-0">
             <BasicInfoSidebar />
           </div>
