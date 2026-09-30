@@ -6,7 +6,6 @@ import {
   validateIndianMobile,
   validateReferenceMobilesDistinct,
 } from "@/lib/validation";
-import NeedContactSupport from "./NeedContactSupport";
 import ValidatedTextInput from "./ValidatedTextInput";
 
 type FieldErrors = {
@@ -175,7 +174,6 @@ export default function PersonalFamilyDetailsStep({ onContinue }: Props) {
         </button>
       </form>
 
-      <NeedContactSupport />
     </div>
   );
 }

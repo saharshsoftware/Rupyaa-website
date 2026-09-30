@@ -2,6 +2,7 @@
 
 import type { ReactElement, ReactNode } from "react";
 import LoanWizard from "@/components/LoanWizard";
+import NeedContactSupport from "@/components/NeedContactSupport";
 import GuestDashboardLanding from "@/components/GuestDashboardLanding";
 import BasicInfoSidebar from "@/components/BasicInfoSidebar";
 import ZapcashLoading from "@/components/ZapcashLoading";
@@ -60,6 +61,9 @@ export default function PersonalLoanPageClient() {
   return (
     <PersonalLoanShell>
       <LoanWizard />
+      <div className="mt-6">
+        <NeedContactSupport />
+      </div>
     </PersonalLoanShell>
   );
 }

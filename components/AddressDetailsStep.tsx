@@ -19,7 +19,6 @@ import {
 } from "@/lib/user-api";
 import AppButton from "@/components/app-button";
 import AppTextField from "@/components/app-text-field";
-import NeedContactSupport from "./NeedContactSupport";
 
 type Props = { onContinue?: () => void };
 
@@ -280,7 +279,6 @@ export default function AddressDetailsStep({ onContinue }: Props) {
         </div>
       </form>
 
-      <NeedContactSupport />
     </div>
   );
 }
