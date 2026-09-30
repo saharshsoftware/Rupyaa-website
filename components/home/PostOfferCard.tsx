@@ -88,16 +88,32 @@ export function PostOfferCard({
 
   const tenureLabel =
     typeof tenure === "string" && tenure.trim().length > 0 ? tenure.trim() : null;
+  const isJourneyVariant = variant === "journey";
+  let shellClassName: string | undefined;
+  let offerLabelClassName = "mt-2 text-sm font-medium text-gray-700 sm:text-base";
+  let amountClassName =
+    "mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-[2.75rem]";
+  let tenureClassName = "mt-2 text-base font-semibold text-gray-800 sm:text-lg";
+  let stepsWrapperClassName = "mt-5 sm:mt-6";
+  let journeyCtaClassName =
+    "mt-5 flex w-full items-center gap-3 rounded-xl bg-[#FECA42] px-3 py-3 text-left transition hover:bg-[#F5C038] sm:mt-6 sm:px-4";
+  if (isJourneyVariant) {
+    shellClassName = "pb-4 pt-6 sm:pb-5 sm:pt-7";
+    offerLabelClassName = "mt-1 text-sm font-medium text-gray-700 sm:text-base";
+    amountClassName =
+      "mt-1.5 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-[2.75rem]";
+    tenureClassName = "mt-1.5 text-base font-bold text-gray-800 sm:text-lg";
+    stepsWrapperClassName = "mt-3 sm:mt-4";
+    journeyCtaClassName =
+      "mt-3.5 flex w-full items-center gap-3 rounded-xl bg-[#FECA42] px-3 py-3 text-left transition hover:bg-[#F5C038] sm:mt-4 sm:px-4";
+  }
 
   let actionBlock: ReactNode = null;
   if (!hideAction) {
     if (variant === "journey") {
       const href = ctaHref ?? "/personal-loan";
       actionBlock = (
-        <Link
-          href={href}
-          className="mt-5 flex w-full items-center gap-3 rounded-xl bg-[#FECA42] px-3 py-3 text-left transition hover:bg-[#F5C038] sm:mt-6 sm:px-4"
-        >
+        <Link href={href} className={journeyCtaClassName}>
           <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white/70 text-gray-900">
             <UserIcon />
           </span>
@@ -144,25 +160,25 @@ export function PostOfferCard({
 
   let amountBlock: ReactNode;
   if (amount != null && typeof amount === "number") {
-    amountBlock = (
-      <p className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-[2.75rem]">
-        {formatCurrency(amount)}
-      </p>
-    );
+    amountBlock = <p className={amountClassName}>{formatCurrency(amount)}</p>;
   } else {
     amountBlock = <p className="mt-2 text-xl font-semibold text-gray-400">—</p>;
   }
+  let tenureBlock: ReactNode = null;
+  if (tenureLabel) {
+    tenureBlock = <p className={tenureClassName}>Tenure : {tenureLabel}</p>;
+  }
+  let stepsBlock: ReactNode = null;
+  if (children) {
+    stepsBlock = <div className={stepsWrapperClassName}>{children}</div>;
+  }
 
   return (
-    <HeroStatusCardShell badge={badge}>
-      <p className="text-sm mt-2 font-medium text-gray-700 sm:text-base">Your Rupyaa Offer</p>
+    <HeroStatusCardShell badge={badge} className={shellClassName}>
+      <p className={offerLabelClassName}>Your Rupyaa Offer</p>
       {amountBlock}
-      {tenureLabel ? (
-        <p className="mt-2 text-base font-semibold text-gray-800 sm:text-lg">
-          Tenure : {tenureLabel}
-        </p>
-      ) : null}
-      {children ? <div className="mt-5 sm:mt-6">{children}</div> : null}
+      {tenureBlock}
+      {stepsBlock}
       {actionBlock}
       {variant === "accept" ? (
         <p className="mt-4 flex items-center justify-center gap-1.5 text-[11px] text-gray-500 sm:text-xs">

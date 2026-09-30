@@ -4,7 +4,6 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { POST_OFFER_CTA_DEFAULT_HREF } from "@/utils/app-constants";
 import type { BuildPostOfferCtaElementArgs } from "@/types/post-offer-cta";
-import { STRING_CONSTANTS } from "@/utils/app-constants";
 
 /**
  * Post-offer hero primary CTA: handler, loan-scoped link, generic link, or disabled.
@@ -21,10 +20,21 @@ export function buildPostOfferCtaElement({
   enableFullWebJourney = false,
 }: BuildPostOfferCtaElementArgs): ReactNode {
   if (typeof onActionPress === "function") {
+    if (!enableFullWebJourney) {
+      return (
+        <Link
+          href={href}
+          className={`block ${isInteractive ? ctaEnabledClass : `${ctaDisabledClass} pointer-events-none`}`}
+          aria-disabled={!isInteractive}
+        >
+          {ctaContent}
+        </Link>
+      );
+    }
     return (
       <button
         type="button"
-        onClick={!enableFullWebJourney ? () => window.location.href = STRING_CONSTANTS.PLAY_STORE_URL : onActionPress}
+        onClick={onActionPress}
         disabled={!isInteractive}
         className={isInteractive ? ctaEnabledClass : ctaDisabledClass}
       >
