@@ -7,9 +7,9 @@ import {
 } from "@/components/credit-score/credit-score-guide-data";
 
 const paragraphClassName =
-  "mb-4 text-base leading-relaxed text-[#33423a] sm:text-[17px] sm:leading-[1.7]";
+  "mb-4 text-base leading-relaxed text-gray-600 sm:text-[17px] sm:leading-[1.7]";
 const listClassName =
-  "mb-4 list-disc space-y-2 pl-5 text-base leading-relaxed text-[#33423a] sm:text-[17px]";
+  "mb-4 list-disc space-y-2 pl-5 text-base leading-relaxed text-gray-600 sm:text-[17px]";
 const headingClassName =
   "mb-4 text-[26px] font-extrabold tracking-tight text-[#14202a] sm:text-[30px]";
 
@@ -77,15 +77,15 @@ export default function CreditScoreGuide() {
             </thead>
             <tbody>
               {SCORE_RANGE_ROWS.map((row, index) => {
-                let rowClassName = "border-b border-[#e6ece7]";
+                let rowClassName = "border-b border-gray-200";
                 if (index % 2 === 1) {
-                  rowClassName += " bg-[#f7faf7]";
+                  rowClassName += " bg-gray-50";
                 }
                 return (
                   <tr key={row.range} className={rowClassName}>
                     <td className="px-4 py-3 font-bold text-primary">{row.range}</td>
-                    <td className="px-4 py-3 text-[#33423a]">{row.rating}</td>
-                    <td className="px-4 py-3 text-[#33423a]">{row.indication}</td>
+                    <td className="px-4 py-3 text-gray-600">{row.rating}</td>
+                    <td className="px-4 py-3 text-gray-600">{row.indication}</td>
                   </tr>
                 );
               })}
@@ -140,10 +140,10 @@ export default function CreditScoreGuide() {
             let answer: ReactNode = null;
             if (isOpen) {
               sign = "–";
-              answer = <p className="m-0 px-5 pb-5 text-base leading-relaxed text-[#33423a] sm:px-6 sm:pb-6">{faq.answer}</p>;
+              answer = <p className="m-0 px-5 pb-5 text-base leading-relaxed text-gray-600 sm:px-6 sm:pb-6">{faq.answer}</p>;
             }
             return (
-              <div key={faq.question} className="overflow-hidden rounded-[14px] border border-[#e6ece7] bg-white">
+              <div key={faq.question} className="overflow-hidden rounded-[14px] border border-gray-200 bg-white">
                 <button type="button" onClick={() => setOpenFaqIndex(isOpen ? null : index)} className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left sm:px-6" aria-expanded={isOpen}>
                   <span className="text-base font-bold text-[#14202a] sm:text-[17px]">{faq.question}</span>
                   <span className="shrink-0 text-[22px] font-normal leading-none text-primary">{sign}</span>
