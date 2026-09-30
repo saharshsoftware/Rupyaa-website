@@ -2,13 +2,14 @@
 
 import type { KeyboardEvent, ReactNode } from "react";
 import AppButton from "@/components/app-button";
+import { maskEmail } from "@/src/utils/mask-email";
 
 type Props = {
   isOpen: boolean;
   title: string;
   otpLength: number;
   otpDigits: string[];
-  maskedEmail?: string;
+  email?: string;
   error?: string | null;
   resendSecondsLeft: number;
   resendPending: boolean;
@@ -25,7 +26,7 @@ export default function OtpVerificationModal({
   title,
   otpLength,
   otpDigits,
-  maskedEmail,
+  email,
   error,
   resendSecondsLeft,
   resendPending,
@@ -37,6 +38,10 @@ export default function OtpVerificationModal({
   onDigitKeyDown,
 }: Props) {
   if (!isOpen) return null;
+
+  const fallbackEmail = "your email";
+  const mobileEmail = email || fallbackEmail;
+  const desktopEmail = maskEmail(email || "") || fallbackEmail;
 
   let resendLabel: string;
   if (resendSecondsLeft > 0) {
@@ -84,8 +89,10 @@ export default function OtpVerificationModal({
         <h2 id="contact-otp-title" className="text-lg font-bold text-gray-900">
           {title}
         </h2>
-        <p className="text-sm text-gray-600">
-          Enter OTP sent to {maskedEmail || "your email"}.
+        <p className="text-sm text-gray-600 wrap-anywhere">
+          Enter OTP sent to{" "}
+          <span className="lg:hidden">{mobileEmail}</span>
+          <span className="hidden lg:inline">{desktopEmail}</span>.
         </p>
         <div className="flex gap-2 justify-center" role="group" aria-label="One-time password digits">
           {otpDigits.map((digit, index) => (
