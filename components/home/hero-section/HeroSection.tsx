@@ -16,6 +16,7 @@ import { HeroLoggedInContent } from "@/components/home/hero-section/HeroLoggedIn
 import { HeroLoggedOut } from "./HeroLoggedOut";
 import { REACT_QUERY_KEYS } from "@/utils/app-constants";
 import { PERSONAL_LOAN_PAGE_GRADIENT } from "@/lib/personal-loan-page-gradient";
+import styles from "./HeroSection.module.css";
 
 /**
  * Home hero: yellow gradient + skyline image for all states.
@@ -128,7 +129,7 @@ export default function HeroSection(): ReactElement {
       style={{ background: PERSONAL_LOAN_PAGE_GRADIENT }}
     >
       <HeroSkyline />
-      <div className="relative z-[2] mx-auto flex w-full flex-1 flex-col items-center justify-start px-4 pb-10 pt-5 sm:justify-center sm:pt-6 h-short:justify-start h-short:px-3 h-short:pb-3 h-short:pt-2 h-xshort:pb-2 h-xshort:pt-1.5">
+      <div className={`${styles.content} relative z-[2] mx-auto flex w-full flex-1 flex-col items-center`}>
         {content}
       </div>
       {cancellationModal}
