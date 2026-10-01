@@ -13,4 +13,4 @@ export const HERO_CARD_GRID_OVERLAY_OPACITY = 0.8;
 export const HERO_CARD_GRID_BACKGROUND_SIZE_PX = 354;
 
 /** Default StatusStrip gradient (native parity). */
-export const STATUS_STRIP_DEFAULT_GRADIENT_COLORS: readonly [string, string] = ["#016626", "#16A34A"];
+export const STATUS_STRIP_DEFAULT_GRADIENT_COLORS: readonly [string, string] = ["var(--status-start)", "var(--success)"];

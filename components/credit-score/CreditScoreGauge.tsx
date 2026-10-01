@@ -41,8 +41,8 @@ export default function CreditScoreGauge({
   const end = polarPoint(1);
   const marker = polarPoint(fraction);
   const trackColor = variant === "dark" ? "#1f3a2a" : "#EEF2F0";
-  const scoreTextColor = variant === "dark" ? "#ffffff" : "#111827";
-  const rangeTextColor = variant === "dark" ? "#9CA3AF" : "#9CA3AF";
+  const scoreTextColor = variant === "dark" ? "var(--white)" : "var(--text-primary)";
+  const rangeTextColor = "var(--text-muted)";
   const gradientId = `credit-gauge-${variant}`;
   return (
     <div className={`flex flex-col items-center ${className}`}>
@@ -54,10 +54,10 @@ export default function CreditScoreGauge({
       >
         <defs>
           <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#EF4444" />
-            <stop offset="35%" stopColor="#F59E0B" />
+            <stop offset="0%" stopColor="var(--danger)" />
+            <stop offset="35%" stopColor="var(--warning)" />
             <stop offset="65%" stopColor="#FACC15" />
-            <stop offset="100%" stopColor="#22C55E" />
+            <stop offset="100%" stopColor="var(--secondary)" />
           </linearGradient>
         </defs>
         <path
@@ -80,7 +80,7 @@ export default function CreditScoreGauge({
           cx={marker.x}
           cy={marker.y}
           r={7}
-          fill="#ffffff"
+          fill="var(--white)"
           stroke={band.color}
           strokeWidth={4}
         />

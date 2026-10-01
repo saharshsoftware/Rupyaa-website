@@ -22,7 +22,7 @@ const SAFETY_POINTS = [
 ] as const;
 
 const CARD_BACKGROUND =
-  "linear-gradient(90deg, rgba(254,202,66,0.22) 0%, rgba(254,202,66,0.1) 55%, rgba(254,202,66,0.03) 100%)";
+  "linear-gradient(90deg, rgb(from var(--brand-color) r g b / 0.22) 0%, rgb(from var(--brand-color) r g b / 0.1) 55%, rgb(from var(--brand-color) r g b / 0.03) 100%)";
 
 /**
  * Homepage safety / trust section.

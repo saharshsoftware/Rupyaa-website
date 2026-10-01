@@ -113,7 +113,7 @@ export default function CreditScoreReport({
 
       </div>
 
-      <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-xl bg-[#FECA42] px-4 py-3">
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-xl bg-primary px-4 py-3">
         <div>
           <div className="flex flex-wrap items-center gap-2">
             <p className="text-xs font-medium text-gray-900">Your score qualifies you for a Personal Loan up to</p>
@@ -121,7 +121,7 @@ export default function CreditScoreReport({
           </div>
           <p className="mt-1 text-3xl font-bold text-gray-950">{formatCurrency(preApprovedAmount)}</p>
         </div>
-        <a href="/personal-loan" className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md bg-[#302400] px-5 py-2 text-xs font-semibold text-[#FECA42] transition hover:bg-black">
+        <a href="/personal-loan" className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md bg-[#302400] px-5 py-2 text-xs font-semibold text-primary transition hover:bg-black">
           Apply now
           <ArrowRightIcon />
         </a>
@@ -129,13 +129,13 @@ export default function CreditScoreReport({
 
       <div className="mt-4 flex flex-col gap-4 rounded-xl border border-gray-100 bg-white p-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-start gap-3">
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[#9c1c2e] text-[10px] font-bold text-white">
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-report-accent text-[10px] font-bold text-white">
             EQUIFAX
           </span>
           <div>
             <div className="flex flex-wrap items-center gap-2">
               <p className="text-sm font-bold text-gray-900">Get your full credit report for Free</p>
-              <span className="rounded bg-red-50 px-2 py-0.5 text-[10px] font-semibold uppercase text-[#9c1c2e]">
+              <span className="rounded bg-red-50 px-2 py-0.5 text-[10px] font-semibold uppercase text-report-accent">
                 Equifax Official
               </span>
             </div>
@@ -148,7 +148,7 @@ export default function CreditScoreReport({
         <button
           type="button"
           onClick={onUnlockReport}
-          className="inline-flex min-h-[40px] shrink-0 items-center justify-center gap-2 rounded-md bg-[#9c1c2e] px-4 py-2 text-xs font-semibold text-white transition hover:bg-[#82101f]"
+          className="inline-flex min-h-[40px] shrink-0 items-center justify-center gap-2 rounded-md bg-report-accent px-4 py-2 text-xs font-semibold text-white transition hover:bg-report-accent-hover"
         >
           Unlock report
           <ArrowRightIcon />
@@ -191,7 +191,7 @@ export default function CreditScoreReport({
           <button
             type="button"
             onClick={onUnlockReport}
-            className="mt-4 inline-flex min-h-[44px] w-full items-center justify-center rounded-xl bg-[#9c1c2e]/10 px-4 py-2.5 text-xs font-semibold text-[#9c1c2e] transition hover:bg-[#9c1c2e]/15"
+            className="mt-4 inline-flex min-h-[44px] w-full items-center justify-center rounded-xl bg-report-accent/10 px-4 py-2.5 text-xs font-semibold text-report-accent transition hover:bg-report-accent/15"
           >
             Get full report
           </button>

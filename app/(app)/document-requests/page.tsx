@@ -27,7 +27,7 @@ function DocumentRequestsEmptyState(): ReactElement {
   const router = useRouter();
 
   return (
-    <div className="flex w-full flex-col items-center rounded-2xl border border-dashed border-[#E8D9A8] bg-[#FFFCF4] px-6 py-10 text-center sm:px-10 sm:py-14">
+    <div className="flex w-full flex-col items-center rounded-2xl border border-dashed border-border-gold bg-input-bg px-6 py-10 text-center sm:px-10 sm:py-14">
       <div className="relative mb-6 h-40 w-full max-w-xs sm:h-48">
         <Image
           src={IMAGES.noPendingDocuments}
@@ -53,7 +53,7 @@ function NeedHelpBar(): ReactElement {
   return (
     <Link
       href="/support"
-      className="mt-6 flex items-center gap-3 rounded-2xl border border-[#FECA42]/40 bg-[#FFF8E6] px-4 py-4 sm:px-5"
+      className="mt-6 flex items-center gap-3 rounded-2xl border border-primary/40 bg-cream-strong px-4 py-4 sm:px-5"
     >
       <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-gray-900 text-white">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
@@ -175,7 +175,7 @@ export default function DocumentRequestsPage(): ReactElement {
         errorMessage = error.message;
       }
       content = (
-        <div className="flex min-h-[200px] flex-col items-center justify-center rounded-2xl border border-dashed border-[#E8D9A8] bg-[#FFFCF4] p-8 text-center">
+        <div className="flex min-h-[200px] flex-col items-center justify-center rounded-2xl border border-dashed border-border-gold bg-input-bg p-8 text-center">
           <p className="mb-4 text-sm text-red-600">{errorMessage}</p>
           <AppButton type="button" onClick={() => void refetch()}>
             Try Again

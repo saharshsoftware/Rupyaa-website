@@ -171,7 +171,7 @@ export default function SoftPullScreen({ onContinue }: Props) {
   return (
     <div className="w-full max-w-full sm:max-w-[95vw] md:max-w-[90vw] lg:max-w-[80vw] min-w-0 mx-auto bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] overflow-hidden">
       <div className="flex flex-col items-center justify-center gap-6 min-h-[280px] p-6 sm:p-8 lg:p-10">
-        <div className="w-16 h-16 rounded-full bg-[#e8f5e9] flex items-center justify-center">
+        <div className="w-16 h-16 rounded-full bg-success-surface flex items-center justify-center">
           <SpinnerIcon className="text-primary" />
         </div>
         <div className="text-center">

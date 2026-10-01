@@ -16,7 +16,7 @@ function CheckIcon() {
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path
         d="M5 12.5l4 4L19 7"
-        stroke="#ffffff"
+        stroke="var(--white)"
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -28,7 +28,7 @@ function CheckIcon() {
 function SpinnerRing({ className = "" }: { readonly className?: string }) {
   return (
     <span
-      className={`inline-block animate-spin rounded-full border-2 border-[#FECA42]/30 border-t-[#FECA42] ${className}`}
+      className={`inline-block animate-spin rounded-full border-2 border-primary/30 border-t-primary ${className}`}
     />
   );
 }
@@ -70,7 +70,7 @@ export default function CreditScoreFetching({ isPending, onComplete }: CreditSco
   if (phase === "steps") {
     card = (
       <>
-        <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border-2 border-[#FECA42]">
+        <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border-2 border-primary">
           <span className="text-xs font-bold tracking-wide text-gray-900">EQUIFAX</span>
         </div>
         <h2 className="mt-6 text-center text-xl font-bold text-gray-900 sm:text-2xl">
@@ -119,7 +119,7 @@ export default function CreditScoreFetching({ isPending, onComplete }: CreditSco
   }
   return (
     <div className="flex min-h-[70vh] w-full items-center justify-center bg-white px-4 py-16">
-      <div className="w-full max-w-md rounded-2xl border border-[#FECA42] bg-white p-6 shadow-[0_12px_40px_rgba(0,0,0,0.08)] sm:p-8">
+      <div className="w-full max-w-md rounded-2xl border border-primary bg-white p-6 shadow-[0_12px_40px_rgba(0,0,0,0.08)] sm:p-8">
         {card}
       </div>
     </div>

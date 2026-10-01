@@ -57,7 +57,7 @@ export function ActiveLoanCard({
   const { description, pillLabel } = STATUS_CONFIG[statusPill];
   const totalPayable =
     typeof amountDue === "number" && amountDue > 0 ? amountDue : 0;
-  let badgeClassName = "text-[#FECA42]";
+  let badgeClassName = "text-primary";
   if (isOverdue) {
     badgeClassName = "text-red-400";
   }
@@ -66,7 +66,7 @@ export function ActiveLoanCard({
     <HeroStatusCardShell
       badge={
         <div
-          className={`absolute right-3 top-3 z-10 rounded-md bg-[#1A1A1A] px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide sm:right-4 sm:top-4 sm:text-[11px] ${badgeClassName}`}
+          className={`absolute right-3 top-3 z-10 rounded-md bg-ink px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide sm:right-4 sm:top-4 sm:text-[11px] ${badgeClassName}`}
         >
           {pillLabel}
         </div>
@@ -75,13 +75,13 @@ export function ActiveLoanCard({
       <h3 className="text-xl font-bold text-gray-900 sm:text-2xl">Loan Status</h3>
       <p className="mt-2 text-sm leading-relaxed text-gray-600 sm:text-[15px]">{description}</p>
       <div className="mt-5 grid grid-cols-2 gap-3 text-left sm:mt-6">
-        <div className="rounded-xl border border-[#FECA42]/50 bg-white px-3 py-3 sm:px-4 sm:py-4">
+        <div className="rounded-xl border border-primary/50 bg-white px-3 py-3 sm:px-4 sm:py-4">
           <p className="text-xs font-medium text-gray-700 sm:text-sm">Total Amount Due</p>
           <p className="mt-1 text-lg font-bold tabular-nums text-[#C9920F] sm:text-xl">
             {formatCurrency(totalPayable)}
           </p>
         </div>
-        <div className="rounded-xl border border-[#FECA42]/50 bg-white px-3 py-3 sm:px-4 sm:py-4">
+        <div className="rounded-xl border border-primary/50 bg-white px-3 py-3 sm:px-4 sm:py-4">
           <p className="text-xs font-medium text-gray-700 sm:text-sm">Due Date</p>
           <p className="mt-1 text-sm font-bold text-[#C9920F] sm:text-base">
             {dueDateFormatted || "—"}

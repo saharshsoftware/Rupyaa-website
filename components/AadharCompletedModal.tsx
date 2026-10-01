@@ -4,8 +4,8 @@ import AppButton from "@/components/app-button";
 
 type Props = { isOpen: boolean; onClose: () => void };
 
-const BRAND_YELLOW = "#FECA42";
-const BRAND_HALO = "#FFFCF4";
+const BRAND_YELLOW = "var(--brand-color)";
+const BRAND_HALO = "var(--input-bg)";
 
 export default function AadharCompletedModal({ isOpen, onClose }: Props) {
   if (!isOpen) return null;
@@ -35,7 +35,7 @@ export default function AadharCompletedModal({ isOpen, onClose }: Props) {
               key={i}
               className="absolute h-2 w-2 rounded-full"
               style={{
-                backgroundColor: `${BRAND_YELLOW}99`,
+                backgroundColor: "rgb(from var(--brand-color) r g b / 0.6)",
                 top: "50%",
                 left: "50%",
                 transform: `rotate(${i * 45}deg) translateY(-52px)`,
@@ -54,7 +54,7 @@ export default function AadharCompletedModal({ isOpen, onClose }: Props) {
         </AppButton>
         <p className="mt-4 text-sm text-gray-500">
           Need help?{" "}
-          <a href="#" className="font-medium text-[#FECA42] hover:underline">
+          <a href="#" className="font-medium text-primary hover:underline">
             Contact support
           </a>
         </p>

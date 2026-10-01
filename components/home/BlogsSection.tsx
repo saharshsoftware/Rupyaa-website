@@ -77,7 +77,7 @@ function BlogCardContent({ card }: { readonly card: BlogCard }) {
   return (
     <Link
       href={card.href}
-      className="group flex h-full min-w-0 flex-col overflow-hidden rounded-xl border border-gray-200 bg-white transition hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-[0_12px_30px_rgba(0,101,37,0.10)] sm:rounded-2xl"
+      className="group flex h-full min-w-0 flex-col overflow-hidden rounded-xl border border-gray-200 bg-white transition hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-[0_12px_30px_rgb(from_var(--brand-green)_r_g_b/0.10)] sm:rounded-2xl"
     >
       <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#E5F2DE]">
         <Image

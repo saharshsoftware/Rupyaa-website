@@ -22,7 +22,7 @@ import AppButton from "@/components/app-button";
 
 const DIGILOCKER_STATUS_QUERY_KEY = ["digilocker-status"] as const;
 
-function CheckIcon({ className = "text-[#FECA42]" }: { className?: string }) {
+function CheckIcon({ className = "text-primary" }: { className?: string }) {
   return (
     <svg
       width="20"
@@ -152,7 +152,7 @@ export default function DigiLockerStep({ onContinue }: Props) {
     <>
       <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-6 md:p-8 max-w-2xl mx-auto w-full">
       <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
-        <div className=" rounded-xl bg-[#E8F5E9] flex items-center justify-center mb-3 sm:mb-4">
+        <div className=" rounded-xl bg-success-surface flex items-center justify-center mb-3 sm:mb-4">
           <Image
             src={digilockerIcon}
             alt="digilocker"

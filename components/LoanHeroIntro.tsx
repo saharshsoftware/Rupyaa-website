@@ -13,7 +13,7 @@ function HeroFeatureIcon({ type }: { type: (typeof HERO_FEATURES)[number]["icon"
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
         <path
           d="M13 2L4 14h7l-1 8 10-14h-7l1-6z"
-          stroke="#111827"
+          stroke="var(--text-primary)"
           strokeWidth="1.7"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -26,11 +26,11 @@ function HeroFeatureIcon({ type }: { type: (typeof HERO_FEATURES)[number]["icon"
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
         <path
           d="M8 3h6l4 4v14H8V3z"
-          stroke="#111827"
+          stroke="var(--text-primary)"
           strokeWidth="1.7"
           strokeLinejoin="round"
         />
-        <path d="M14 3v4h4M10 12h6M10 16h4" stroke="#111827" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M14 3v4h4M10 12h6M10 16h4" stroke="var(--text-primary)" strokeWidth="1.7" strokeLinecap="round" />
       </svg>
     );
   }
@@ -38,11 +38,11 @@ function HeroFeatureIcon({ type }: { type: (typeof HERO_FEATURES)[number]["icon"
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
       <path
         d="M12 3l7 3v5c0 4.5-3 7.5-7 8.5-4-1-7-4-7-8.5V6l7-3z"
-        stroke="#111827"
+        stroke="var(--text-primary)"
         strokeWidth="1.7"
         strokeLinejoin="round"
       />
-      <path d="M9.5 11.5l1.8 1.8 3.4-3.6" stroke="#111827" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M9.5 11.5l1.8 1.8 3.4-3.6" stroke="var(--text-primary)" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }

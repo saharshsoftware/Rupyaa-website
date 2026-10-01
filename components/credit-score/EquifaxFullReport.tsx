@@ -113,7 +113,7 @@ export default function EquifaxFullReport({ data, pdfUrl, onBack }: EquifaxFullR
         Back to summary
       </button>
 
-      <div className="overflow-hidden rounded-2xl bg-[#9c1c2e] px-5 py-5 text-white sm:px-8 sm:py-6">
+      <div className="overflow-hidden rounded-2xl bg-report-accent px-5 py-5 text-white sm:px-8 sm:py-6">
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
             <p className="text-2xl font-bold italic tracking-tight">EQUIFAX</p>
@@ -129,7 +129,7 @@ export default function EquifaxFullReport({ data, pdfUrl, onBack }: EquifaxFullR
               target="_blank"
               rel="noopener noreferrer"
               aria-disabled={!hasPdf}
-              className={`inline-flex min-h-[40px] items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-semibold text-[#9c1c2e] transition hover:bg-white/90 ${
+              className={`inline-flex min-h-[40px] items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-semibold text-report-accent transition hover:bg-white/90 ${
                 hasPdf ? "" : "pointer-events-none opacity-50"
               }`}
             >
@@ -243,7 +243,7 @@ export default function EquifaxFullReport({ data, pdfUrl, onBack }: EquifaxFullR
           target="_blank"
           rel="noopener noreferrer"
           aria-disabled={!hasPdf}
-          className={`inline-flex min-h-[48px] shrink-0 items-center justify-center gap-2 rounded-xl bg-[#9c1c2e] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#82101f] ${
+          className={`inline-flex min-h-[48px] shrink-0 items-center justify-center gap-2 rounded-xl bg-report-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-report-accent-hover ${
             hasPdf ? "" : "pointer-events-none opacity-50"
           }`}
         >

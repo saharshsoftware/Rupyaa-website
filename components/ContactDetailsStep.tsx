@@ -414,9 +414,9 @@ export default function ContactDetailsStep({ onContinue }: Props): ReactElement 
   }
 
   return (
-    <div className="w-full max-w-full sm:max-w-[95vw] md:max-w-[90vw] lg:max-w-[80vw] min-w-0 mx-auto bg-white rounded-2xl border border-[#FFF4D9] overflow-hidden">
+    <div className="w-full max-w-full sm:max-w-[95vw] md:max-w-[90vw] lg:max-w-[80vw] min-w-0 mx-auto bg-white rounded-2xl border border-gold-soft overflow-hidden">
       <form className="pb-6 px-4 sm:px-6" onSubmit={handleSubmit} noValidate>
-        <div className="flex items-center gap-2 rounded-t-xl bg-[#FFE398] px-4 py-3 border border-b-0 border-[#FFF4D9] -mx-4 sm:-mx-6 sm:rounded-t-2xl mb-4">
+        <div className="flex items-center gap-2 rounded-t-xl bg-gold-header px-4 py-3 border border-b-0 border-gold-soft -mx-4 sm:-mx-6 sm:rounded-t-2xl mb-4">
           <MailIcon />
           <h3 className="text-sm font-bold text-gray-900">Contact Details</h3>
         </div>

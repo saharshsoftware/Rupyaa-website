@@ -32,7 +32,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#e8f5e9] border-b border-gray-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-success-surface border-b border-gray-200">
       <nav className={`flex items-center justify-between h-16 ${appShellContainerClassName}`}>
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <Image
@@ -72,7 +72,7 @@ export default function Header() {
         </div>
       </nav>
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-[#e8f5e9] border-t border-gray-200 py-4 px-4 sm:px-6 lg:px-8 flex flex-col gap-2">
+        <div className="md:hidden absolute top-16 left-0 right-0 bg-success-surface border-t border-gray-200 py-4 px-4 sm:px-6 lg:px-8 flex flex-col gap-2">
           {NAV_LINKS.map(({ href, label }) => (
             <Link
               key={label}

@@ -13,7 +13,7 @@ export function LoanDetailRow({ label, value }: { label: string; value: ReactNod
 
 export function AmountSummaryBox({ label, amount }: { label: string; amount: string }) {
   return (
-    <div className="flex items-center justify-between gap-4 rounded-lg border border-primary/40 bg-[#E8F5E9]/60 px-4 py-3 my-4">
+    <div className="flex items-center justify-between gap-4 rounded-lg border border-primary/40 bg-success-surface/60 px-4 py-3 my-4">
       <span className="text-sm font-semibold text-gray-900">{label}</span>
       <span className="text-sm font-semibold text-gray-900">{amount}</span>
     </div>

@@ -135,7 +135,7 @@ export default function EMICalculatorSection() {
                   onChange={(e) => setLoanAmount(Number(e.target.value))}
                   className="emi-slider w-full"
                   style={{
-                    background: `linear-gradient(to right, var(--brand-color) 0%, var(--brand-color) ${((loanAmount - LOAN_AMOUNT_MIN) / (LOAN_AMOUNT_MAX - LOAN_AMOUNT_MIN)) * 100}%, #e5e7eb ${((loanAmount - LOAN_AMOUNT_MIN) / (LOAN_AMOUNT_MAX - LOAN_AMOUNT_MIN)) * 100}%, #e5e7eb 100%)`,
+                    background: `linear-gradient(to right, var(--brand-color) 0%, var(--brand-color) ${((loanAmount - LOAN_AMOUNT_MIN) / (LOAN_AMOUNT_MAX - LOAN_AMOUNT_MIN)) * 100}%, var(--border) ${((loanAmount - LOAN_AMOUNT_MIN) / (LOAN_AMOUNT_MAX - LOAN_AMOUNT_MIN)) * 100}%, var(--border) 100%)`,
                   }}
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
@@ -176,7 +176,7 @@ export default function EMICalculatorSection() {
                       </button>
                     </div>
                     <div className={`px-4 py-2.5 rounded-lg border text-gray-800 font-bold text-sm min-w-[60px] text-center ${
-                      tenureUnit === "months" ? "border-gray-200 bg-[#FFFCF4]" : "border-gray-200 bg-white"
+                      tenureUnit === "months" ? "border-gray-200 bg-input-bg" : "border-gray-200 bg-white"
                     }`}>
                       {tenureValue}
                     </div>
@@ -192,7 +192,7 @@ export default function EMICalculatorSection() {
                   onChange={(e) => setTenureValue(Number(e.target.value))}
                   className="emi-slider w-full"
                   style={{
-                    background: `linear-gradient(to right, var(--brand-color) 0%, var(--brand-color) ${((tenureValue - tenureMin) / (tenureMax - tenureMin)) * 100}%, #e5e7eb ${((tenureValue - tenureMin) / (tenureMax - tenureMin)) * 100}%, #e5e7eb 100%)`,
+                    background: `linear-gradient(to right, var(--brand-color) 0%, var(--brand-color) ${((tenureValue - tenureMin) / (tenureMax - tenureMin)) * 100}%, var(--border) ${((tenureValue - tenureMin) / (tenureMax - tenureMin)) * 100}%, var(--border) 100%)`,
                   }}
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
@@ -221,7 +221,7 @@ export default function EMICalculatorSection() {
                   onChange={(e) => setInterestRate(Number(e.target.value))}
                   className="emi-slider w-full"
                   style={{
-                    background: `linear-gradient(to right, var(--brand-color) 0%, var(--brand-color) ${((interestRate - INTEREST_MIN) / (INTEREST_MAX - INTEREST_MIN)) * 100}%, #e5e7eb ${((interestRate - INTEREST_MIN) / (INTEREST_MAX - INTEREST_MIN)) * 100}%, #e5e7eb 100%)`,
+                    background: `linear-gradient(to right, var(--brand-color) 0%, var(--brand-color) ${((interestRate - INTEREST_MIN) / (INTEREST_MAX - INTEREST_MIN)) * 100}%, var(--border) ${((interestRate - INTEREST_MIN) / (INTEREST_MAX - INTEREST_MIN)) * 100}%, var(--border) 100%)`,
                   }}
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">

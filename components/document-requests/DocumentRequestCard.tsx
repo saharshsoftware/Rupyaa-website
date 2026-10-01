@@ -70,7 +70,7 @@ type StatusConfig = {
 const STATUS_CONFIG: Record<string, StatusConfig> = {
   pending: {
     label: "Pending",
-    className: "bg-[#FFF8E6] text-amber-800 border-[#FECA42]/50",
+    className: "bg-cream-strong text-amber-800 border-primary/50",
   },
   uploaded: {
     label: "Under Review",
@@ -259,7 +259,7 @@ export default function DocumentRequestCard({ request, onUploadSuccess }: Props)
     "flex flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-gray-300 bg-white px-4 py-8 min-h-[140px] cursor-pointer transition-colors hover:border-gray-400";
   if (isDragging || selectedFiles.length > 0) {
     dropZoneClassName =
-      "flex flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-[#FECA42] bg-[#FFFCF4] px-4 py-8 min-h-[140px] cursor-pointer transition-colors";
+      "flex flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-primary bg-input-bg px-4 py-8 min-h-[140px] cursor-pointer transition-colors";
   }
 
   let dropZoneLabel = "Click to select documents or drag and drop files here";
@@ -448,10 +448,10 @@ export default function DocumentRequestCard({ request, onUploadSuccess }: Props)
 
   return (
     <>
-      <div className="w-full rounded-2xl border border-dashed border-[#E8D9A8] bg-[#FFFCF4] p-4 sm:p-5">
+      <div className="w-full rounded-2xl border border-dashed border-border-gold bg-input-bg p-4 sm:p-5">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
           <div className="flex min-w-0 items-start gap-3">
-            <span className="mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-xl bg-[#FFF8E6] text-gray-700">
+            <span className="mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-xl bg-cream-strong text-gray-700">
               <DocumentIcon />
             </span>
             <div className="min-w-0">

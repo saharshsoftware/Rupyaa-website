@@ -139,8 +139,8 @@ export function PreOfferCard({
 
         {footerMessage != null && footerMessage.length > 0 ? (
           <div className="mt-5 flex items-center justify-center gap-1.5 px-2">
-            <InfoIcon className="shrink-0 text-[#9CA3AF]" />
-            <p className="text-center text-[11px] leading-snug text-[#6B7280] sm:text-xs">{footerMessage}</p>
+            <InfoIcon className="shrink-0 text-text-muted" />
+            <p className="text-center text-[11px] leading-snug text-text-secondary sm:text-xs">{footerMessage}</p>
           </div>
         ) : null}
       </div>

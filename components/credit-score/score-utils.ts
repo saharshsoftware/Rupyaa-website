@@ -9,22 +9,22 @@ export interface ScoreBand {
 
 const BAND_POOR: ScoreBand = {
   label: "Poor",
-  color: "#EF4444",
+  color: "var(--danger)",
   textClassName: "text-red-500",
 };
 const BAND_FAIR: ScoreBand = {
   label: "Fair",
-  color: "#F59E0B",
+  color: "var(--warning)",
   textClassName: "text-amber-500",
 };
 const BAND_GOOD: ScoreBand = {
   label: "Good",
-  color: "#22C55E",
+  color: "var(--secondary)",
   textClassName: "text-green-500",
 };
 const BAND_EXCELLENT: ScoreBand = {
   label: "Excellent",
-  color: "#16A34A",
+  color: "var(--success)",
   textClassName: "text-green-600",
 };
 

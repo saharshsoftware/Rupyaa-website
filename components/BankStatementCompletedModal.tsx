@@ -2,7 +2,7 @@
 
 function BankBuildingIcon() {
   return (
-    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" className="text-[#22C55E]">
+    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" className="text-secondary">
       <path d="M3 21h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       <path d="M3 10h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       <path d="M5 6l7-3 7 3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -25,7 +25,7 @@ export default function BankStatementCompletedModal({ isOpen, onClose }: Props) 
         <button
           type="button"
           onClick={onClose}
-          className="absolute top-4 right-4 p-1 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#006525] min-w-[44px] min-h-[44px] flex items-center justify-center"
+          className="absolute top-4 right-4 p-1 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-green min-w-[44px] min-h-[44px] flex items-center justify-center"
           aria-label="Close"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -34,7 +34,7 @@ export default function BankStatementCompletedModal({ isOpen, onClose }: Props) 
           </svg>
         </button>
         <div className="flex flex-col items-center text-center pt-2">
-          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#F0FBF2] flex items-center justify-center mb-4">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-success-soft flex items-center justify-center mb-4">
             <BankBuildingIcon />
           </div>
           <h2 id="completed-title" className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
@@ -46,11 +46,11 @@ export default function BankStatementCompletedModal({ isOpen, onClose }: Props) 
           <button
             type="button"
             onClick={onClose}
-            className="w-full py-3.5 rounded-xl bg-[#006525] text-white font-semibold hover:bg-[#004d1c] focus:outline-none focus:ring-2 focus:ring-[#006525] focus:ring-offset-2 min-h-[48px]"
+            className="w-full py-3.5 rounded-xl bg-brand-green text-white font-semibold hover:bg-brand-green-hover focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-offset-2 min-h-[48px]"
           >
             Continue
           </button>
-          <p className="text-sm text-gray-500 mt-4">Need help? <a href="#" className="text-[#006525] font-medium hover:underline">Contact Support</a></p>
+          <p className="text-sm text-gray-500 mt-4">Need help? <a href="#" className="text-brand-green font-medium hover:underline">Contact Support</a></p>
         </div>
       </div>
     </div>

@@ -42,7 +42,7 @@ export default function UnderReviewDownloadCard({
     <div
       className="w-full overflow-hidden rounded-3xl border border-white/60 backdrop-blur-xl"
       style={{
-        background: "linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, #FFFCF5 100%)",
+        background: "linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, var(--surface-ivory) 100%)",
       }}
     >
       <div className="relative p-4 sm:p-5">

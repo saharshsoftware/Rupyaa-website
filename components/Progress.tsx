@@ -62,25 +62,25 @@ export default function Progress({ steps, currentStep = 0, className = "" }: Pro
             let node: ReactNode;
             if (isHighlighted) {
               node = (
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#FFFCF4] sm:h-14 sm:w-14 md:h-16 md:w-16">
-                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#FECA42] sm:h-7 sm:w-7 md:h-8 md:w-8">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-input-bg sm:h-14 sm:w-14 md:h-16 md:w-16">
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary sm:h-7 sm:w-7 md:h-8 md:w-8">
                     <CheckIcon />
                   </span>
                 </div>
               );
             } else {
               node = (
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#FFFCF4] sm:h-14 sm:w-14 md:h-16 md:w-16">
-                  <span className="h-6 w-6 rounded-full border-2 border-[#FECA42] bg-white sm:h-7 sm:w-7 md:h-8 md:w-8" />
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-input-bg sm:h-14 sm:w-14 md:h-16 md:w-16">
+                  <span className="h-6 w-6 rounded-full border-2 border-primary bg-white sm:h-7 sm:w-7 md:h-8 md:w-8" />
                 </div>
               );
             }
 
             let segmentClassName: string;
             if (segmentFilled) {
-              segmentClassName = "bg-[#FECA42]";
+              segmentClassName = "bg-primary";
             } else {
-              segmentClassName = "bg-[#FFFCF4]";
+              segmentClassName = "bg-input-bg";
             }
 
             return (

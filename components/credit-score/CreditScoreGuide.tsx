@@ -11,7 +11,7 @@ const paragraphClassName =
 const listClassName =
   "mb-4 list-disc space-y-2 pl-5 text-base leading-relaxed text-gray-600 sm:text-[17px]";
 const headingClassName =
-  "mb-4 text-[26px] font-extrabold tracking-tight text-[#14202a] sm:text-[30px]";
+  "mb-4 text-[26px] font-extrabold tracking-tight text-text-strong sm:text-[30px]";
 
 export default function CreditScoreGuide() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -69,7 +69,7 @@ export default function CreditScoreGuide() {
         <div className="mb-5 overflow-x-auto">
           <table className="w-full min-w-[560px] border-collapse text-[15px]">
             <thead>
-              <tr className="bg-[#FECA42] text-left text-white">
+              <tr className="bg-primary text-left text-white">
                 <th className="rounded-tl-[10px] px-4 py-3 font-bold">Credit Score</th>
                 <th className="px-4 py-3 font-bold">Rating</th>
                 <th className="rounded-tr-[10px] px-4 py-3 font-bold">What it Indicates</th>
@@ -104,15 +104,15 @@ export default function CreditScoreGuide() {
         <p className={paragraphClassName}>
           Your credit score is mainly influenced by how you use and repay credit.
         </p>
-        <h3 className="mb-2 text-lg font-extrabold text-[#14202a]">Repayment History</h3>
+        <h3 className="mb-2 text-lg font-extrabold text-text-strong">Repayment History</h3>
         <p className={paragraphClassName}>Paying your EMIs and credit card bills on time helps maintain a healthy credit profile. Late or missed payments can negatively affect your score.</p>
-        <h3 className="mb-2 text-lg font-extrabold text-[#14202a]">Credit Usage</h3>
+        <h3 className="mb-2 text-lg font-extrabold text-text-strong">Credit Usage</h3>
         <p className={paragraphClassName}>Using a large portion of your available credit card limit regularly may indicate higher dependence on credit. Keeping your credit usage under control can support a healthier credit profile.</p>
-        <h3 className="mb-2 text-lg font-extrabold text-[#14202a]">Loan and Credit Applications</h3>
+        <h3 className="mb-2 text-lg font-extrabold text-text-strong">Loan and Credit Applications</h3>
         <p className={paragraphClassName}>Every time you formally apply for a loan or credit card, the lender may check your credit report. Multiple applications within a short period can affect your credit profile.</p>
-        <h3 className="mb-2 text-lg font-extrabold text-[#14202a]">Length of Credit History</h3>
+        <h3 className="mb-2 text-lg font-extrabold text-text-strong">Length of Credit History</h3>
         <p className={paragraphClassName}>A longer history of responsible credit usage gives lenders more information about your repayment behaviour.</p>
-        <h3 className="mb-2 text-lg font-extrabold text-[#14202a]">Existing Credit Accounts</h3>
+        <h3 className="mb-2 text-lg font-extrabold text-text-strong">Existing Credit Accounts</h3>
         <p className={paragraphClassName}>The number of loans, credit cards and other active credit accounts you have can also influence your overall credit profile.</p>
       </section>
 
@@ -145,7 +145,7 @@ export default function CreditScoreGuide() {
             return (
               <div key={faq.question} className="overflow-hidden rounded-[14px] border border-gray-200 bg-white">
                 <button type="button" onClick={() => setOpenFaqIndex(isOpen ? null : index)} className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left sm:px-6" aria-expanded={isOpen}>
-                  <span className="text-base font-bold text-[#14202a] sm:text-[17px]">{faq.question}</span>
+                  <span className="text-base font-bold text-text-strong sm:text-[17px]">{faq.question}</span>
                   <span className="shrink-0 text-[22px] font-normal leading-none text-primary">{sign}</span>
                 </button>
                 {answer}

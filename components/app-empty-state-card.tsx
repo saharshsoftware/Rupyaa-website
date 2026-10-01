@@ -20,7 +20,7 @@ export default function AppEmptyStateCard({
   secondaryAction,
 }: AppEmptyStateCardProps) {
   return (
-    <div className="w-full max-w-5xl mx-auto rounded-2xl bg-[#E8F5E9] border border-[#C8E6C9] p-6 sm:p-10 md:p-14 lg:p-16 min-h-[min(52vh,420px)] flex flex-col items-center justify-center text-center">
+    <div className="w-full max-w-5xl mx-auto rounded-2xl bg-success-surface border border-success-border p-6 sm:p-10 md:p-14 lg:p-16 min-h-[min(52vh,420px)] flex flex-col items-center justify-center text-center">
       <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-primary/15 flex items-center justify-center mb-8 shrink-0">{icon}</div>
       <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 max-w-3xl">{title}</h2>
       <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-10 max-w-2xl">{description}</p>

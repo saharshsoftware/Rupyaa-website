@@ -26,7 +26,7 @@ export function NonSalaryIllustration({ className = "" }: IconProps) {
       <path
         d="M70 18L88 52H52L70 18z"
         fill="#FBBF24"
-        stroke="#F59E0B"
+        stroke="var(--warning)"
         strokeWidth="1.5"
         strokeLinejoin="round"
       />
@@ -37,7 +37,7 @@ export function NonSalaryIllustration({ className = "" }: IconProps) {
         strokeLinecap="round"
       />
       <circle cx="70" cy="48" r="1.5" fill="#92400E" />
-      <circle cx="98" cy="82" r="14" fill="#006525" />
+      <circle cx="98" cy="82" r="14" fill="var(--brand-green)" />
       <circle cx="98" cy="78" r="5" fill="white" />
       <path d="M88 92c0-5.5 4.5-8 10-8s10 2.5 10 8" fill="white" />
     </svg>
@@ -59,14 +59,14 @@ export function StarBadgeIcon({ className = "" }: IconProps) {
 export function ClockBadgeIcon({ className = "" }: IconProps) {
   return (
     <span
-      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#E8F5E9] ${className}`}
+      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-success-surface ${className}`}
     >
       <svg
         width="16"
         height="16"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#006525"
+        stroke="var(--brand-green)"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -89,7 +89,7 @@ export function BenefitBoltIcon({ className = "" }: IconProps) {
       aria-hidden="true"
       className={`mx-auto ${className}`}
     >
-      <path fill="#006525" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      <path fill="var(--brand-green)" d="M13 10V3L4 14h7v7l9-11h-7z" />
     </svg>
   );
 }
@@ -101,7 +101,7 @@ export function BenefitShieldIcon({ className = "" }: IconProps) {
       height="22"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#006525"
+      stroke="var(--brand-green)"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -128,10 +128,10 @@ export function BenefitRupeeIcon({ className = "" }: IconProps) {
         x="12"
         y="17"
         textAnchor="middle"
-        fill="#006525"
+        fill="var(--brand-green)"
         fontSize="18"
         fontWeight="700"
-        fontFamily="system-ui, sans-serif"
+        fontFamily="inherit"
       >
         ₹
       </text>

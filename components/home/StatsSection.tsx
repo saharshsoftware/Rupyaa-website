@@ -45,7 +45,7 @@ export default function StatsSection(): ReactElement {
             </div>
             <Link
               href="/auth"
-              className="mt-8 inline-flex min-h-[46px] items-center justify-center rounded-xl bg-[#1A1A1A] px-8 py-2.5 text-sm font-semibold tracking-wide text-[#FECA42] transition hover:bg-black"
+              className="mt-8 inline-flex min-h-[46px] items-center justify-center rounded-xl bg-ink px-8 py-2.5 text-sm font-semibold tracking-wide text-primary transition hover:bg-black"
             >
               APPLY NOW
             </Link>
@@ -81,7 +81,7 @@ export default function StatsSection(): ReactElement {
               })}
               <Link
                 href="/auth"
-                className="mt-6 inline-flex min-h-[46px] items-center justify-center rounded-xl bg-[#1A1A1A] px-8 py-2.5 text-sm font-semibold tracking-wide text-[#FECA42] transition hover:bg-black"
+                className="mt-6 inline-flex min-h-[46px] items-center justify-center rounded-xl bg-ink px-8 py-2.5 text-sm font-semibold tracking-wide text-primary transition hover:bg-black"
               >
                 APPLY NOW
               </Link>

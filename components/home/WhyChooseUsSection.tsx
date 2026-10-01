@@ -12,7 +12,7 @@ type FeatureIconProps = {
 
 function FeatureIcon({ children }: FeatureIconProps): ReactElement {
   return (
-    <span className="mb-4 flex size-10 items-center justify-center rounded-full border border-[#FECA42] bg-white text-gray-900 shadow-sm">
+    <span className="mb-4 flex size-10 items-center justify-center rounded-full border border-primary bg-white text-gray-900 shadow-sm">
       {children}
     </span>
   );
@@ -80,7 +80,7 @@ const FEATURES = [
 ] as const;
 
 const FEATURE_CARD_CLASSNAME =
-  "flex h-full flex-col rounded-2xl border border-[#FECA42] bg-[radial-gradient(ellipse_at_top_left,_#FECA42_0%,_rgba(254,202,66,0.45)_32%,_rgba(254,202,66,0.12)_58%,_#FFFFFF_82%)] p-5 sm:p-6";
+  "flex h-full flex-col rounded-2xl border border-primary bg-[radial-gradient(ellipse_at_top_left,_var(--brand-color)_0%,_rgb(from_var(--brand-color)_r_g_b/0.45)_32%,_rgb(from_var(--brand-color)_r_g_b/0.12)_58%,_var(--background)_82%)] p-5 sm:p-6";
 
 type FeatureCardProps = {
   readonly title: string;
@@ -145,7 +145,7 @@ function MobileInfiniteFeatureStrip(): ReactElement {
 
 export default function WhyChooseUsSection(): ReactElement {
   return (
-    <section className="border-t border-[#FECA42] bg-white">
+    <section className="border-t border-primary bg-white">
       <div className={`${appShellContainerClassName} ${homeSectionSpacingClassName}`}>
         <div className="mx-auto mb-8 mt-8 max-w-3xl text-center sm:mb-10">
           <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">

@@ -8,7 +8,7 @@ const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 
 function CheckIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#22C55E] shrink-0">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-secondary shrink-0">
       <path d="M20 6L9 17l-5-5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
@@ -16,7 +16,7 @@ function CheckIcon() {
 
 function IdIcon() {
   return (
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#006525]">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-brand-green">
       <rect x="3" y="4" width="18" height="16" rx="2" ry="2" />
       <path d="M3 10h18M9 14h6" strokeLinecap="round" />
     </svg>
@@ -70,7 +70,7 @@ export default function KYCVerificationStep() {
       <label className="text-sm font-medium text-gray-700">{label}</label>
       <div
         onClick={() => ref.current?.click()}
-        className="flex items-center justify-between gap-2 py-3 px-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 hover:border-[#006525]/50 hover:bg-[#E8F5E9]/50 cursor-pointer transition-colors min-h-[48px]"
+        className="flex items-center justify-between gap-2 py-3 px-4 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 hover:border-brand-green/50 hover:bg-success-surface/50 cursor-pointer transition-colors min-h-[48px]"
       >
         <span className="text-sm text-gray-600 truncate min-w-0">{file ? file.name : "Tap to upload"}</span>
         <span className="shrink-0">{file ? <CheckIcon /> : null}</span>
@@ -82,7 +82,7 @@ export default function KYCVerificationStep() {
   return (
     <div className="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] p-4 sm:p-6 md:p-8 max-w-2xl mx-auto w-full">
       <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
-        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#E8F5E9] flex items-center justify-center mb-3 sm:mb-4">
+        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-success-surface flex items-center justify-center mb-3 sm:mb-4">
           <IdIcon />
         </div>
         <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">KYC Verification</h2>
@@ -102,7 +102,7 @@ export default function KYCVerificationStep() {
           onClick={() => nextStep()}
           disabled={!canContinue}
           className={`w-full py-3.5 rounded-xl font-semibold min-h-[48px] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 ${
-            canContinue ? "bg-[#006525] text-white hover:bg-[#004d1c] focus:ring-[#006525]" : "bg-gray-300 text-gray-500 cursor-not-allowed focus:ring-gray-300"
+            canContinue ? "bg-brand-green text-white hover:bg-brand-green-hover focus:ring-brand-green" : "bg-gray-300 text-gray-500 cursor-not-allowed focus:ring-gray-300"
           }`}
         >
           Submit for Verification
@@ -110,7 +110,7 @@ export default function KYCVerificationStep() {
       </div>
 
       <p className="text-center text-xs sm:text-sm text-gray-500 mt-4 sm:mt-6">
-        Need help? <a href="#" className="text-[#006525] font-medium hover:underline">Contact Support</a>
+        Need help? <a href="#" className="text-brand-green font-medium hover:underline">Contact Support</a>
       </p>
     </div>
   );

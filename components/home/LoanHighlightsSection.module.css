@@ -1,8 +1,8 @@
-.heading { text-align: center; margin-bottom: 24px; color: #202020; }
+.heading { text-align: center; margin-bottom: 24px; color: var(--text-heading); }
 .heading h2, .intro h2 { font-size: 28px; font-weight: 600; line-height: 1.2; letter-spacing: -.045em; }
 .heading p { margin-top: 10px; color: #656565; font-size: 15px; line-height: 1.2; }
 .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.card { background: #fff8e7; border: 1px solid #ffd369; border-radius: 12px; padding: 14px 16px; text-align: center; }
+.card { background: var(--cream-muted); border: 1px solid #ffd369; border-radius: 12px; padding: 14px 16px; text-align: center; }
 .highlightIcon { display: flex; align-items: center; justify-content: center; width: 26px; height: 26px; margin: 0 auto 12px; border-radius: 6px; background: #070707; }
 .highlightIcon img { width: 19px; height: 19px; object-fit: contain; filter: brightness(0) saturate(100%) invert(85%) sepia(74%) saturate(801%) hue-rotate(331deg) brightness(102%) contrast(99%); }
 .card h3 { font-size: 12px; font-weight: 400; line-height: 1.4; color: #606060; }
@@ -17,7 +17,7 @@
   align-items: start;
   column-gap: 28px;
   row-gap: 16px;
-  background: #fff8e7;
+  background: var(--cream-muted);
   border-radius: 18px;
   padding: 24px 28px;
   margin-top: 24px;

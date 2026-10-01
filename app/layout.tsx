@@ -1,15 +1,15 @@
 import type { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google";
+import { Roboto } from "next/font/google";
 // import Script from "next/script";
 import "./globals.css";
 import { Providers } from "@/components/providers";
 import { zapcashJsonLdSchema } from "@/lib/SEO-JSON-schema";
 import { OG_IMAGE_URL, SITE_URL } from "@/utils/app-constants";
 
-const poppins = Poppins({
-  weight: ["300", "400", "500", "600", "700"],
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700", "900"],
   subsets: ["latin"],
-  variable: "--font-poppins",
+  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -93,7 +93,7 @@ export default function RootLayout({
         /> */}
       </head>
       <body
-        className={`${poppins.variable} font-sans antialiased`}
+        className={`${roboto.variable} font-sans antialiased`}
         suppressHydrationWarning
       >
         {/* <noscript>

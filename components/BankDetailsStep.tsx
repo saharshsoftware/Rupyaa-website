@@ -337,9 +337,9 @@ export default function BankDetailsStep({ onContinue }: Props) {
   }
 
   return (
-    <div className="bg-white rounded-2xl border border-[#FFF4D9] overflow-hidden max-w-2xl mx-auto w-full">
+    <div className="bg-white rounded-2xl border border-gold-soft overflow-hidden max-w-2xl mx-auto w-full">
       <form className="pb-6 px-4 sm:px-6" onSubmit={handleSubmit} noValidate>
-        <div className="flex items-center gap-2 rounded-t-xl bg-[#FFE398] px-4 py-3 border border-b-0 border-[#FFF4D9] -mx-4 sm:-mx-6 sm:rounded-t-2xl">
+        <div className="flex items-center gap-2 rounded-t-xl bg-gold-header px-4 py-3 border border-b-0 border-gold-soft -mx-4 sm:-mx-6 sm:rounded-t-2xl">
           <BankIcon />
           <h3 className="text-sm font-bold text-gray-900">Bank Details</h3>
         </div>

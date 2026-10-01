@@ -68,7 +68,7 @@ export function HeroYellowButton({
   type = "button",
   className = "",
 }: HeroYellowButtonProps): ReactElement {
-  const baseClassName = `inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl bg-[#FECA42] px-5 py-3 text-sm font-bold text-gray-900 transition hover:bg-[#F5C038] focus:outline-none focus:ring-2 focus:ring-[#FECA42] focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 sm:min-h-[52px] sm:text-base ${className}`;
+  const baseClassName = `inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-bold text-gray-900 transition hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 sm:min-h-[52px] sm:text-base ${className}`;
   if (href && !disabled) {
     return (
       <a href={href} className={baseClassName}>

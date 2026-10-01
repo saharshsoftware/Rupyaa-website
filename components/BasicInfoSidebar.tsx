@@ -16,13 +16,13 @@ export default function BasicInfoSidebar(): ReactElement {
   const downloadConfig = useAppDownload();
 
   return (
-    <aside className="relative flex h-full min-h-[420px] w-full flex-col overflow-hidden rounded-2xl border border-[#FECA42] bg-[#FFFCF4] pb-0 lg:min-h-0 [container-type:size]">
+    <aside className="relative flex h-full min-h-[420px] w-full flex-col overflow-hidden rounded-2xl border border-primary bg-input-bg pb-0 lg:min-h-0 [container-type:size]">
       <div className="flex shrink-0 flex-col items-center gap-3 px-4 pt-5 sm:gap-4 sm:pt-6 lg:gap-[clamp(0.5rem,2.4cqh,1.25rem)] lg:px-5 lg:pt-[clamp(0.75rem,3cqh,1.75rem)]">
         <div className="hidden aspect-square w-[clamp(96px,28cqh,168px)] shrink-0 overflow-hidden rounded-xl border border-gray-900/10 bg-white p-1.5 shadow-sm lg:block">
           <AppDownloadQrCode
             url={downloadConfig.url}
             label={`QR code for the Rupyaa ${downloadConfig.storeLabel} listing`}
-            backgroundColor="#ffffff"
+            backgroundColor="var(--white)"
             foregroundColor="#000000"
           />
         </div>
