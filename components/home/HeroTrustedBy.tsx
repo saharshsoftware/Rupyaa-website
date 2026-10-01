@@ -13,12 +13,12 @@ const AVATARS = [
  */
 export default function HeroTrustedBy(): ReactElement {
   return (
-    <div className="mb-4 mt-10 flex items-center justify-center gap-3 sm:mb-5 sm:mt-0">
+    <div className="mb-4 mt-10 flex items-center justify-center gap-3 sm:mb-5 sm:mt-0 h-short:mb-1.5 h-short:mt-1 h-xshort:mb-1 h-xshort:mt-0">
       <div className="flex -space-x-2.5">
         {AVATARS.map((src, index) => (
           <span
             key={src}
-            className="relative inline-flex size-8 overflow-hidden rounded-full border-2 border-white bg-gray-100 shadow-sm sm:size-9"
+            className="relative inline-flex size-8 overflow-hidden rounded-full border-2 border-white bg-gray-100 shadow-sm sm:size-9 h-short:size-7"
             style={{ zIndex: AVATARS.length - index }}
           >
             <Image src={src} alt="" width={36} height={36} className="size-full object-cover" />
