@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SiteChrome from "@/components/SiteChrome";
+import { PERSONAL_LOAN_PAGE_GRADIENT } from "@/lib/personal-loan-page-gradient";
 
 export const metadata: Metadata = {
   title: "Page Not Found - Rupyaa",
@@ -69,72 +71,58 @@ function HeadsetIcon() {
 
 export default function NotFound() {
   return (
-    <div
-      className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 overflow-hidden"
-      style={{
-        background:
-          "radial-gradient(circle at 15% 20%, rgb(from var(--brand-green) r g b / 0.18) 0%, rgb(from var(--brand-green) r g b / 0.06) 30%, rgb(from var(--white) r g b / 0) 62%), radial-gradient(circle at 85% 18%, rgb(183, 214, 191) 0%, rgba(183, 214, 191, 0.42) 32%, rgb(from var(--white) r g b / 0) 66%), linear-gradient(180deg,#e8f3ea 0%,#edf6ee 30%,#f3faf4 60%,var(--background) 100%)",
-      }}
-    >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, rgb(from var(--brand-green) r g b / 0.06) 1px, transparent 1px), linear-gradient(to bottom, rgb(from var(--brand-green) r g b / 0.07) 1px, transparent 1px)",
-          backgroundSize: "40px 40px",
-          maskImage:
-            "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0) 100%)",
-          WebkitMaskImage:
-            "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0) 100%)",
-        }}
-      />
+    <SiteChrome hideChrome={false}>
+      <section
+        className="relative min-h-[calc(100dvh-4rem)] flex flex-col items-center justify-center px-4 py-16 sm:px-6 overflow-hidden"
+        style={{ background: PERSONAL_LOAN_PAGE_GRADIENT }}
+        aria-labelledby="not-found-title"
+      >
+        <div className="relative z-10 flex flex-col items-center text-center max-w-xl">
+          <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-primary/10 flex items-center justify-center mb-6 sm:mb-8 ring-1 ring-primary/15">
+            <CompassIcon />
+          </div>
 
-      <div className="relative z-10 flex flex-col items-center text-center max-w-xl">
-        <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-primary/10 flex items-center justify-center mb-6 sm:mb-8 ring-1 ring-primary/15">
-          <CompassIcon />
-        </div>
-
-        <p className="text-sm font-semibold tracking-[0.2em] text-primary uppercase mb-3">
-          Error 404
-        </p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight">
-          Looks like you&apos;ve taken a wrong turn
-        </h1>
-        <p className="text-base sm:text-lg text-gray-600 mb-8 max-w-md">
-          The page you&apos;re looking for doesn&apos;t exist or may have been moved.
-          Let&apos;s get you back on track.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-          <Link
-            href="/"
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-white font-semibold shadow-sm hover:bg-primary/90 transition-colors"
-          >
-            <ArrowLeftIcon />
-            Back to Home
-          </Link>
-          <Link
-            href="/support"
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-white/90 backdrop-blur-sm border border-gray-200 px-6 py-3 text-gray-800 font-semibold hover:bg-white transition-colors"
-          >
-            <HeadsetIcon />
-            Contact Support
-          </Link>
-        </div>
-
-        <div className="mt-10 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-100 px-6 py-4 w-full">
-          <p className="text-sm text-gray-600">
-            Need urgent help? Reach us at{" "}
-            <a
-              href="mailto:care@rupyaa.com"
-              className="text-primary font-semibold hover:underline"
-            >
-              care@rupyaa.com
-            </a>
+          <p className="text-sm font-semibold tracking-[0.2em] text-gray-800 uppercase mb-3">
+            Error 404
           </p>
+          <h1 id="not-found-title" className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight">
+            Looks like you&apos;ve taken a wrong turn
+          </h1>
+          <p className="text-base sm:text-lg text-gray-600 mb-8 max-w-md">
+            The page you&apos;re looking for doesn&apos;t exist or may have been moved.
+            Let&apos;s get you back on track.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+            <Link
+              href="/"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-gray-900 font-semibold shadow-sm hover:bg-primary/90 transition-colors"
+            >
+              <ArrowLeftIcon />
+              Back to Home
+            </Link>
+            <Link
+              href="/support"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white/90 backdrop-blur-sm border border-gray-200 px-6 py-3 text-gray-800 font-semibold hover:bg-white transition-colors"
+            >
+              <HeadsetIcon />
+              Contact Support
+            </Link>
+          </div>
+
+          <div className="mt-10 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-100 px-6 py-4 w-full">
+            <p className="text-sm text-gray-600">
+              Need urgent help? Reach us at{" "}
+              <a
+                href="mailto:care@rupyaa.com"
+                className="text-gray-900 font-semibold underline hover:no-underline"
+              >
+                care@rupyaa.com
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </SiteChrome>
   );
 }

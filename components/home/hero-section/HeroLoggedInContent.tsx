@@ -100,12 +100,12 @@ export function HeroLoggedInContent({
   return (
     <div className="mx-auto flex w-full max-w-[560px] flex-col items-center text-center sm:max-w-[640px]">
       <HeroTrustedBy />
-      <h1 className="mt-3 text-[2.1rem] font-extrabold leading-[1.1] tracking-tight text-text-primary sm:mt-4 sm:text-5xl md:text-6xl lg:text-[4.5rem]">
+      <h1 className="mt-3 text-[2.1rem] font-extrabold leading-[1.1] tracking-tight text-[#111827] sm:mt-4 sm:text-5xl md:text-6xl lg:text-[4.5rem] h-short:mt-1 h-short:text-[1.65rem] h-short:leading-[1.08] h-xshort:text-[1.45rem]">
         Choti si need,
         <br />
         Badi si Smile.
       </h1>
-      <div className="mt-8 w-full max-w-[520px] sm:mt-8 lg:mt-6">{cardArea}</div>
+      <div className="mt-8 w-full max-w-[520px] sm:mt-8 lg:mt-6 h-short:mt-3 h-xshort:mt-2">{cardArea}</div>
       {debugPanel}
     </div>
   );

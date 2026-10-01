@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { getMirrorDestination } from './lib/blog/resolve-mirror-destination';
+import { isMissingMirrorPage } from './src/services/is-missing-mirror-page';
 
 const MAINTENANCE_MODE = process.env.MAINTENANCE_MODE === 'true' || process.env.MAINTENANCE_MODE === '1';
 const STAGING_HOST_PATTERN = /^staging[\w-]*\.rupyaa\.com$/;
@@ -81,6 +82,12 @@ export const proxy = async (request: NextRequest): Promise<NextResponse> => {
         if (destination) {
             const destinationUrl = new URL(destination);
             destinationUrl.search = request.nextUrl.search;
+            if (
+                (request.method === 'GET' || request.method === 'HEAD') &&
+                await isMissingMirrorPage(destinationUrl)
+            ) {
+                return withStagingNoIndex(request, NextResponse.next());
+            }
             return withStagingNoIndex(request, NextResponse.rewrite(destinationUrl));
         }
     }

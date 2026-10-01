@@ -4,6 +4,10 @@
  * Single source of truth for brand colors and fonts.
  * Change a value here to update Tailwind utilities and var() usages together.
  */
+/* Viewport height, not width: short phones clip the fixed hero otherwise. */
+@custom-variant h-short (@media (max-height: 760px));
+@custom-variant h-xshort (@media (max-height: 640px));
+
 :root {
   --brand-color: #feca42;
   --primary-hover: #f5c038;

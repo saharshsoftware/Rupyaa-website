@@ -98,14 +98,22 @@ export function PostOfferCard({
   let journeyCtaClassName =
     "mt-5 flex w-full items-center gap-3 rounded-xl bg-primary px-3 py-3 text-left transition hover:bg-primary-hover sm:mt-6 sm:px-4";
   if (isJourneyVariant) {
-    shellClassName = "pb-4 pt-6 sm:pb-5 sm:pt-7";
-    offerLabelClassName = "mt-1 text-sm font-medium text-gray-700 sm:text-base";
+    shellClassName =
+      "pb-4 pt-6 sm:pb-5 sm:pt-7 h-short:px-3.5 h-short:pb-3 h-short:pt-4 h-xshort:px-3 h-xshort:pb-2.5 h-xshort:pt-3.5";
+    offerLabelClassName =
+      "mt-1 text-sm font-medium text-gray-700 sm:text-base h-short:mt-0 h-short:text-xs";
     amountClassName =
-      "mt-1.5 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-[2.75rem]";
-    tenureClassName = "mt-1.5 text-base font-bold text-gray-800 sm:text-lg";
-    stepsWrapperClassName = "mt-3 sm:mt-4";
+      "mt-1.5 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-[2.75rem] h-short:mt-1 h-short:text-[1.85rem] h-xshort:text-3xl";
+    tenureClassName =
+      "mt-1.5 text-base font-bold text-gray-800 sm:text-lg h-short:mt-1 h-short:text-sm";
+    stepsWrapperClassName = "mt-3 sm:mt-4 h-short:mt-2 h-xshort:mt-1.5";
     journeyCtaClassName =
-      "mt-3.5 flex w-full items-center gap-3 rounded-xl bg-primary px-3 py-3 text-left transition hover:bg-primary-hover sm:mt-4 sm:px-4";
+      "mt-3.5 flex w-full items-center gap-3 rounded-xl bg-[#FECA42] px-3 py-3 text-left transition hover:bg-[#F5C038] sm:mt-4 sm:px-4 h-short:mt-2 h-short:gap-2 h-short:px-2.5 h-short:py-2 h-xshort:mt-1.5";
+  }
+
+  // Reserve space below the absolute ID badge on mobile, including short screens.
+  if (badge) {
+    offerLabelClassName += " max-sm:pt-4";
   }
 
   let actionBlock: ReactNode = null;
@@ -114,16 +122,18 @@ export function PostOfferCard({
       const href = ctaHref ?? "/personal-loan";
       actionBlock = (
         <Link href={href} className={journeyCtaClassName}>
-          <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white/70 text-gray-900">
+          <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white/70 text-gray-900 h-short:size-8">
             <UserIcon />
           </span>
           <span className="min-w-0 flex-1">
-            <span className="block text-sm font-bold text-gray-900 sm:text-base">
+            <span className="block text-sm font-bold leading-tight text-gray-900 sm:text-base h-short:text-[13px]">
               {journeyCtaTitle}
             </span>
-            <span className="block text-xs text-gray-700 sm:text-sm">{journeyCtaSubtitle}</span>
+            <span className="block text-xs leading-tight text-gray-700 sm:text-sm h-short:text-[11px]">
+              {journeyCtaSubtitle}
+            </span>
           </span>
-          <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-ink text-white">
+          <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#1A1A1A] text-white h-short:size-8">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden>
               <path
                 d="M5 12h14M13 6l6 6-6 6"
