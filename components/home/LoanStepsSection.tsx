@@ -12,7 +12,7 @@ type StepIconProps = {
 
 function StepIcon({ children }: StepIconProps): ReactElement {
   return (
-    <span className="relative z-10 flex size-11 shrink-0 items-center justify-center rounded-full border-2 border-[#FECA42] bg-[#FFFCF5] text-gray-900 sm:size-12">
+    <span className="relative z-10 flex size-11 shrink-0 items-center justify-center rounded-full border-2 border-primary bg-surface-ivory text-gray-900 sm:size-12">
       {children}
     </span>
   );
@@ -83,26 +83,28 @@ export default function LoanStepsSection(): ReactElement {
   return (
     <section className="bg-white">
       <div className={`${appShellContainerClassName} ${homeSectionSpacingClassName}`}>
-        <h2 className="mb-6 text-center text-2xl font-bold text-gray-900 sm:mb-8 sm:text-left sm:text-3xl lg:text-4xl">
-          How It Works
-        </h2>
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
-          <div className="hidden items-end justify-center rounded-3xl border border-[#FECA42] bg-[linear-gradient(360deg,_#FECA42_0%,_rgba(254,202,66,0.45)_32%,_rgba(254,202,66,0.12)_58%,_#FFFFFF_82%)] px-6 pb-0 pt-10 sm:px-10 sm:pt-12 lg:flex">
-            <div className="relative w-full max-w-[240px] sm:max-w-[280px]">
-              <Image
-                src={HOME_IMAGES.howItWorksPhone}
-                alt="Rupyaa app - loan offer eligibility"
-                width={420}
-                height={735}
-                className="h-auto w-full object-contain object-bottom drop-shadow-xl"
-                sizes="(max-width: 640px) 240px, 280px"
-              />
+          <div className="flex flex-col items-center">
+            <h2 className="mb-6 text-center text-2xl font-bold text-gray-900 sm:mb-8 sm:text-3xl lg:text-4xl">
+              How It Works
+            </h2>
+            <div className="hidden w-full items-end justify-center rounded-3xl border border-primary bg-[linear-gradient(360deg,_var(--brand-color)_0%,_rgb(from_var(--brand-color)_r_g_b/0.45)_32%,_rgb(from_var(--brand-color)_r_g_b/0.12)_58%,_var(--background)_82%)] px-6 pb-0 pt-10 sm:px-10 sm:pt-12 lg:flex">
+              <div className="relative w-full max-w-[240px] sm:max-w-[280px]">
+                <Image
+                  src={HOME_IMAGES.howItWorksPhone}
+                  alt="Rupyaa app - loan offer eligibility"
+                  width={420}
+                  height={735}
+                  className="h-auto w-full object-contain object-bottom drop-shadow-xl"
+                  sizes="(max-width: 640px) 240px, 280px"
+                />
+              </div>
             </div>
           </div>
           <ol className="relative space-y-8 sm:space-y-10">
             <span
               aria-hidden
-              className="absolute bottom-6 left-[21px] top-6 w-0.5 bg-[#FECA42] sm:left-[23px]"
+              className="absolute bottom-6 left-[21px] top-6 w-0.5 bg-primary sm:left-[23px]"
             />
             {STEPS.map(({ title, description, icon: Icon }) => (
               <li key={title} className="relative flex items-start gap-4">

@@ -115,13 +115,13 @@ export default function ReferenceDetailsStep({ onContinue }: Props) {
   return (
     <div className="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] overflow-hidden max-w-2xl mx-auto w-full">
       <form className="pb-6 px-4 sm:px-6" onSubmit={handleSubmit} noValidate>
-        <div className="flex items-center gap-2 rounded-t-xl bg-[#FFE398] px-4 py-3 border border-b-0 border-[#FFF4D9] -mx-4 sm:-mx-6 sm:rounded-t-2xl">
+        <div className="flex items-center gap-2 rounded-t-xl bg-gold-header px-4 py-3 border border-b-0 border-gold-soft -mx-4 sm:-mx-6 sm:rounded-t-2xl">
           <PeopleIcon />
           <h3 className="text-sm font-bold text-gray-900">References</h3>
         </div>
 
         <div className="border-gray-200 rounded-b-xl -mx-4 sm:-mx-6 px-4 sm:px-6 py-4 space-y-0">
-          <div className="flex items-center gap-2 rounded-lg bg-[#FECA42] px-3 py-2 mb-4">
+          <div className="flex items-center gap-2 rounded-lg bg-primary px-3 py-2 mb-4">
             <PersonIcon />
             <span className="text-sm font-semibold text-gray-800">Reference Details 1</span>
           </div>
@@ -155,7 +155,7 @@ export default function ReferenceDetailsStep({ onContinue }: Props) {
             />
           </div>
 
-          <div className="flex items-center gap-2 rounded-lg bg-[#FECA42] px-3 py-2 mb-4">
+          <div className="flex items-center gap-2 rounded-lg bg-primary px-3 py-2 mb-4">
             <PersonIcon />
             <span className="text-sm font-semibold text-gray-800">Reference Details 2</span>
           </div>

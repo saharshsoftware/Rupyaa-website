@@ -119,7 +119,7 @@ function RupeeIcon({ className }: { className?: string }) {
         textAnchor="middle"
         fontSize="22"
         fontWeight="800"
-        fontFamily="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
+        fontFamily="inherit"
         fill="currentColor"
       >
         ₹
@@ -359,7 +359,7 @@ export default function ProfilePage() {
         {isLoading && !apiData && (
           <div className="flex items-center justify-center py-16 text-gray-500">
             <div className="flex flex-col items-center gap-3">
-              <div className="h-10 w-10 animate-spin rounded-full border-2 border-[#FECA42] border-t-transparent" />
+              <div className="h-10 w-10 animate-spin rounded-full border-2 border-primary border-t-transparent" />
               <span className="text-sm font-medium">Loading profile…</span>
             </div>
           </div>
@@ -368,7 +368,7 @@ export default function ProfilePage() {
         {(!isLoading || apiData) && apiData && (
           <>
             {showIncompleteBanner && (
-              <div className="mb-6 rounded-2xl border border-[#FECA42]/60 bg-[#FFFCF4] px-4 py-4 sm:px-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div className="mb-6 rounded-2xl border border-primary/60 bg-input-bg px-4 py-4 sm:px-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div>
                   <p className="text-sm font-semibold text-gray-900">Complete your profile for faster approvals</p>
                   <p className="text-xs sm:text-sm text-gray-600 mt-1">
@@ -378,7 +378,7 @@ export default function ProfilePage() {
                 <div className="flex flex-col sm:flex-row gap-2 shrink-0">
                   <Link
                     href="/personal-loan"
-                    className="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-[#FECA42] text-gray-900 text-sm font-semibold hover:bg-[#FECA42]/90 min-h-[44px] text-center"
+                    className="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-primary text-gray-900 text-sm font-semibold hover:bg-primary/90 min-h-[44px] text-center"
                   >
                     Complete Profile
                   </Link>
@@ -395,7 +395,7 @@ export default function ProfilePage() {
               <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex items-center gap-4">
                   <DefaultUserAvatar
-                    className="h-16 w-16 bg-[#FFF4D9] sm:h-20 sm:w-20"
+                    className="h-16 w-16 bg-gold-soft sm:h-20 sm:w-20"
                     iconClassName="h-9 w-9 text-gray-900 sm:h-11 sm:w-11"
                     aria-label="Profile"
                   />
@@ -431,9 +431,9 @@ export default function ProfilePage() {
                     return (
                       <div
                         key={f.key}
-                        className="flex items-center gap-3 rounded-xl border border-[#FECA42]/70 bg-[#FFFCF4] px-4 py-3"
+                        className="flex items-center gap-3 rounded-xl border border-primary/70 bg-input-bg px-4 py-3"
                       >
-                        <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-[#FFE398]">
+                        <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-gold-header">
                           <Icon className="text-gray-900" />
                         </span>
                         <div className="min-w-0 flex-1">
@@ -463,7 +463,7 @@ export default function ProfilePage() {
                 </div>
                 <div className="divide-y divide-gray-100">
                   <div className="flex items-center gap-3 py-3 first:pt-0">
-                    <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#FFE398]">
+                    <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-gold-header">
                       <HomeIcon className="text-gray-900" />
                     </span>
                     <div className="min-w-0 flex-1">
@@ -482,7 +482,7 @@ export default function ProfilePage() {
                     </div>
                   </div>
                   <div className="flex items-center gap-3 py-3">
-                    <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#FFE398]">
+                    <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-gold-header">
                       <BuildingIcon className="text-gray-900" />
                     </span>
                     <div className="min-w-0 flex-1">
@@ -516,7 +516,7 @@ export default function ProfilePage() {
                 <button
                   type="button"
                   onClick={handleSave}
-                  className="w-full sm:w-auto py-3 px-6 rounded-xl bg-[#FECA42] text-gray-900 font-medium hover:bg-[#FECA42]/90 min-h-[48px] transition-colors"
+                  className="w-full sm:w-auto py-3 px-6 rounded-xl bg-primary text-gray-900 font-medium hover:bg-primary/90 min-h-[48px] transition-colors"
                 >
                   Save Changes
                 </button>

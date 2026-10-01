@@ -24,7 +24,7 @@ function getRangeProgress(value: number, min: number, max: number): number {
 
 function getRangeBackground(value: number, min: number, max: number): string {
   const progress = getRangeProgress(value, min, max);
-  return `linear-gradient(to right, #FECA42 0%, #FECA42 ${progress}%, #F3F4F6 ${progress}%, #F3F4F6 100%)`;
+  return `linear-gradient(to right, var(--brand-color) 0%, var(--brand-color) ${progress}%, var(--surface-muted) ${progress}%, var(--surface-muted) 100%)`;
 }
 
 function getRangeStyle(
@@ -103,7 +103,7 @@ export default function GuestDashboardLanding(): ReactElement {
           showStickyBar ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-4 opacity-0"
         }`}
       >
-        <div className="w-full bg-button px-3 py-2 shadow-[0_-8px_24px_rgba(254,202,66,0.35)] sm:px-6 sm:py-2.5">
+        <div className="w-full bg-button px-3 py-2 shadow-[0_-8px_24px_rgb(from_var(--brand-color)_r_g_b/0.35)] sm:px-6 sm:py-2.5">
           <form
             onSubmit={handleStickySubmit}
             className="flex flex-col items-stretch gap-2 sm:flex-row sm:items-center sm:justify-center sm:gap-3"
@@ -146,13 +146,13 @@ export default function GuestDashboardLanding(): ReactElement {
         className="relative isolate overflow-hidden bg-white"
         style={{
           background:
-            "linear-gradient(360deg, #FECA42 0%, rgba(255, 255, 255, 0) 100%)",
+            "linear-gradient(360deg, var(--brand-color) 0%, rgba(255, 255, 255, 0) 100%)",
         }}
       >
         <section className="mx-auto grid w-full max-w-7xl gap-8 px-4 pb-14 pt-10 sm:gap-10 sm:px-6 sm:pt-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12 lg:px-8 lg:pb-20 lg:pt-16">
           <LoanHeroIntro />
 
-          <div className="order-2 rounded-[1.5rem] border border-[#FECA42]/50 bg-white p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] sm:p-6 lg:order-2">
+          <div className="order-2 rounded-[1.5rem] border border-primary/50 bg-white p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] sm:p-6 lg:order-2">
             <h2 className="text-lg font-semibold tracking-[-0.02em] text-slate-900 sm:text-xl">
               Personal Loan EMI Calculator
             </h2>
@@ -194,9 +194,9 @@ export default function GuestDashboardLanding(): ReactElement {
                     let buttonClassName =
                       "rounded-xl px-2 py-2.5 text-sm font-semibold transition";
                     if (isActive) {
-                      buttonClassName += " bg-[#FECA42] text-gray-900";
+                      buttonClassName += " bg-primary text-gray-900";
                     } else {
-                      buttonClassName += " bg-[#F3F4F6] text-slate-700 hover:bg-[#E5E7EB]";
+                      buttonClassName += " bg-surface-muted text-slate-700 hover:bg-border";
                     }
                     return (
                       <button

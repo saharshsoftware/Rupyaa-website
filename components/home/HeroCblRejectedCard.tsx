@@ -30,12 +30,12 @@ function HourglassIcon(): ReactElement {
 function StayTunedSmileIcon(): ReactElement {
   return (
     <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden>
-      <circle cx="8" cy="8" r="7" fill="#FECA42" />
-      <circle cx="5.5" cy="6.5" r="1" fill="#1A1A1A" />
-      <circle cx="10.5" cy="6.5" r="1" fill="#1A1A1A" />
+      <circle cx="8" cy="8" r="7" fill="var(--brand-color)" />
+      <circle cx="5.5" cy="6.5" r="1" fill="var(--ink)" />
+      <circle cx="10.5" cy="6.5" r="1" fill="var(--ink)" />
       <path
         d="M5 9.5c.8 1.2 2 1.8 3 1.8s2.2-.6 3-1.8"
-        stroke="#1A1A1A"
+        stroke="var(--ink)"
         strokeWidth="1.2"
         strokeLinecap="round"
       />
@@ -53,7 +53,7 @@ export default function HeroCblRejectedCard({
 }: Props): ReactElement {
   return (
     <HeroStatusCardShell>
-      <div className="mx-auto mb-3 inline-flex items-center gap-1.5 rounded-full border border-[#FECA42]/70 bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-gray-800 shadow-sm">
+      <div className="mx-auto mb-3 inline-flex items-center gap-1.5 rounded-full border border-primary/70 bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-gray-800 shadow-sm">
         Stay Tuned
         <StayTunedSmileIcon />
       </div>

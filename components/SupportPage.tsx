@@ -161,8 +161,8 @@ function ContactCard({
     </p>
   );
   return (
-    <section className="flex items-center gap-2 rounded-xl border border-[#FECA42] bg-[#FFFCF4] px-2 py-1.5 sm:min-h-[80px] sm:gap-3 sm:p-3 sm:shadow-[0_14px_32px_rgba(15,23,42,0.05)]">
-      <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-[#FFE398] sm:size-14 sm:rounded-xl [&_svg]:h-[18px] [&_svg]:w-[18px] sm:[&_svg]:h-[26px] sm:[&_svg]:w-[26px]">
+    <section className="flex items-center gap-2 rounded-xl border border-primary bg-input-bg px-2 py-1.5 sm:min-h-[80px] sm:gap-3 sm:p-3 sm:shadow-[0_14px_32px_rgba(15,23,42,0.05)]">
+      <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-gold-header sm:size-14 sm:rounded-xl [&_svg]:h-[18px] [&_svg]:w-[18px] sm:[&_svg]:h-[26px] sm:[&_svg]:w-[26px]">
         {icon}
       </div>
       <div className="min-w-0">
@@ -179,7 +179,7 @@ function SupportPromoCard(): React.ReactNode {
   const downloadConfig = useAppDownload();
 
   return (
-    <section className="grid gap-5 rounded-xl border border-primary/10 bg-[#e8f5e9] p-6 shadow-[0_14px_32px_rgba(15,23,42,0.06)] sm:grid-cols-[180px_1fr] sm:items-center">
+    <section className="grid gap-5 rounded-xl border border-primary/10 bg-success-surface p-6 shadow-[0_14px_32px_rgba(15,23,42,0.06)] sm:grid-cols-[180px_1fr] sm:items-center">
       <span className="mx-auto hidden size-[170px] sm:mx-0 sm:block">
         <AppDownloadQrCode
           url={downloadConfig.url}
@@ -437,7 +437,7 @@ function SupportContent(): React.ReactNode {
                 updateFormField("applicantReference", event.target.value)
               }
               placeholder="Loan Application Issue"
-              inputClassName="border-[#FECA42] bg-[#FFFCF4] focus:border-[#FECA42] sm:border-gray-200 sm:bg-white"
+              inputClassName="border-primary bg-input-bg focus:border-primary sm:border-gray-200 sm:bg-white"
             />
             <AppTextField
               id="support-registered-phone"
@@ -446,7 +446,7 @@ function SupportContent(): React.ReactNode {
               value={displayPhoneNumber}
               readOnly
               placeholder="+91 9999999999"
-              inputClassName="border-[#FECA42] bg-[#FFFCF4] text-slate-700 focus:border-[#FECA42] sm:border-gray-200 sm:bg-slate-50"
+              inputClassName="border-primary bg-input-bg text-slate-700 focus:border-primary sm:border-gray-200 sm:bg-slate-50"
             />
           </div>
           <SupportIssueDropdown
@@ -471,7 +471,7 @@ function SupportContent(): React.ReactNode {
               }
               placeholder="Please provide details..."
               rows={5}
-              className="w-full resize-none rounded-xl border border-[#FECA42] bg-[#FFFCF4] px-4 py-3.5 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-[#FECA42] focus:ring-2 focus:ring-[#FECA42]/20 sm:border-gray-200 sm:bg-white sm:focus:border-input-border sm:focus:bg-input-bg sm:focus:ring-input-border/20"
+              className="w-full resize-none rounded-xl border border-primary bg-input-bg px-4 py-3.5 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-primary focus:ring-2 focus:ring-primary/20 sm:border-gray-200 sm:bg-white sm:focus:border-input-border sm:focus:bg-input-bg sm:focus:ring-input-border/20"
             />
           </label>
           <div>
@@ -482,7 +482,7 @@ function SupportContent(): React.ReactNode {
               htmlFor={fileInputId}
               onDragOver={handleAttachmentDragOver}
               onDrop={handleAttachmentDrop}
-              className="flex min-h-36 cursor-pointer flex-col items-center justify-center rounded-xl border border-[#FECA42] bg-[#FFFCF4] px-4 text-center transition hover:bg-[#FFF4D9] sm:min-h-40 sm:border-dashed sm:border-input-border/60 sm:bg-input-bg sm:hover:border-input-border"
+              className="flex min-h-36 cursor-pointer flex-col items-center justify-center rounded-xl border border-primary bg-input-bg px-4 text-center transition hover:bg-gold-soft sm:min-h-40 sm:border-dashed sm:border-input-border/60 sm:bg-input-bg sm:hover:border-input-border"
             >
               <UploadIcon />
               <span className="mt-3 text-sm font-bold text-gray-900">
@@ -535,9 +535,9 @@ function SupportContent(): React.ReactNode {
             <div className="mb-6 text-center sm:mb-8">
               <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
                 Welcome to{" "}
-                <span className="text-slate-900 sm:text-[#FECA42]">Rupyaa Support</span>
+                <span className="text-slate-900 sm:text-primary">Rupyaa Support</span>
               </h1>
-              <p className="mt-2 text-sm text-slate-500 sm:mt-4 sm:text-base sm:font-semibold sm:text-[#FECA42]">
+              <p className="mt-2 text-sm text-slate-500 sm:mt-4 sm:text-base sm:font-semibold sm:text-primary">
                 How can we help you today?
               </p>
             </div>

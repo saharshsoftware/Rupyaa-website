@@ -115,9 +115,9 @@ const TESTIMONIALS = [
 function RatingSummaryCard(): ReactElement {
   return (
     <div
-      className={`${RATING_CARD_CLASS_NAME} items-center justify-center bg-[#FECA42] px-2.5 py-5 text-center sm:px-6 sm:py-8 lg:px-7 lg:py-10`}
+      className={`${RATING_CARD_CLASS_NAME} items-center justify-center bg-primary px-2.5 py-5 text-center sm:px-6 sm:py-8 lg:px-7 lg:py-10`}
     >
-      <p className="text-[28px] font-extrabold leading-none text-gray-900 sm:text-5xl lg:text-6xl">
+      <p className="text-[28px] font-semibold leading-none text-gray-900 sm:text-5xl lg:text-6xl">
         4.5
       </p>
       <p className="mt-1.5 text-[10px] font-medium leading-tight text-gray-900 sm:mt-3 sm:text-sm lg:text-base">
@@ -154,16 +154,16 @@ function TestimonialCard({
   initials,
   showDivider = true,
 }: TestimonialCardProps): ReactElement {
-  let cardClassName = `${REVIEW_CARD_CLASS_NAME} bg-[#FFFCF5] px-4 py-5 sm:px-6 sm:py-8 lg:px-7 lg:py-10`;
+  let cardClassName = `${REVIEW_CARD_CLASS_NAME} bg-surface-ivory px-4 py-5 sm:px-6 sm:py-8 lg:px-7 lg:py-10`;
   if (showDivider) {
-    cardClassName = `${cardClassName} border-l border-[#FECA42]`;
+    cardClassName = `${cardClassName} border-l border-primary`;
   }
 
   return (
     <div className={cardClassName}>
       <p className="text-[13px] leading-relaxed text-gray-600 sm:text-[15px]">{quote}</p>
       <div className="mt-auto flex items-center gap-2.5 sm:gap-3">
-        <div className="flex size-8 shrink-0 items-center justify-center rounded-full border border-[#FECA42] bg-gray-100 text-[11px] font-semibold text-gray-700 sm:size-9 sm:text-xs">
+        <div className="flex size-8 shrink-0 items-center justify-center rounded-full border border-primary bg-gray-100 text-[11px] font-semibold text-gray-700 sm:size-9 sm:text-xs">
           {initials}
         </div>
         <div>
@@ -185,7 +185,7 @@ export default function TestimonialsSection(): ReactElement {
         <h2 className="mb-8 text-center text-2xl font-bold text-gray-900 sm:mb-10 sm:text-3xl lg:mb-12 lg:text-4xl">
           What our customer say
         </h2>
-        <div className="overflow-hidden rounded-2xl border border-[#FECA42]">
+        <div className="overflow-hidden rounded-2xl border border-primary">
           <div className="flex overflow-x-auto overscroll-x-contain [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             <div className="sticky left-0 z-10 shrink-0 self-stretch">
               <RatingSummaryCard />

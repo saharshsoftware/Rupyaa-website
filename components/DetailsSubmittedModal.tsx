@@ -9,14 +9,14 @@ export default function DetailsSubmittedModal({ isOpen, onClose }: Props) {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="details-submitted-title">
       <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" onClick={onClose} aria-hidden="true" />
       <div className="relative w-full max-w-md rounded-2xl bg-white p-6 sm:p-8 shadow-xl text-center">
-        <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-[#F0FBF2] flex items-center justify-center mx-auto mb-4">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#22C55E] relative z-10">
+        <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-success-soft flex items-center justify-center mx-auto mb-4">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-secondary relative z-10">
             <path d="M20 6L9 17l-5-5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           {[...Array(8)].map((_, i) => (
             <span
               key={i}
-              className="absolute w-2 h-2 rounded-full bg-[#22C55E]/60"
+              className="absolute w-2 h-2 rounded-full bg-secondary/60"
               style={{
                 top: "50%",
                 left: "50%",
@@ -34,7 +34,7 @@ export default function DetailsSubmittedModal({ isOpen, onClose }: Props) {
         <button
           type="button"
           onClick={onClose}
-          className="w-full py-3.5 rounded-xl bg-[#006525] text-white font-semibold hover:bg-[#004d1c] focus:outline-none focus:ring-2 focus:ring-[#006525] focus:ring-offset-2 min-h-[48px]"
+          className="w-full py-3.5 rounded-xl bg-brand-green text-white font-semibold hover:bg-brand-green-hover focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-offset-2 min-h-[48px]"
         >
           OK
         </button>

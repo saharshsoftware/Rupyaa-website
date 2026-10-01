@@ -53,23 +53,23 @@ export default function UnableToDetectSalaryModal({ isOpen, onClose, onUploadAga
           <button
             type="button"
             onClick={handleUploadAgain}
-            className="flex w-full items-center justify-center gap-2 rounded-xl border-2 border-[#006525] bg-white py-3 font-medium text-[#006525] min-h-[48px] hover:bg-[#E8F5E9] focus:outline-none focus:ring-2 focus:ring-[#006525] focus:ring-offset-2"
+            className="flex w-full items-center justify-center gap-2 rounded-xl border-2 border-brand-green bg-white py-3 font-medium text-brand-green min-h-[48px] hover:bg-success-surface focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-offset-2"
           >
-            <UploadIcon className="text-[#006525]" />
+            <UploadIcon className="text-brand-green" />
             Upload Again
           </button>
           {onContinue && (
             <button
               type="button"
               onClick={handleContinue}
-              className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#006525] text-white py-3 font-semibold min-h-[48px] hover:bg-[#004d1c] focus:outline-none focus:ring-2 focus:ring-[#006525] focus:ring-offset-2"
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-green text-white py-3 font-semibold min-h-[48px] hover:bg-brand-green-hover focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-offset-2"
             >
               Continue
             </button>
           )}
         </div>
         <p className="text-center text-sm text-gray-400 mt-4">
-          Need to update your statement? <button type="button" onClick={onClose} className="font-medium text-[#006525] hover:underline">Update statement</button>
+          Need to update your statement? <button type="button" onClick={onClose} className="font-medium text-brand-green hover:underline">Update statement</button>
         </p>
       </div>
     </div>

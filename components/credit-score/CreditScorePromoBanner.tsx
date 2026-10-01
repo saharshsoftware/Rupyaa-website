@@ -7,7 +7,7 @@ interface CreditScorePromoBannerProps {
 }
 
 const BANNER_GRADIENT =
-  "linear-gradient(90deg, #FECA42 0%, rgba(254,202,66,0.45) 32%, rgba(254,202,66,0.12) 58%, #FFFFFF 82%)";
+  "linear-gradient(90deg, var(--brand-color) 0%, rgb(from var(--brand-color) r g b / 0.45) 32%, rgb(from var(--brand-color) r g b / 0.12) 58%, var(--background) 82%)";
 
 /**
  * Homepage banner that introduces the free credit score check and starts the flow.
@@ -17,7 +17,7 @@ export default function CreditScorePromoBanner({
   onStart,
 }: CreditScorePromoBannerProps): ReactElement {
   return (
-    <section className="relative overflow-hidden rounded-2xl border border-[#FECA42] bg-white sm:rounded-[28px]">
+    <section className="relative overflow-hidden rounded-2xl border border-primary bg-white sm:rounded-[28px]">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
@@ -47,7 +47,7 @@ export default function CreditScorePromoBanner({
           <button
             type="button"
             onClick={onStart}
-            className="mt-3 inline-flex min-h-[36px] items-center justify-center rounded-lg bg-[#1A1A1A] px-4 py-2 text-xs font-semibold text-[#FECA42] transition hover:bg-black focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
+            className="mt-3 inline-flex min-h-[36px] items-center justify-center rounded-lg bg-ink px-4 py-2 text-xs font-semibold text-primary transition hover:bg-black focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
           >
             Check Now
           </button>
@@ -77,7 +77,7 @@ export default function CreditScorePromoBanner({
           <button
             type="button"
             onClick={onStart}
-            className="mt-6 inline-flex min-h-[46px] items-center justify-center rounded-xl bg-[#1A1A1A] px-8 py-2.5 text-sm font-semibold text-[#FECA42] transition hover:bg-black focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 sm:mt-8"
+            className="mt-6 inline-flex min-h-[46px] items-center justify-center rounded-xl bg-ink px-8 py-2.5 text-sm font-semibold text-primary transition hover:bg-black focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 sm:mt-8"
           >
             Check Now
           </button>

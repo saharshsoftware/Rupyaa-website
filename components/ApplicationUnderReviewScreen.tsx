@@ -81,7 +81,7 @@ export default function ApplicationUnderReviewScreen() {
   return (
     <div className="w-full max-w-full sm:max-w-[95vw] md:max-w-[90vw] lg:max-w-[80vw] min-w-0 mx-auto bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] p-6 sm:p-8 md:p-10">
       <div className="flex flex-col items-center text-center max-w-md mx-auto">
-        <div className="w-16 h-16 rounded-full bg-[#e8f5e9] flex items-center justify-center mb-6">
+        <div className="w-16 h-16 rounded-full bg-success-surface flex items-center justify-center mb-6">
           <CheckIcon />
         </div>
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">

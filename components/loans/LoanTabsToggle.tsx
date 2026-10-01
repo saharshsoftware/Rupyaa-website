@@ -92,9 +92,9 @@ export function LoanTabsToggle({
           "flex size-10 shrink-0 items-center justify-center rounded-xl bg-gray-100 text-gray-500";
         if (isActive) {
           buttonClassName =
-            "flex w-full items-start gap-3 rounded-2xl border-2 border-[#FECA42] bg-white p-4 text-left transition-colors";
+            "flex w-full items-start gap-3 rounded-2xl border-2 border-primary bg-white p-4 text-left transition-colors";
           iconWrapClassName =
-            "flex size-10 shrink-0 items-center justify-center rounded-xl bg-[#FECA42] text-gray-900";
+            "flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary text-gray-900";
         }
         return (
           <button

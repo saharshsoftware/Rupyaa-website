@@ -47,7 +47,7 @@ export default function HeroJourneyProgress({
           if (index < currentStepIndex) {
             barClassName = "h-1.5 w-full rounded-full bg-gray-900";
           } else if (index === currentStepIndex) {
-            barClassName = "h-1.5 w-full rounded-full bg-[#FECA42]";
+            barClassName = "h-1.5 w-full rounded-full bg-primary";
           }
           return (
             <div key={label} className="min-w-0">

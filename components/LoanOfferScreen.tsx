@@ -80,7 +80,7 @@ function RegisterLoanOfferMarketing({
       <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
         <div className="flex flex-col gap-4 justify-between p-6 sm:p-8 lg:p-10">
           <div>
-            <span className="item-center inline-flex gap-1.5 w-fit px-3 py-1.5 rounded-full bg-[#e8f5e9] border border-primary text-primary text-xs font-bold uppercase tracking-wide mb-4">
+            <span className="item-center inline-flex gap-1.5 w-fit px-3 py-1.5 rounded-full bg-success-surface border border-primary text-primary text-xs font-bold uppercase tracking-wide mb-4">
               <CheckIcon />
               {hasPersonalizedOffer ? "PERSONALIZED OFFER" : "LOAN OFFER"}
             </span>
@@ -256,7 +256,7 @@ function ApprovedOfferReview({ onContinue }: { onContinue?: () => void }) {
       <button
         type="button"
         onClick={improveOfferByUsingBsa}
-        className="mb-4 flex w-full items-center gap-3 rounded-2xl border border-button bg-[#FFFCF4]/40 p-4 text-left transition-colors hover:bg-[#FFF8E6] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+        className="mb-4 flex w-full items-center gap-3 rounded-2xl border border-button bg-input-bg/40 p-4 text-left transition-colors hover:bg-cream-strong focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
       >
         <span className="min-w-0 flex-1">
           <p className="mb-1 text-sm font-semibold text-gray-900">

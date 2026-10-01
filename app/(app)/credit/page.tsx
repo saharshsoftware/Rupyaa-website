@@ -63,13 +63,13 @@ export default function CreditScorePage() {
         </div>
 
         {/* Verified Status Card */}
-        <div className="w-full flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 rounded-xl sm:rounded-2xl bg-[#E8F5E9] border border-gray-200 px-4 sm:px-6 py-4 mb-6">
+        <div className="w-full flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 rounded-xl sm:rounded-2xl bg-success-surface border border-gray-200 px-4 sm:px-6 py-4 mb-6">
           <div className="flex items-center gap-3">
             <div className="relative flex items-center justify-center w-12 h-12">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="absolute text-gray-300">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
-              <div className="relative w-8 h-8 rounded-full bg-[#C8E6C9] flex items-center justify-center">
+              <div className="relative w-8 h-8 rounded-full bg-success-border flex items-center justify-center">
                 <CheckIcon className="text-primary" />
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function CreditScorePage() {
               <ul className="space-y-4">
                 {REPORT_FEATURES.map((feature) => (
                   <li key={feature.title} className="flex gap-3">
-                    <div className="w-6 h-6 rounded-full bg-[#E8F5E9] flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-6 h-6 rounded-full bg-success-surface flex items-center justify-center shrink-0 mt-0.5">
                       <CheckIcon className="text-primary" />
                     </div>
                     <div>
@@ -106,7 +106,7 @@ export default function CreditScorePage() {
             </div>
 
             {/* Right: Pricing */}
-            <div className="relative bg-[#E8F5E9] p-5 sm:p-6 md:p-8 flex flex-col justify-center">
+            <div className="relative bg-success-surface p-5 sm:p-6 md:p-8 flex flex-col justify-center">
               <div className="absolute top-4 right-4">
                 <span className="px-2.5 py-1 rounded-lg bg-primary text-white text-xs font-bold">
                   40% OFF

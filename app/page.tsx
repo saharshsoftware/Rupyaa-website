@@ -1,3 +1,4 @@
+import { Montserrat } from "next/font/google";
 import SiteChrome from "@/components/SiteChrome";
 import HeroSection from "@/components/home/hero-section/HeroSection";
 import WhyChooseUsSection from "@/components/home/WhyChooseUsSection";
@@ -11,6 +12,12 @@ import StatsSection from "@/components/home/StatsSection";
 import { ExternalAppConfigInit } from "@/components/ExternalAppConfigInit";
 import { getSeoMetadata } from "@/lib/seo-metadata";
 import { homepageSchema } from "@/lib/SEO-JSON-schema";
+
+const montserrat = Montserrat({
+  weight: ["300", "400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  variable: "--font-montserrat-family",
+});
 
 export const generateMetadata = () => getSeoMetadata("home");
 
@@ -26,7 +33,7 @@ export default function HomeLandingPage() {
       /> */}
       <ExternalAppConfigInit />
       <SiteChrome
-        className="min-h-screen overflow-x-hidden bg-white"
+        className={`${montserrat.variable} min-h-screen overflow-x-hidden bg-white font-montserrat`}
         mainClassName="flex flex-col"
       >
         <HeroSection />

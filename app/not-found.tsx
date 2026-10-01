@@ -73,7 +73,7 @@ export default function NotFound() {
       className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 overflow-hidden"
       style={{
         background:
-          "radial-gradient(circle at 15% 20%, rgba(0, 101, 37, 0.18) 0%, rgba(0, 101, 37, 0.06) 30%, rgba(255,255,255,0) 62%), radial-gradient(circle at 85% 18%, rgb(183, 214, 191) 0%, rgba(183, 214, 191, 0.42) 32%, rgba(255,255,255,0) 66%), linear-gradient(180deg,#e8f3ea 0%,#edf6ee 30%,#f3faf4 60%,#ffffff 100%)",
+          "radial-gradient(circle at 15% 20%, rgb(from var(--brand-green) r g b / 0.18) 0%, rgb(from var(--brand-green) r g b / 0.06) 30%, rgb(from var(--white) r g b / 0) 62%), radial-gradient(circle at 85% 18%, rgb(183, 214, 191) 0%, rgba(183, 214, 191, 0.42) 32%, rgb(from var(--white) r g b / 0) 66%), linear-gradient(180deg,#e8f3ea 0%,#edf6ee 30%,#f3faf4 60%,var(--background) 100%)",
       }}
     >
       <div
@@ -81,7 +81,7 @@ export default function NotFound() {
         className="pointer-events-none absolute inset-0"
         style={{
           backgroundImage:
-            "linear-gradient(to right, rgba(0, 101, 37, 0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 101, 37, 0.07) 1px, transparent 1px)",
+            "linear-gradient(to right, rgb(from var(--brand-green) r g b / 0.06) 1px, transparent 1px), linear-gradient(to bottom, rgb(from var(--brand-green) r g b / 0.07) 1px, transparent 1px)",
           backgroundSize: "40px 40px",
           maskImage:
             "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0) 100%)",

@@ -96,7 +96,7 @@ export function PostOfferCard({
   let tenureClassName = "mt-2 text-base font-semibold text-gray-800 sm:text-lg";
   let stepsWrapperClassName = "mt-5 sm:mt-6";
   let journeyCtaClassName =
-    "mt-5 flex w-full items-center gap-3 rounded-xl bg-[#FECA42] px-3 py-3 text-left transition hover:bg-[#F5C038] sm:mt-6 sm:px-4";
+    "mt-5 flex w-full items-center gap-3 rounded-xl bg-primary px-3 py-3 text-left transition hover:bg-primary-hover sm:mt-6 sm:px-4";
   if (isJourneyVariant) {
     shellClassName = "pb-4 pt-6 sm:pb-5 sm:pt-7";
     offerLabelClassName = "mt-1 text-sm font-medium text-gray-700 sm:text-base";
@@ -105,7 +105,7 @@ export function PostOfferCard({
     tenureClassName = "mt-1.5 text-base font-bold text-gray-800 sm:text-lg";
     stepsWrapperClassName = "mt-3 sm:mt-4";
     journeyCtaClassName =
-      "mt-3.5 flex w-full items-center gap-3 rounded-xl bg-[#FECA42] px-3 py-3 text-left transition hover:bg-[#F5C038] sm:mt-4 sm:px-4";
+      "mt-3.5 flex w-full items-center gap-3 rounded-xl bg-primary px-3 py-3 text-left transition hover:bg-primary-hover sm:mt-4 sm:px-4";
   }
 
   let actionBlock: ReactNode = null;
@@ -123,7 +123,7 @@ export function PostOfferCard({
             </span>
             <span className="block text-xs text-gray-700 sm:text-sm">{journeyCtaSubtitle}</span>
           </span>
-          <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#1A1A1A] text-white">
+          <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-ink text-white">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden>
               <path
                 d="M5 12h14M13 6l6 6-6 6"
@@ -139,7 +139,7 @@ export function PostOfferCard({
     } else {
       const ctaContent = <span>{actionLabel}</span>;
       const ctaEnabledClass =
-        "inline-flex min-h-[48px] w-full items-center justify-center rounded-xl bg-[#FECA42] px-5 py-3 text-sm font-bold text-gray-900 transition hover:bg-[#F5C038] focus:outline-none focus:ring-2 focus:ring-[#FECA42] focus:ring-offset-2 sm:min-h-[52px] sm:text-base";
+        "inline-flex min-h-[48px] w-full items-center justify-center rounded-xl bg-primary px-5 py-3 text-sm font-bold text-gray-900 transition hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 sm:min-h-[52px] sm:text-base";
       const ctaDisabledClass = `${ctaEnabledClass} cursor-not-allowed opacity-60`;
       actionBlock = (
         <div className="mt-6 sm:mt-7">

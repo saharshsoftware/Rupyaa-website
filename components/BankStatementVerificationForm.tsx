@@ -5,7 +5,7 @@ import BankStatementCompletedModal from './BankStatementCompletedModal';
 import { validateIndianMobile, validateOrganizationName } from '@/lib/validation';
 import ValidatedTextInput from './ValidatedTextInput';
 
-function BankIcon({ className = 'text-[#22C55E]' }: { className?: string }) {
+function BankIcon({ className = 'text-secondary' }: { className?: string }) {
   return (
     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className={className}>
       <path d="M3 21h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -65,7 +65,7 @@ export default function BankStatementVerificationForm({ onContinue, onSuccessCom
   return (
     <div className="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] p-4 sm:p-6 md:p-8 max-w-2xl mx-auto w-full">
       <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
-        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#F0FBF2] flex items-center justify-center mb-3 sm:mb-4">
+        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-success-soft flex items-center justify-center mb-3 sm:mb-4">
           <BankIcon />
         </div>
         <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">Bank Statement Verification</h2>
@@ -79,7 +79,7 @@ export default function BankStatementVerificationForm({ onContinue, onSuccessCom
           <label htmlFor="bank-mobile" className="text-sm text-gray-500 font-medium">
             Mobile Number (Linked to bank) *
           </label>
-          <div className={`flex rounded-xl border overflow-hidden focus-within:ring-2 focus-within:ring-[#006525]/20 focus-within:border-[#006525] ${errors.mobile ? 'border-red-500' : 'border-gray-200'}`}>
+          <div className={`flex rounded-xl border overflow-hidden focus-within:ring-2 focus-within:ring-brand-green/20 focus-within:border-brand-green ${errors.mobile ? 'border-red-500' : 'border-gray-200'}`}>
             <span className="flex items-center px-4 bg-gray-50 text-gray-600 text-sm border-r border-gray-200 min-h-[48px]">+91</span>
             <input
               id="bank-mobile"
@@ -105,7 +105,7 @@ export default function BankStatementVerificationForm({ onContinue, onSuccessCom
             maxLength={200}
             onValueChange={(value) => { setOrganization(value); setErrors((prev) => ({ ...prev, organization: undefined })); }}
             placeholder="Enter your organization or company name"
-            className={`w-full px-4 py-3 rounded-xl border text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#006525]/20 focus:border-[#006525] min-h-[48px] ${errors.organization ? 'border-red-500' : 'border-gray-200'}`}
+            className={`w-full px-4 py-3 rounded-xl border text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-green/20 focus:border-brand-green min-h-[48px] ${errors.organization ? 'border-red-500' : 'border-gray-200'}`}
             aria-invalid={!!errors.organization}
             aria-describedby={errors.organization ? 'organization-error' : undefined}
           />
@@ -114,14 +114,14 @@ export default function BankStatementVerificationForm({ onContinue, onSuccessCom
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full py-3.5 rounded-xl bg-[#006525] text-white font-semibold hover:bg-[#004d1c] focus:outline-none focus:ring-2 focus:ring-[#006525] focus:ring-offset-2 transition-colors mt-2 min-h-[48px] disabled:opacity-70 disabled:cursor-wait"
+          className="w-full py-3.5 rounded-xl bg-brand-green text-white font-semibold hover:bg-brand-green-hover focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-offset-2 transition-colors mt-2 min-h-[48px] disabled:opacity-70 disabled:cursor-wait"
         >
           {isSubmitting ? 'Verifying…' : 'Continue'}
         </button>
       </form>
 
       <p className="text-center text-xs sm:text-sm text-gray-500 mt-4 sm:mt-6">
-        Need help? <a href="#" className="text-[#006525] font-medium hover:underline">Contact Support</a>
+        Need help? <a href="#" className="text-brand-green font-medium hover:underline">Contact Support</a>
       </p>
 
       <BankStatementCompletedModal isOpen={showCompletedModal} onClose={handleCompletedClose} />

@@ -54,7 +54,7 @@ export default function Header() {
         <button
           type="button"
           onClick={toggle}
-          className="md:hidden p-2 -ml-1 rounded-xl hover:bg-[#00652514] text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#006525]/30 min-h-[44px] min-w-[44px] flex items-center justify-center"
+          className="md:hidden p-2 -ml-1 rounded-xl hover:bg-brand-green-soft text-gray-700 focus:outline-none focus:ring-2 focus:ring-brand-green/30 min-h-[44px] min-w-[44px] flex items-center justify-center"
           aria-label="Open menu"
         >
           <MenuIcon />
@@ -66,14 +66,14 @@ export default function Header() {
         </div>
       </div>
       <div className="flex gap-2 sm:gap-4 shrink-0">
-        <button type="button" className="bg-[#0065250F] text-primary p-2 sm:px-3 sm:py-2 rounded-2xl hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#006525]/30 min-h-[44px] flex items-center justify-center" aria-label="Notifications">
+        <button type="button" className="bg-brand-green-muted text-primary p-2 sm:px-3 sm:py-2 rounded-2xl hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-brand-green/30 min-h-[44px] flex items-center justify-center" aria-label="Notifications">
           <Image className="w-4 h-4" src={notification} alt="" />
         </button>
         <div className="relative" ref={menuRef}>
           <button
             type="button"
             onClick={() => setShowAccountMenu((v) => !v)}
-            className="bg-[#0065250F] text-primary flex gap-1 sm:gap-2 px-2 sm:px-3 py-2 rounded-2xl text-xs sm:text-sm items-center hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#006525]/30 min-h-[44px]"
+            className="bg-brand-green-muted text-primary flex gap-1 sm:gap-2 px-2 sm:px-3 py-2 rounded-2xl text-xs sm:text-sm items-center hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-brand-green/30 min-h-[44px]"
           >
             <Image className="w-4 h-4 shrink-0" src={profile} alt="" />
             <span className="hidden sm:inline">My Account</span>

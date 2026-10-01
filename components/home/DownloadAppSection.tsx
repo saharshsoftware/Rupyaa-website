@@ -13,7 +13,7 @@ import { useAppDownload } from "@/hooks/useAppDownload";
 import { HOME_IMAGES } from "@/lib/images";
 
 const SECTION_GRADIENT =
-  "radial-gradient(ellipse 70% 120% at 88% 55%, #FECA42 0%, #FFE899 42%, #FFF3D1 72%, #FFFCF4 100%)";
+  "radial-gradient(ellipse 70% 120% at 88% 55%, var(--brand-color) 0%, var(--gold-pale) 42%, var(--gold-mist) 72%, var(--input-bg) 100%)";
 
 export default function DownloadAppSection({
   heading = "Your loan journey, in one app.",
@@ -25,7 +25,7 @@ export default function DownloadAppSection({
     <section className="bg-white">
       <div className={`${appShellContainerClassName} ${homeSectionSpacingClassName}`}>
         <div
-          className="relative flex flex-col overflow-hidden rounded-2xl border border-[#FECA42] sm:rounded-3xl lg:flex-row"
+          className="relative flex flex-col overflow-hidden rounded-2xl border border-primary sm:rounded-3xl lg:flex-row"
           style={{ background: SECTION_GRADIENT }}
         >
           <div className="relative z-10 flex w-full flex-col justify-center gap-6 p-6 sm:gap-8 sm:p-8 md:p-10 lg:max-w-[58%] lg:p-12 xl:max-w-[55%]">
@@ -39,11 +39,11 @@ export default function DownloadAppSection({
               </p>
             </div>
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-start sm:gap-5">
-              <div className="hidden size-[112px] shrink-0 overflow-hidden rounded-xl border border-[#FECA42] bg-white p-1.5 shadow-sm sm:block md:size-[128px]">
+              <div className="hidden size-[112px] shrink-0 overflow-hidden rounded-xl border border-primary bg-white p-1.5 shadow-sm sm:block md:size-[128px]">
                 <AppDownloadQrCode
                   url={downloadConfig.url}
                   label={`QR code for the Rupyaa ${downloadConfig.storeLabel} listing`}
-                  backgroundColor="#ffffff"
+                  backgroundColor="var(--white)"
                   foregroundColor="#000000"
                 />
               </div>

@@ -58,7 +58,7 @@ export default function SideBar() {
                 href={href}
                 onClick={close}
                 className={`flex items-center gap-2 text-[14px] pl-1 py-2 rounded-r min-h-[44px] ${
-                  isActive ? "bg-[#00652514] text-primary border-l-4 border-l-primary" : "text-gray-700 hover:bg-[#00652514] hover:border-l-4 hover:border-l-primary"
+                  isActive ? "bg-brand-green-soft text-primary border-l-4 border-l-primary" : "text-gray-700 hover:bg-brand-green-soft hover:border-l-4 hover:border-l-primary"
                 }`}
               >
                 <Image className="w-4 h-4 shrink-0" src={icon} alt="" />

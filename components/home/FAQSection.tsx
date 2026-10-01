@@ -232,7 +232,7 @@ export default function FAQSection({ startBatch = 0, layout = "centered" }: FAQS
         const { question } = item;
         const isOpen = openIndex === index;
         const answerContent = renderFaqAnswerContent(item);
-        let itemClassName = "overflow-hidden rounded-2xl border border-[#FECA42]/55 bg-[#FFFCF4]";
+        let itemClassName = "overflow-hidden rounded-2xl border border-primary/55 bg-input-bg";
         if (layout === "centered") {
           itemClassName = "overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm";
         }

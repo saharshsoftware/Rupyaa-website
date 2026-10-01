@@ -39,7 +39,7 @@ function CreditScoreGauge() {
       <text x="171" y="53" fill="#20a920" fontSize="9" transform="rotate(65 171 53)">EXCELLENT</text>
       <circle cx="100" cy="104" r="20" fill="#ff681c" />
       <path d="M100 84 A20 20 0 0 1 100 124Z" fill="#20c520" />
-      <path d="M94 105 L126 43 L105 110Z" fill="#303030" />
+      <path d="M94 105 L126 43 L105 110Z" fill="var(--text-body)" />
       <circle cx="100" cy="104" r="6" fill="#ffcc24" />
     </svg>
   );
@@ -182,7 +182,7 @@ export default function CreditScoreForm({
 
   return (
     <div className={styles.root}>
-      <div className="flex min-h-[140px] items-center justify-between gap-3 rounded-xl border border-[#FECA42] bg-[#FFFCF4] px-4 py-4 sm:px-5">
+      <div className="flex min-h-[140px] items-center justify-between gap-3 rounded-xl border border-primary bg-input-bg px-4 py-4 sm:px-5">
         <div>
           <h1 className="text-2xl font-semibold leading-tight sm:text-[28px]">
             <span className="bg-gradient-to-r from-[#ff4b18] via-[#ffb900] to-[#68c817] bg-clip-text text-transparent">Check Your Credit</span>
@@ -197,7 +197,7 @@ export default function CreditScoreForm({
       </div>
 
       <form onSubmit={handleSubmit} className="mt-7" noValidate>
-        <h2 className="text-2xl font-bold text-[#383838] sm:text-[26px]">Let’s check your credit score</h2>
+        <h2 className="text-2xl font-bold text-text-label sm:text-[26px]">Let’s check your credit score</h2>
         <p className="mt-2 text-base text-gray-600">Enter your details to get your personalised credit report.</p>
 
           <div className="mt-6 space-y-4">
@@ -276,11 +276,11 @@ export default function CreditScoreForm({
                 />
                 <span>
                   I authorize Rupyaa to fetch my credit report from Equifax and agree to the{" "}
-                  <Link href="/terms" className="font-semibold text-[#FECA42] hover:underline">
+                  <Link href="/terms" className="font-semibold text-primary hover:underline">
                     Terms
                   </Link>{" "}
                   &amp;{" "}
-                  <Link href="/privacy-policy" className="font-semibold text-[#FECA42] hover:underline">
+                  <Link href="/privacy-policy" className="font-semibold text-primary hover:underline">
                     Privacy Policy
                   </Link>
                   .
@@ -289,7 +289,7 @@ export default function CreditScoreForm({
               {consentError}
             </div>
 
-            <AppButton type="submit" fullWidth disabled={isSubmitting} className="mt-2 min-h-[42px] rounded-md bg-[#FECA42] py-2.5 text-sm">
+            <AppButton type="submit" fullWidth disabled={isSubmitting} className="mt-2 min-h-[42px] rounded-md bg-primary py-2.5 text-sm">
               {submitLabel}
             </AppButton>
           </div>

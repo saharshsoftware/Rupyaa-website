@@ -8,14 +8,14 @@
 /* Reuse the FAQ's split layout without changing its content or interactions. */
 .emi-calculator-page #faq > div { max-width: 1080px; padding: 0 32px 48px; }
 .emi-calculator-page #faq > div > div { margin-top: 0; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 54px; }
-.emi-calculator-page #faq h2 { font-size: clamp(34px, 4.2vw, 48px); font-weight: 600; line-height: 1.08; letter-spacing: -.035em; color: #202020; }
+.emi-calculator-page #faq h2 { font-size: clamp(34px, 4.2vw, 48px); font-weight: 600; line-height: 1.08; letter-spacing: -.035em; color: var(--text-heading); }
 .emi-calculator-page #faq h2 + p { max-width: 400px; margin-top: 20px; font-size: 14px; line-height: 1.55; color: #555; }
 .emi-calculator-page #faq h2 + p + div { margin-top: 16px; }
 .emi-calculator-page #faq a[href="/support"] { min-height: 42px; min-width: 144px; padding: 10px 24px; border-radius: 6px; font-size: 12px; }
 .emi-calculator-page #faq .space-y-3 > :not(:last-child) { margin-bottom: 8px; }
-.emi-calculator-page #faq .space-y-3 > div:has(> button[aria-expanded]) { background: #fff8e7; border: 0; border-radius: 12px; box-shadow: none; }
+.emi-calculator-page #faq .space-y-3 > div:has(> button[aria-expanded]) { background: var(--cream-muted); border: 0; border-radius: 12px; box-shadow: none; }
 .emi-calculator-page #faq button[aria-expanded] { min-height: 42px; padding: 12px; gap: 12px; }
-.emi-calculator-page #faq button[aria-expanded] > span:first-child { padding-right: 0; color: #383838; font-size: 13px; font-weight: 400; line-height: 1.45; }
+.emi-calculator-page #faq button[aria-expanded] > span:first-child { padding-right: 0; color: var(--text-label); font-size: 13px; font-weight: 400; line-height: 1.45; }
 .emi-calculator-page #faq button[aria-expanded] svg { width: 16px; height: 16px; }
 .emi-calculator-page #faq [role="region"] > div { padding: 0 12px 14px; }
 .emi-calculator-page #faq [role="region"] p,

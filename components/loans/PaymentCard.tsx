@@ -261,7 +261,7 @@ export function PaymentCard({
                 <p className="mt-2 text-xs text-gray-500">
                   Remaining balance after payment: {formatCurrency(remainingBalance)}
                 </p>
-                <div className="mt-4 rounded-lg bg-[#E8F5E9]/50 p-4 space-y-2">
+                <div className="mt-4 rounded-lg bg-success-surface/50 p-4 space-y-2">
                   <div className="flex justify-between text-sm">
                     <span className="font-semibold text-gray-800">Amount to Pay:</span>
                     <span className="font-bold">{formatCurrency(customAmount)}</span>

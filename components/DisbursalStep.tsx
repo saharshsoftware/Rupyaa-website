@@ -52,8 +52,8 @@ export default function DisbursalStep() {
   if (submitted) {
     return (
       <div className="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] p-6 sm:p-8 max-w-2xl mx-auto w-full text-center">
-        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#F0FBF2] flex items-center justify-center mx-auto mb-4 sm:mb-6">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#22C55E]">
+        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-success-soft flex items-center justify-center mx-auto mb-4 sm:mb-6">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-secondary">
             <path d="M20 6L9 17l-5-5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
@@ -65,7 +65,7 @@ export default function DisbursalStep() {
           <button
             type="button"
             onClick={handleBackToDashboard}
-            className="px-6 py-3 rounded-xl bg-[#006525] text-white font-semibold hover:bg-[#004d1c] min-h-[48px]"
+            className="px-6 py-3 rounded-xl bg-brand-green text-white font-semibold hover:bg-brand-green-hover min-h-[48px]"
           >
             Back to Dashboard
           </button>
@@ -88,8 +88,8 @@ export default function DisbursalStep() {
   return (
     <div className="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] p-4 sm:p-6 md:p-8 max-w-2xl mx-auto w-full">
       <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
-        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#F0FBF2] flex items-center justify-center mb-3 sm:mb-4">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#22C55E]">
+        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-success-soft flex items-center justify-center mb-3 sm:mb-4">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-secondary">
             <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
             <line x1="1" y1="10" x2="23" y2="10" />
           </svg>
@@ -99,18 +99,18 @@ export default function DisbursalStep() {
       </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-        <div className="rounded-xl bg-[#F0FDF4] border border-[#22C55E]/20 p-4">
+        <div className="rounded-xl bg-[#F0FDF4] border border-secondary/20 p-4">
           <div className="flex items-center gap-2 mb-4">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#22C55E] shrink-0">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-secondary shrink-0">
               <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
               <line x1="1" y1="10" x2="23" y2="10" />
             </svg>
             <span className="text-sm font-semibold text-gray-900">Bank Details Verification</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#22C55E] ml-1">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-secondary ml-1">
               <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
               <path d="M7 11V7a5 5 0 0110 0v4" />
             </svg>
-            <span className="text-xs font-medium text-[#22C55E]">Secured & Encrypted</span>
+            <span className="text-xs font-medium text-secondary">Secured & Encrypted</span>
           </div>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-1.5">
@@ -126,7 +126,7 @@ export default function DisbursalStep() {
                   setErrors((prev) => ({ ...prev, accountNumber: undefined, confirmAccount: undefined }));
                 }}
                 placeholder="Enter account number"
-                className={`w-full px-4 py-3 rounded-xl border min-h-[48px] focus:outline-none focus:ring-2 focus:ring-[#006525]/20 focus:border-[#006525] ${
+                className={`w-full px-4 py-3 rounded-xl border min-h-[48px] focus:outline-none focus:ring-2 focus:ring-brand-green/20 focus:border-brand-green ${
                   errors.accountNumber ? "border-red-500" : "border-gray-200"
                 }`}
                 aria-invalid={!!errors.accountNumber}
@@ -153,7 +153,7 @@ export default function DisbursalStep() {
                 className={`w-full px-4 py-3 rounded-xl border min-h-[48px] focus:outline-none focus:ring-2 ${
                   errors.confirmAccount || (confirmAccount && accountNumber !== confirmAccount)
                     ? "border-red-500 focus:ring-red-200"
-                    : "border-gray-200 focus:ring-[#006525]/20 focus:border-[#006525]"
+                    : "border-gray-200 focus:ring-brand-green/20 focus:border-brand-green"
                 }`}
                 aria-invalid={!!errors.confirmAccount}
                 aria-describedby={errors.confirmAccount ? "confirmAccount-error" : undefined}
@@ -175,7 +175,7 @@ export default function DisbursalStep() {
                   setErrors((prev) => ({ ...prev, ifsc: undefined }));
                 }}
                 placeholder="ICIC0001234"
-                className={`w-full px-4 py-3 rounded-xl border min-h-[48px] focus:outline-none focus:ring-2 focus:ring-[#006525]/20 focus:border-[#006525] font-mono uppercase ${
+                className={`w-full px-4 py-3 rounded-xl border min-h-[48px] focus:outline-none focus:ring-2 focus:ring-brand-green/20 focus:border-brand-green font-mono uppercase ${
                   errors.ifsc ? "border-red-500" : "border-gray-200"
                 }`}
                 aria-invalid={!!errors.ifsc}
@@ -189,8 +189,8 @@ export default function DisbursalStep() {
             </div>
           </div>
         </div>
-        <div className="flex items-start gap-2 rounded-xl bg-[#E8F5E9] border border-[#006525]/20 px-4 py-3">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#006525] shrink-0 mt-0.5">
+        <div className="flex items-start gap-2 rounded-xl bg-success-surface border border-brand-green/20 px-4 py-3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-brand-green shrink-0 mt-0.5">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
           </svg>
           <p className="text-sm text-gray-700">This is the bank account for loan disbursal.</p>
@@ -200,7 +200,7 @@ export default function DisbursalStep() {
           type="submit"
           disabled={!canSubmit}
           className={`w-full py-3.5 rounded-xl font-semibold min-h-[48px] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 ${
-            canSubmit ? "bg-[#006525] text-white hover:bg-[#004d1c] focus:ring-[#006525]" : "bg-gray-300 text-gray-500 cursor-not-allowed focus:ring-gray-300"
+            canSubmit ? "bg-brand-green text-white hover:bg-brand-green-hover focus:ring-brand-green" : "bg-gray-300 text-gray-500 cursor-not-allowed focus:ring-gray-300"
           }`}
         >
           Continue
@@ -208,7 +208,7 @@ export default function DisbursalStep() {
       </form>
 
       <p className="text-center text-xs sm:text-sm text-gray-500 mt-4 sm:mt-6">
-        Need help? <a href="#" className="text-[#006525] font-medium hover:underline">Contact Support</a>
+        Need help? <a href="#" className="text-brand-green font-medium hover:underline">Contact Support</a>
       </p>
 
       <DetailsSubmittedModal isOpen={showSuccessModal} onClose={handleSuccessModalClose} />

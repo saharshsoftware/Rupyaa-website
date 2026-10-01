@@ -122,7 +122,7 @@ export default function ActiveLoanPage() {
               </Link>
               <Link
                 href={secondaryHref}
-                className="flex-1 min-h-[52px] rounded-xl border border-primary text-primary font-semibold flex items-center justify-center hover:bg-[#E8F5E9]/50"
+                className="flex-1 min-h-[52px] rounded-xl border border-primary text-primary font-semibold flex items-center justify-center hover:bg-success-surface/50"
               >
                 {secondaryLabel}
               </Link>
