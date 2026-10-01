@@ -19,7 +19,7 @@ export function HeroStatusCardShell({
   return (
     <div
       className={cn(
-        "relative isolate w-full overflow-hidden rounded-[1.35rem] border border-white/70 px-5 pb-6 pt-7 text-center shadow-[0_12px_40px_rgba(15,23,42,0.12)] backdrop-blur-md sm:rounded-[1.5rem] sm:px-7 sm:pb-7 sm:pt-8",
+        "relative isolate w-full overflow-hidden rounded-[1.35rem] border border-white/70 px-5 pb-6 pt-7 text-center shadow-[0_12px_40px_rgba(15,23,42,0.12)] backdrop-blur-md sm:rounded-[1.5rem] sm:px-7 sm:pb-7 sm:pt-8 h-short:px-3.5 h-short:pb-3 h-short:pt-4 h-xshort:pb-2.5 h-xshort:pt-3.5",
         className,
       )}
       style={{
@@ -42,7 +42,7 @@ type HeroAppIdBadgeProps = {
  */
 export function HeroAppIdBadge({ label }: HeroAppIdBadgeProps): ReactElement {
   return (
-    <div className="absolute right-3 top-3 z-10 max-w-[70%] truncate rounded-md bg-[#1A1A1A] px-2.5 py-1 text-[10px] font-semibold tracking-wide text-[#FECA42] sm:right-4 sm:top-4 sm:text-[11px]">
+    <div className="absolute right-3 top-3 z-10 max-w-[70%] truncate rounded-md bg-[#1A1A1A] px-2.5 py-1 text-[10px] font-semibold tracking-wide text-[#FECA42] sm:right-4 sm:top-4 sm:text-[11px] h-short:right-2 h-short:top-2 h-short:px-2 h-short:py-0.5 h-short:text-[9px]">
       {label}
     </div>
   );
